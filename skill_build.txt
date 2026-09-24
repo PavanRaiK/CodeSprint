@@ -1,0 +1,93 @@
+
+SKILL BUILD
+SAHYADRI NAV — Context-Aware Indoor Campus Navigation
+1. Purpose of this document
+The Skill Build defines HOW the team should build Sahyadri Nav. It translates the specification into engineering skills, implementation stages, technical responsibilities, and working practices. It can be used as a team checklist or as the foundation for instructions given to an AI coding assistant.
+2. Team capability map
+Skill
+What the team must be able to do
+Campus mapping
+Read the photographed floor plans and convert rooms, corridors, stairs, elevators and landmarks into structured data.
+Frontend engineering
+Build search, floor selector, route modes, map view, route animation and navigation instructions.
+Backend/API
+Expose locations, graph data, route calculation, reports and QR checkpoint endpoints.
+Graph algorithms
+Implement A* and a weighted cost function for different route modes.
+Database design
+Maintain normalized campus entities and graph relationships.
+Computer vision
+Optional OCR/room-sign recognition; keep it lightweight and demo-focused.
+UX design
+Make navigation understandable to a first-time visitor.
+Testing
+Validate real routes against the physical floor plans and test blocked-path rerouting.
+Demo engineering
+Prepare QR markers, scripted scenarios and fallback data for reliable judging.
+3. Build sequence
+Phase 1 — Map extraction
+Select the main building floors. Create a clean location inventory and identify stairs/elevators and corridor junctions.
+Phase 2 — Navigation graph
+Create nodes and edges. Add distance, floor, stair/elevator, accessibility and active-status attributes.
+Phase 3 — Backend
+Create FastAPI endpoints for locations, floors, graph, route calculation, QR checkpoints and issue updates.
+Phase 4 — Routing
+Implement A* with route-mode-specific edge costs. Validate routes manually against the floor plans.
+Phase 5 — Frontend
+Build search, floor/map view, route mode selector, route summary and turn-by-turn instructions.
+Phase 6 — QR positioning
+Create demo QR markers mapped to graph nodes and update the user's current node after scanning.
+Phase 7 — Dynamic rerouting
+Add blocked edge/area reporting and recalculate routes.
+Phase 8 — Intelligence extras
+Add OCR, semantic aliases, 'I'm Lost', or campus-memory reports only after the core flow is stable.
+Phase 9 — Demo hardening
+Test scripted scenarios, add fallback data, fix route mistakes, and prepare the final pitch.
+4. A* routing skill
+Use a graph where each edge has a base distance and contextual attributes. A route mode changes the cost, not the underlying map.
+Fastest: prioritize distance/time.
+Accessible: strongly penalize or prohibit inaccessible stairs/links.
+Easy: add a penalty for excessive turns, complicated transitions, or difficult-to-follow segments.
+Blocked: remove or heavily penalize unavailable edges.
+5. Data-building workflow
+Crop/clean each blueprint before tracing.
+Give every destination a stable ID.
+Record floor and room number/name.
+Create corridor junction nodes rather than making every pixel a node.
+Connect room entrances to nearby corridor nodes.
+Connect floors only through actual stairs/elevators.
+Measure/estimate distances consistently and document the scale assumption.
+Test every important destination with at least one known route.
+6. Frontend skill checklist
+Search with aliases and fuzzy matching.
+Show current location and destination clearly.
+Highlight the active route.
+Handle multi-floor routes with an understandable floor transition.
+Provide a route summary: distance, estimated time, floors, stairs/elevator.
+Show alternative route modes without overwhelming the user.
+Keep the interface demo-friendly: a judge should understand it in seconds.
+7. AI coding assistant rules
+Never invent rooms or connections that are not present in the verified campus data.
+Keep campus data separate from UI components.
+Build one working vertical slice before adding advanced features.
+Prefer deterministic algorithms for routing; use AI only where it adds a clear capability.
+Do not replace A* with an LLM.
+Every generated route should be testable against known graph paths.
+Keep a fallback demo dataset so the final presentation does not depend on network availability.
+8. Testing plan
+Destination lookup test: room number, full name, abbreviation and alias.
+Same-floor route test.
+Cross-floor route test.
+Accessible-route test.
+Blocked-staircase rerouting test.
+Invalid/unknown location test.
+QR checkpoint test.
+Visual route verification against the photographed blueprint.
+9. Final demo script
+Search for a destination.
+Show multiple route modes.
+Select one and display the route across the floor plan.
+Scan a QR checkpoint to establish current position.
+Report a staircase/corridor as unavailable.
+Recalculate and show the alternative route.
+Finish with the statement: the system navigates the real building using a campus-specific spatial graph.

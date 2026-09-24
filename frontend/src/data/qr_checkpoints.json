@@ -1,0 +1,101 @@
+[
+  {
+    "id": "QR-G-ENT-S",
+    "code": "SAHYADRI_QR_G_ENT_S",
+    "name": "Ground Floor \u00b7 Main South Entrance",
+    "floor": 0,
+    "node_id": "N_G_S_ENT",
+    "physical_location": "Main South Portico Security Pillar",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_G_ENT_S"
+  },
+  {
+    "id": "QR-G-ENT-W",
+    "code": "SAHYADRI_QR_G_ENT_W",
+    "name": "Ground Floor \u00b7 West Courtyard Gate",
+    "floor": 0,
+    "node_id": "N_G_W_PATIO",
+    "physical_location": "West Gate Pillar near Visitors Lounge",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_G_ENT_W"
+  },
+  {
+    "id": "QR-G-LIFT",
+    "code": "SAHYADRI_QR_G_LIFT",
+    "name": "Ground Floor \u00b7 West Elevator Bank",
+    "floor": 0,
+    "node_id": "ELEV_1_0",
+    "physical_location": "Lift Lobby Ground Floor Wall Plaque",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_G_LIFT"
+  },
+  {
+    "id": "QR-ST1-A",
+    "code": "SAHYADRI_QR_ST1_A",
+    "name": "1st Floor \u00b7 Staircase A Checkpoint",
+    "floor": 1,
+    "node_id": "STAIR_A_1",
+    "physical_location": "1st Floor Landing, Staircase A near CAED Lab",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_ST1_A"
+  },
+  {
+    "id": "QR-1-LIB",
+    "code": "SAHYADRI_QR_1_LIB",
+    "name": "1st Floor \u00b7 Central Library Entrance",
+    "floor": 1,
+    "node_id": "N_1_W_LIB",
+    "physical_location": "Central Library Turnstile Checkpoint",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_1_LIB"
+  },
+  {
+    "id": "QR-ST2-B",
+    "code": "SAHYADRI_QR_ST2_B",
+    "name": "2nd Floor \u00b7 Staircase B Checkpoint",
+    "floor": 2,
+    "node_id": "STAIR_B_2",
+    "physical_location": "2nd Floor East Central Staircase Wall Mount",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_ST2_B"
+  },
+  {
+    "id": "QR-2-LIFT",
+    "code": "SAHYADRI_QR_2_LIFT",
+    "name": "2nd Floor \u00b7 West Elevator Bank",
+    "floor": 2,
+    "node_id": "ELEV_1_2",
+    "physical_location": "2nd Floor Elevator Lobby Column",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_2_LIFT"
+  },
+  {
+    "id": "QR-2-214",
+    "code": "SAHYADRI_QR_2_214",
+    "name": "2nd Floor \u00b7 Room 214 Doorpost",
+    "floor": 2,
+    "node_id": "N_2_N_214",
+    "physical_location": "Faculty Department Room 214 Door Sign",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_2_214"
+  },
+  {
+    "id": "QR-3-CIVIL",
+    "code": "SAHYADRI_QR_3_CIVIL",
+    "name": "3rd Floor \u00b7 Civil Engineering Dept",
+    "floor": 3,
+    "node_id": "N_3_N_STAFF",
+    "physical_location": "Civil Department Staff Room Entrance",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_3_CIVIL"
+  },
+  {
+    "id": "QR-4-GARDEN",
+    "code": "SAHYADRI_QR_4_GARDEN",
+    "name": "4th Floor \u00b7 Sky Garden Promenade",
+    "floor": 4,
+    "node_id": "N_4_TERRACE",
+    "physical_location": "Rooftop Garden Entry Archway",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_4_GARDEN"
+  },
+  {
+    "id": "QR-5-INCUB",
+    "code": "SAHYADRI_QR_5_INCUB",
+    "name": "5th Floor \u00b7 Incubation Centre Checkpoint",
+    "floor": 5,
+    "node_id": "N_5_N_INCUBATION",
+    "physical_location": "Startup Incubation Reception Desk",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_5_INCUB"
+  }
+]

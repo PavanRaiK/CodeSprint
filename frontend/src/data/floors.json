@@ -1,0 +1,50 @@
+[
+  {
+    "floor": 0,
+    "id": "G",
+    "name": "Ground Floor",
+    "short_name": "Ground",
+    "bg_image": "/blueprints/ground.png",
+    "elevation": 0
+  },
+  {
+    "floor": 1,
+    "id": "1",
+    "name": "First Floor",
+    "short_name": "1st",
+    "bg_image": "/blueprints/first.png",
+    "elevation": 4
+  },
+  {
+    "floor": 2,
+    "id": "2",
+    "name": "Second Floor",
+    "short_name": "2nd",
+    "bg_image": "/blueprints/second.png",
+    "elevation": 8
+  },
+  {
+    "floor": 3,
+    "id": "3",
+    "name": "Third Floor",
+    "short_name": "3rd",
+    "bg_image": "/blueprints/third.png",
+    "elevation": 12
+  },
+  {
+    "floor": 4,
+    "id": "4",
+    "name": "Fourth Floor",
+    "short_name": "4th",
+    "bg_image": "/blueprints/fourth.png",
+    "elevation": 16
+  },
+  {
+    "floor": 5,
+    "id": "5",
+    "name": "Fifth Floor",
+    "short_name": "5th",
+    "bg_image": "/blueprints/fifth.png",
+    "elevation": 20
+  }
+]

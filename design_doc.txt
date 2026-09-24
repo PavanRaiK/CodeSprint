@@ -1,0 +1,195 @@
+
+DESIGN DOCUMENT
+SAHYADRI NAV — Context-Aware Indoor Campus Navigation
+Design system inspired by the supplied Mapbox-style reference
+1. Purpose of this document
+This Design Document defines HOW Sahyadri Nav should look, behave, and communicate with the user. It converts the project specification into a consistent visual and interaction system so the team can build the frontend without making unrelated design decisions screen by screen.
+The supplied reference is used as the visual direction: dark surfaces, strong blue interaction accents, geometric typography, map-first presentation, rounded cards, compact controls, and a polished navigation-product feel. The goal is to adapt that language to Sahyadri Nav rather than copy the reference.
+2. Design goals
+Map-first: the route and building structure should always be the visual focus.
+Fast comprehension: a first-time visitor should understand the next action immediately.
+Professional hackathon product: it should look like a usable navigation product, not a college CRUD project.
+Low visual noise: controls should support navigation rather than compete with the map.
+Context-aware: route modes, accessibility, floor changes, and temporary closures must be visually obvious.
+Demo-friendly: every major feature should be understandable within a few seconds during judging.
+3. Reference-derived visual direction
+The supplied design reference uses a near-black foundation, blue as the main interaction color, large map/product visuals, rounded surfaces, pill controls, and a restrained information hierarchy. Its typography and spacing are geometric and generous, while UI controls remain compact. These principles are retained for Sahyadri Nav. fileciteturn0file0L8-L26
+The reference specifies a dark base around #0e1012 and a primary interactive blue around #007afc. These become the starting points for the Sahyadri Nav theme. fileciteturn0file0L183-L188
+4. Brand concept
+Product name: SAHYADRI NAV
+Tagline: Navigate the campus. Know the way.
+Visual personality: technical, calm, precise, campus-aware, and navigation-focused.
+5. Color system
+Token
+Color
+Usage
+Rule
+Background
+#0E1012
+App shell / main background
+Primary dark foundation
+Surface
+#15191E
+Cards, panels, search areas
+Use for elevation
+Surface 2
+#1D232A
+Selected/raised controls
+Use sparingly
+Primary
+#007AFC
+Buttons, active route, links
+Primary interaction accent
+Primary soft
+#12385D
+Selected states / route halo
+Low-intensity blue
+Text
+#F4F7FA
+Main text
+High contrast
+Muted
+#9AA5B1
+Secondary text
+Supporting information
+Success
+#39C98A
+Open/accessible/confirmed
+Status only
+Warning
+#F4B942
+Crowded/attention
+Status only
+Danger
+#FF5C5C
+Blocked/closed
+Status only
+6. Typography
+Primary font: Inter or a similar modern geometric sans-serif.
+Display headings: bold, compact, high contrast.
+Body text: regular/medium with comfortable line height.
+Map labels: medium weight; avoid excessive text directly on the map.
+Numbers such as room numbers, distance and ETA should use strong weight for quick scanning.
+7. Layout system
+Desktop application: two major regions — navigation/sidebar and map workspace.
+Map workspace should occupy the majority of the viewport.
+Search and destination controls sit above or over the map rather than forcing the user away from it.
+Use 8px as the base spacing unit; common gaps: 8, 16, 24, 32px.
+Cards use rounded corners, approximately 12–16px.
+Avoid excessive borders; rely on surface contrast and spacing.
+8. Information architecture
+The primary application flow should remain simple:
+Home / Map
+Search destination
+Select route mode
+View route
+Start navigation
+Update position / scan QR
+Reroute if necessary
+9. Main screen — Map
+The map screen is the core of the product.
+Top-left: Sahyadri Nav logo/name and destination search.
+Left or floating panel: current location, destination, route mode and route summary.
+Main canvas: selected floor plan with the active route prominently highlighted.
+Floor selector: compact vertical or segmented control for Ground, 1st, 2nd, 3rd, 4th, 5th floors.
+Map controls: zoom, recenter, current-location and orientation controls.
+Bottom/side information card: distance, ETA, floor transitions and major instructions.
+10. Search experience
+Search should feel like a navigation command rather than a generic database search.
+Placeholder: 'Where do you want to go?'
+Accept room numbers, names, departments, labs, offices and aliases.
+Show result type and floor under each result.
+Example: 'Room 214 · Faculty Department · 2nd Floor'.
+Allow the user to select a result without navigating through multiple pages.
+11. Route selection
+After selecting a destination, show route options as compact cards/pills:
+Mode
+Meaning
+Visual cue
+Example
+Fastest
+Prioritizes travel time/distance
+Blue
+2 min · 140 m
+Accessible
+Avoids unsuitable stairs/links
+Blue + accessibility icon
+3 min · Elevator
+Easy
+Reduces complicated turns/transitions
+Blue + compass icon
+3 min · 5 turns
+12. Route visualization
+Use a strong blue route line over the floor plan.
+Use a subtle glow/halo around the active route when appropriate.
+Destination gets a prominent pin/marker.
+Current position uses a distinct location indicator.
+Stair/elevator transitions receive a clear transition icon.
+Do not hide the floor plan beneath excessive route graphics.
+When a route crosses floors, animate or clearly transition the selected floor.
+13. Turn-by-turn navigation card
+Example:
+1  Walk straight · 30 m
+2  Turn left at Courtyard 4
+3  Continue past Physics Lab
+4  Take Staircase B to 2nd Floor
+5  Room 214 is on your left
+14. QR positioning / 'I'm Lost'
+QR positioning should be presented as a fast recovery mechanism, not as a technical feature that dominates the UI.
+Button: 'Update my location'
+Option: 'Scan campus QR'
+After scan: show 'Location updated · 2nd Floor · Staircase B'.
+The 'I'm Lost' action can open a simple recovery panel: scan nearby QR, identify a visible room sign, or choose a known landmark.
+15. Dynamic obstruction / rerouting
+Blocked path should use the danger color and a small 'Closed' label.
+The old route should visually fade rather than disappear instantly.
+The replacement route should animate/highlight.
+Show a concise message such as: 'Staircase A unavailable. Route updated.'
+Never use red as the normal navigation route color.
+16. Floor-plan treatment
+The supplied Sahyadri blueprints are the core visual asset. They should be converted into clean SVG layers where possible. Keep the original architectural information recognizable while reducing visual clutter.
+Base layer: walls, rooms, corridors.
+Location layer: room/landmark labels.
+Navigation layer: route, current position, destination.
+Interaction layer: clickable rooms, stairs, elevators and landmarks.
+Status layer: temporary closures or reports.
+17. Component library
+SearchBar
+LocationResult
+FloorSelector
+RouteModeSelector
+RouteSummaryCard
+MapCanvas
+CurrentLocationMarker
+DestinationMarker
+FloorTransitionMarker
+NavigationInstruction
+QRScannerModal
+RerouteAlert
+IssueReportCard
+MapControlButton
+18. Responsive design
+Desktop: map + side panel.
+Tablet: map with collapsible panel.
+Mobile: full-screen map with bottom-sheet search and route controls.
+Never make the user horizontally scroll the map application.
+Important route information must remain visible without opening multiple menus.
+19. Accessibility
+Do not communicate route status through color alone; use icons/text too.
+Maintain readable contrast.
+Buttons need clear labels/tooltips.
+Accessible route should be a first-class route mode, not hidden under settings.
+Navigation instructions should use simple language.
+20. What NOT to do
+Do not create a generic Google Maps clone.
+Do not use a rainbow-colored dashboard.
+Do not place every database field on the main screen.
+Do not make the route line so thick that it hides the blueprint.
+Do not make AI/chat the center of the product; navigation is the center.
+Do not add 3D/AR merely for visual effect if the basic route is not reliable.
+21. Judge-facing visual story
+The interface should communicate this story visually within one screen:
+REAL SAHYADRI MAP → USER LOCATION → DESTINATION → ROUTE OPTIONS → BEST-SUITED ROUTE → LIVE REROUTING
+This makes the uniqueness visible instead of requiring the team to explain every feature verbally.
+22. Implementation handoff
+Frontend developers should treat this document as the UI contract. The Spec Sheet defines what exists; the Skill Build defines how it is implemented; this document defines how those capabilities are presented to the user.

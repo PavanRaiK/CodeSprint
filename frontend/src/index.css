@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-void-black: #0e1012;
+  --color-deep-charcoal: #15171b;
+  --color-gunmetal: #1c1f24;
+  --color-graphite: #23262d;
+  --color-steel: #333943;
+  --color-pewter: #444d5a;
+  --color-slate: #566171;
+  --color-ash: #8b96aa;
+  --color-fog: #a0aaba;
+  --color-silver: #bbc2ce;
+  --color-signal-blue: #007afc;
+  --color-deep-signal: #0062ca;
+  --color-map-green: #228a56;
+  --color-map-red: #ff5c5c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-void-black);
+  color: #ffffff;
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Custom Scrollbar for sleek dark panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e1012;
+}
+::-webkit-scrollbar-thumb {
+  background: #23262d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333943;
+}
+
+/* Route animation and pulse */
+@keyframes routePulse {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-animated {
+  stroke-dasharray: 8 6;
+  animation: routePulse 1.2s linear infinite;
+}
+
+@keyframes beaconPing {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.beacon-wave {
+  animation: beaconPing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Map viewport drag cursor */
+.map-canvas-grab {
+  cursor: grab;
+}
+.map-canvas-grab:active {
+  cursor: grabbing;
+}

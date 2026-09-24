@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ISSUE-01",
+    "title": "Staircase A Closed for Maintenance",
+    "type": "staircase_closed",
+    "node_ids": [
+      "STAIR_A_0",
+      "STAIR_A_1",
+      "STAIR_A_2",
+      "STAIR_A_3"
+    ],
+    "edge_ids": [],
+    "floor": 1,
+    "status": "active",
+    "severity": "high",
+    "description": "Routine step refinishing and painting; please use Staircase B or West Elevators.",
+    "reported_at": "2026-09-24T18:00:00Z"
+  }
+]

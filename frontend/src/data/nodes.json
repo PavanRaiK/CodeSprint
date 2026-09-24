@@ -1,0 +1,2495 @@
+[
+  {
+    "id": "ELEV_1_0",
+    "name": "West Lift Bank (Floor 0)",
+    "type": "elevator",
+    "floor": 0,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_0",
+    "name": "Staircase B (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "ELEV_1_1",
+    "name": "West Lift Bank (Floor 1)",
+    "type": "elevator",
+    "floor": 1,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_1",
+    "name": "Staircase B (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "ELEV_1_2",
+    "name": "West Lift Bank (Floor 2)",
+    "type": "elevator",
+    "floor": 2,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_2",
+    "name": "Staircase B (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "ELEV_1_3",
+    "name": "West Lift Bank (Floor 3)",
+    "type": "elevator",
+    "floor": 3,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_3",
+    "name": "Staircase B (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "ELEV_1_4",
+    "name": "West Lift Bank (Floor 4)",
+    "type": "elevator",
+    "floor": 4,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_4",
+    "name": "Staircase B (Floor 4)",
+    "type": "staircase",
+    "floor": 4,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "ELEV_1_5",
+    "name": "West Lift Bank (Floor 5)",
+    "type": "elevator",
+    "floor": 5,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "STAIR_B_5",
+    "name": "Staircase B (Floor 5)",
+    "type": "staircase",
+    "floor": 5,
+    "x": 660,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_0",
+    "name": "Staircase A (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 420,
+    "y": 390,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_C_0",
+    "name": "Staircase C (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 350,
+    "y": 660,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_0",
+    "name": "Staircase D (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 410,
+    "y": 845,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_1",
+    "name": "Staircase A (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 420,
+    "y": 390,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_C_1",
+    "name": "Staircase C (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 350,
+    "y": 660,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_1",
+    "name": "Staircase D (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 410,
+    "y": 845,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_2",
+    "name": "Staircase A (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 420,
+    "y": 390,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_C_2",
+    "name": "Staircase C (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 350,
+    "y": 660,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_2",
+    "name": "Staircase D (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 410,
+    "y": 845,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_3",
+    "name": "Staircase A (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 420,
+    "y": 390,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_C_3",
+    "name": "Staircase C (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 350,
+    "y": 660,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_3",
+    "name": "Staircase D (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 410,
+    "y": 845,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_LIB_0",
+    "name": "Library Spiral Staircase (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 285,
+    "y": 785,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_LIB_1",
+    "name": "Library Spiral Staircase (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 285,
+    "y": 785,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_LIB_2",
+    "name": "Library Spiral Staircase (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 285,
+    "y": 785,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_WS_0",
+    "name": "Workshop Staircase (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 575,
+    "y": 80,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_WS_1",
+    "name": "Workshop Staircase (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 575,
+    "y": 80,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_WS_2",
+    "name": "Workshop Staircase (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 575,
+    "y": 80,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_WS_3",
+    "name": "Workshop Staircase (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 575,
+    "y": 80,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_WS_4",
+    "name": "Workshop Staircase (Floor 4)",
+    "type": "staircase",
+    "floor": 4,
+    "x": 575,
+    "y": 80,
+    "accessible": false
+  },
+  {
+    "id": "N_G_S_W",
+    "name": "South-West Corridor Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 215,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_ENT",
+    "name": "Main South Entrance Foyer",
+    "type": "entrance",
+    "floor": 0,
+    "x": 312,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_40",
+    "name": "South Corridor near Mechanical Dept 40",
+    "type": "corridor",
+    "floor": 0,
+    "x": 350,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_STAIR_D",
+    "name": "South Corridor near Staircase D",
+    "type": "corridor",
+    "floor": 0,
+    "x": 410,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_MID",
+    "name": "South Corridor Central Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 500,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_E1",
+    "name": "South Corridor near Classroom 38",
+    "type": "corridor",
+    "floor": 0,
+    "x": 650,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_E2",
+    "name": "South Corridor near Classroom 37",
+    "type": "corridor",
+    "floor": 0,
+    "x": 780,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_S_E",
+    "name": "South-East Corridor Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 900,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_VISITORS",
+    "name": "West Corridor near Visitors Lounge 38",
+    "type": "corridor",
+    "floor": 0,
+    "x": 215,
+    "y": 825,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_PATIO",
+    "name": "West Patio Entrance Junction",
+    "type": "entrance",
+    "floor": 0,
+    "x": 215,
+    "y": 760,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_LIFT",
+    "name": "West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 0,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_STUDY43",
+    "name": "West Corridor Study Space 43",
+    "type": "corridor",
+    "floor": 0,
+    "x": 215,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_MID",
+    "name": "West Corridor Central Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 215,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_PLACEMENT",
+    "name": "West Corridor Placement Office 18",
+    "type": "corridor",
+    "floor": 0,
+    "x": 215,
+    "y": 375,
+    "accessible": true
+  },
+  {
+    "id": "N_G_W_N",
+    "name": "North-West Corridor Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 215,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_N_EXAM",
+    "name": "North Corridor Exam Section 14",
+    "type": "corridor",
+    "floor": 0,
+    "x": 440,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_N_MID",
+    "name": "North Corridor Central Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 500,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_N_STORE",
+    "name": "North Corridor Store 11",
+    "type": "corridor",
+    "floor": 0,
+    "x": 645,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_N_DIR",
+    "name": "North Corridor Director's Chamber 10",
+    "type": "corridor",
+    "floor": 0,
+    "x": 750,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_N_E",
+    "name": "North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 0,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_G_E_PRINCIPAL",
+    "name": "East Corridor Principal's Chamber 2",
+    "type": "corridor",
+    "floor": 0,
+    "x": 900,
+    "y": 290,
+    "accessible": true
+  },
+  {
+    "id": "N_G_E_ACADEMIC",
+    "name": "East Corridor Academic Section 3",
+    "type": "corridor",
+    "floor": 0,
+    "x": 900,
+    "y": 370,
+    "accessible": true
+  },
+  {
+    "id": "N_G_E_MID",
+    "name": "East Corridor Central Junction (East Entrance)",
+    "type": "intersection",
+    "floor": 0,
+    "x": 800,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_G_E_COMP",
+    "name": "East Corridor Dept of Computers 23",
+    "type": "corridor",
+    "floor": 0,
+    "x": 800,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "N_G_E_LAB5",
+    "name": "East Corridor Computer Lab-5 31",
+    "type": "corridor",
+    "floor": 0,
+    "x": 800,
+    "y": 710,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_MID",
+    "name": "Central Atrium Crossroads",
+    "type": "intersection",
+    "floor": 0,
+    "x": 500,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STAIR_A",
+    "name": "Corridor Junction near Staircase A",
+    "type": "intersection",
+    "floor": 0,
+    "x": 420,
+    "y": 440,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STAIR_B",
+    "name": "Corridor Junction near Staircase B & East Entry",
+    "type": "intersection",
+    "floor": 0,
+    "x": 660,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STAIR_C",
+    "name": "Corridor Junction near Staircase C & Store 35",
+    "type": "intersection",
+    "floor": 0,
+    "x": 350,
+    "y": 660,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STUDY32",
+    "name": "Central Corridor Study 32 & Seminar",
+    "type": "corridor",
+    "floor": 0,
+    "x": 500,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_MAIN_ENT",
+    "name": "Main Campus Entrance",
+    "type": "room",
+    "floor": 0,
+    "x": 312,
+    "y": 920,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_WEST_ENT",
+    "name": "West Campus Entrance",
+    "type": "room",
+    "floor": 0,
+    "x": 100,
+    "y": 810,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_EAST_ENT",
+    "name": "East Academic Entrance",
+    "type": "room",
+    "floor": 0,
+    "x": 650,
+    "y": 485,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_PRINCIPAL",
+    "name": "Principal's Chamber (Room 2)",
+    "type": "room",
+    "floor": 0,
+    "x": 915,
+    "y": 290,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_ACADEMIC",
+    "name": "Academic Section (Room 3)",
+    "type": "room",
+    "floor": 0,
+    "x": 915,
+    "y": 370,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_FOUNDATION",
+    "name": "Foundation Office (Room 9)",
+    "type": "room",
+    "floor": 0,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_DIRECTOR",
+    "name": "Director's Chamber (Room 10)",
+    "type": "room",
+    "floor": 0,
+    "x": 750,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_STORE_11",
+    "name": "Central Store Room (Room 11)",
+    "type": "room",
+    "floor": 0,
+    "x": 645,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_PLACEMENT_EXAM",
+    "name": "Placement & Exam Cell (Room 14)",
+    "type": "room",
+    "floor": 0,
+    "x": 440,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_PLACEMENT_OFFICE",
+    "name": "Placement Office (Room 18)",
+    "type": "room",
+    "floor": 0,
+    "x": 200,
+    "y": 375,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_STUDY_21",
+    "name": "Study Space 21",
+    "type": "room",
+    "floor": 0,
+    "x": 575,
+    "y": 485,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_DRAWING_22",
+    "name": "Drawing & Design Hall (Room 22)",
+    "type": "room",
+    "floor": 0,
+    "x": 645,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_DEPT_COMP",
+    "name": "Department of Computer Science (Room 23)",
+    "type": "room",
+    "floor": 0,
+    "x": 760,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_HOD_CS",
+    "name": "HOD Computer Science & Dept Library",
+    "type": "room",
+    "floor": 0,
+    "x": 900,
+    "y": 610,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_COMP_LAB_5",
+    "name": "Computer Lab-5 (Room 31)",
+    "type": "room",
+    "floor": 0,
+    "x": 915,
+    "y": 710,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_SEMINAR_32",
+    "name": "Seminar Hall & Discussion Room 32",
+    "type": "room",
+    "floor": 0,
+    "x": 550,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_STUDY_33",
+    "name": "Courtyard Study Space 33",
+    "type": "room",
+    "floor": 0,
+    "x": 645,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_GUEST_LOUNGE",
+    "name": "Guest Lounge & Quiet Area (Room 36)",
+    "type": "room",
+    "floor": 0,
+    "x": 390,
+    "y": 760,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_CLASS_37",
+    "name": "Classroom 37",
+    "type": "room",
+    "floor": 0,
+    "x": 900,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_VISITORS_LOUNGE",
+    "name": "Visitors Lounge (Room 38)",
+    "type": "room",
+    "floor": 0,
+    "x": 195,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_SECURITY",
+    "name": "Campus Security & Helpdesk (Room 39)",
+    "type": "room",
+    "floor": 0,
+    "x": 215,
+    "y": 825,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_DEPT_40",
+    "name": "Mechanical Department Office (Room 40)",
+    "type": "room",
+    "floor": 0,
+    "x": 345,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_MEETING_44",
+    "name": "Conference Room 44",
+    "type": "room",
+    "floor": 0,
+    "x": 200,
+    "y": 535,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_COURT_1",
+    "name": "Courtyard 1 / Lecture Hall-1",
+    "type": "room",
+    "floor": 0,
+    "x": 730,
+    "y": 735,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_COURT_2",
+    "name": "Courtyard 2 / Lecture Hall-2",
+    "type": "room",
+    "floor": 0,
+    "x": 380,
+    "y": 540,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_COURT_3",
+    "name": "Courtyard 3 / Lecture Hall-4",
+    "type": "room",
+    "floor": 0,
+    "x": 380,
+    "y": 310,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_COURT_4",
+    "name": "Courtyard 4 / Lecture Hall-3",
+    "type": "room",
+    "floor": 0,
+    "x": 715,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_WORKSHOP_46",
+    "name": "Workshop - Furnace & Forging (Room 46)",
+    "type": "room",
+    "floor": 0,
+    "x": 320,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_G_WORKSHOP_45",
+    "name": "Workshop - Electrical Repair & Carpentry (Room 45)",
+    "type": "room",
+    "floor": 0,
+    "x": 480,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "N_1_S_W",
+    "name": "First Floor South-West Junction (Central Library)",
+    "type": "intersection",
+    "floor": 1,
+    "x": 215,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_1_S_129",
+    "name": "First Floor South Corridor near E&C Lab-5",
+    "type": "corridor",
+    "floor": 1,
+    "x": 440,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_1_S_128",
+    "name": "First Floor South Corridor near E&C Lab-4",
+    "type": "corridor",
+    "floor": 1,
+    "x": 590,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_1_S_126",
+    "name": "First Floor South Corridor near E&C Lab-3",
+    "type": "corridor",
+    "floor": 1,
+    "x": 740,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_1_S_E",
+    "name": "First Floor South-East Corridor Junction",
+    "type": "intersection",
+    "floor": 1,
+    "x": 900,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_LIB",
+    "name": "First Floor West Corridor Library Entrance",
+    "type": "corridor",
+    "floor": 1,
+    "x": 215,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_LIFT",
+    "name": "First Floor West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 1,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_136",
+    "name": "First Floor West Corridor Study Space 136",
+    "type": "corridor",
+    "floor": 1,
+    "x": 215,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_MID",
+    "name": "First Floor West Corridor Central Junction",
+    "type": "intersection",
+    "floor": 1,
+    "x": 215,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_116",
+    "name": "First Floor West Corridor Lecture Hall 116",
+    "type": "corridor",
+    "floor": 1,
+    "x": 215,
+    "y": 340,
+    "accessible": true
+  },
+  {
+    "id": "N_1_W_N",
+    "name": "First Floor North-West Corridor Junction",
+    "type": "intersection",
+    "floor": 1,
+    "x": 215,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_N_CAED",
+    "name": "First Floor North Corridor CAED Lab 112",
+    "type": "corridor",
+    "floor": 1,
+    "x": 410,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_N_FACULTY",
+    "name": "First Floor North Corridor Faculty 111",
+    "type": "corridor",
+    "floor": 1,
+    "x": 580,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_N_MBA_CLASS",
+    "name": "First Floor North Corridor MBA Class 110",
+    "type": "corridor",
+    "floor": 1,
+    "x": 670,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_N_MBA_OFFICE",
+    "name": "First Floor North Corridor MBA Office 109",
+    "type": "corridor",
+    "floor": 1,
+    "x": 760,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_N_E",
+    "name": "First Floor North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 1,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_1_E_MBA102",
+    "name": "First Floor East Corridor MBA CR 102",
+    "type": "corridor",
+    "floor": 1,
+    "x": 900,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "N_1_E_MBA103",
+    "name": "First Floor East Corridor MBA CR 103",
+    "type": "corridor",
+    "floor": 1,
+    "x": 900,
+    "y": 360,
+    "accessible": true
+  },
+  {
+    "id": "N_1_E_MID",
+    "name": "First Floor East Corridor Central Junction",
+    "type": "intersection",
+    "floor": 1,
+    "x": 800,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_1_E_STAFF",
+    "name": "First Floor East Corridor E&C Staff Room",
+    "type": "corridor",
+    "floor": 1,
+    "x": 800,
+    "y": 615,
+    "accessible": true
+  },
+  {
+    "id": "N_1_E_LAB1",
+    "name": "First Floor East Corridor E&C Lab-1",
+    "type": "corridor",
+    "floor": 1,
+    "x": 800,
+    "y": 730,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_MID",
+    "name": "First Floor Central Atrium Crossroads",
+    "type": "intersection",
+    "floor": 1,
+    "x": 500,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STAIR_A",
+    "name": "First Floor Corridor near Staircase A",
+    "type": "intersection",
+    "floor": 1,
+    "x": 420,
+    "y": 440,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STAIR_B",
+    "name": "First Floor Corridor near Staircase B",
+    "type": "intersection",
+    "floor": 1,
+    "x": 660,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STAIR_C",
+    "name": "First Floor Corridor near Staircase C & E&C Lab-8",
+    "type": "intersection",
+    "floor": 1,
+    "x": 350,
+    "y": 660,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STUDY133",
+    "name": "First Floor Corridor Study 133 & E&C Lab-6",
+    "type": "corridor",
+    "floor": 1,
+    "x": 500,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_DIR",
+    "name": "MBA Director's Chamber (Room 101)",
+    "type": "room",
+    "floor": 1,
+    "x": 840,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_CR_102",
+    "name": "MBA Classroom 102",
+    "type": "room",
+    "floor": 1,
+    "x": 820,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_CR_103",
+    "name": "MBA Classroom 103",
+    "type": "room",
+    "floor": 1,
+    "x": 820,
+    "y": 360,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MEET_106",
+    "name": "Faculty Conference Room 106",
+    "type": "room",
+    "floor": 1,
+    "x": 740,
+    "y": 465,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_STUDY_107",
+    "name": "Study Space 107",
+    "type": "room",
+    "floor": 1,
+    "x": 590,
+    "y": 440,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_LIB",
+    "name": "MBA Departmental Library (Room 109)",
+    "type": "room",
+    "floor": 1,
+    "x": 480,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_OFFICE",
+    "name": "MBA Department Office",
+    "type": "room",
+    "floor": 1,
+    "x": 760,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_MBA_CLASS",
+    "name": "MBA Lecture Classroom 110",
+    "type": "room",
+    "floor": 1,
+    "x": 670,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_FACULTY_111",
+    "name": "Faculty Cabins 111",
+    "type": "room",
+    "floor": 1,
+    "x": 580,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_CAED_LAB",
+    "name": "CAED Computer Lab (Room 112)",
+    "type": "room",
+    "floor": 1,
+    "x": 410,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_LADIES_ROOM",
+    "name": "Ladies Common Lounge (Room 113)",
+    "type": "room",
+    "floor": 1,
+    "x": 240,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_LECTURE_116",
+    "name": "Lecture Hall 116",
+    "type": "room",
+    "floor": 1,
+    "x": 140,
+    "y": 340,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_ELEC_PANEL",
+    "name": "Electrical Panel Room 118",
+    "type": "room",
+    "floor": 1,
+    "x": 510,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_STUDY_119",
+    "name": "Study Space 119",
+    "type": "room",
+    "floor": 1,
+    "x": 510,
+    "y": 590,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_STAFF_ROOM",
+    "name": "E&C Department Staff Room",
+    "type": "room",
+    "floor": 1,
+    "x": 720,
+    "y": 615,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_1",
+    "name": "E & C Lab-1 (Room 122)",
+    "type": "room",
+    "floor": 1,
+    "x": 855,
+    "y": 730,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_2",
+    "name": "E & C Lab-2 (Room 125)",
+    "type": "room",
+    "floor": 1,
+    "x": 880,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_3",
+    "name": "E & C Lab-3 (Room 126)",
+    "type": "room",
+    "floor": 1,
+    "x": 740,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_4",
+    "name": "E & C Lab-4 (Room 128)",
+    "type": "room",
+    "floor": 1,
+    "x": 590,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_5",
+    "name": "E & C Lab-5 (Room 129)",
+    "type": "room",
+    "floor": 1,
+    "x": 440,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_6",
+    "name": "E & C Lab-6 (Room 130/131)",
+    "type": "room",
+    "floor": 1,
+    "x": 485,
+    "y": 760,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_7",
+    "name": "E & C Lab-7 (Room 132)",
+    "type": "room",
+    "floor": 1,
+    "x": 485,
+    "y": 665,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_EC_LAB_8",
+    "name": "E & C Lab-8 (Room 134)",
+    "type": "room",
+    "floor": 1,
+    "x": 385,
+    "y": 665,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_STUDY_133",
+    "name": "Study Space 133",
+    "type": "room",
+    "floor": 1,
+    "x": 590,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_LIB_MAIN",
+    "name": "Central Library (Primary Floor) (Room 135)",
+    "type": "room",
+    "floor": 1,
+    "x": 235,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_STUDY_136",
+    "name": "Study Space 136",
+    "type": "room",
+    "floor": 1,
+    "x": 240,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_LECTURE_137",
+    "name": "Lecture Hall 137",
+    "type": "room",
+    "floor": 1,
+    "x": 140,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_SEMINAR_AUD",
+    "name": "Campus Auditorium (Red Seminar Hall)",
+    "type": "room",
+    "floor": 1,
+    "x": 330,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_WORKSHOP_138",
+    "name": "Workshop 1st Floor - CAD & Simulation (Room 138)",
+    "type": "room",
+    "floor": 1,
+    "x": 350,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_1_WORKSHOP_139",
+    "name": "Workshop 1st Floor - Drafting Studio (Room 139)",
+    "type": "room",
+    "floor": 1,
+    "x": 180,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_W",
+    "name": "Second Floor South-West Junction (Library SF)",
+    "type": "intersection",
+    "floor": 2,
+    "x": 215,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_233",
+    "name": "Second Floor South Corridor near IS Lab-5",
+    "type": "corridor",
+    "floor": 2,
+    "x": 430,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_232",
+    "name": "Second Floor South Corridor near IS Lab-4",
+    "type": "corridor",
+    "floor": 2,
+    "x": 550,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_231",
+    "name": "Second Floor South Corridor near Server Room",
+    "type": "corridor",
+    "floor": 2,
+    "x": 635,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_230",
+    "name": "Second Floor South Corridor near IS Lab-3",
+    "type": "corridor",
+    "floor": 2,
+    "x": 700,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_S_E",
+    "name": "Second Floor South-East Corridor Junction",
+    "type": "intersection",
+    "floor": 2,
+    "x": 900,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_LIB",
+    "name": "Second Floor Library SF Entrance",
+    "type": "corridor",
+    "floor": 2,
+    "x": 215,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_LIFT",
+    "name": "Second Floor West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 2,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_CHEM",
+    "name": "Second Floor West Corridor Chemistry Lab",
+    "type": "corridor",
+    "floor": 2,
+    "x": 215,
+    "y": 550,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_MID",
+    "name": "Second Floor West Corridor Central Junction",
+    "type": "intersection",
+    "floor": 2,
+    "x": 215,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_PHYSICS",
+    "name": "Second Floor West Corridor Physics Lab",
+    "type": "corridor",
+    "floor": 2,
+    "x": 215,
+    "y": 370,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_LOUNGE",
+    "name": "Second Floor Student Lounge 216 & Bridge",
+    "type": "intersection",
+    "floor": 2,
+    "x": 215,
+    "y": 220,
+    "accessible": true
+  },
+  {
+    "id": "N_2_W_N",
+    "name": "Second Floor North-West Corridor Junction",
+    "type": "intersection",
+    "floor": 2,
+    "x": 215,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_N_214",
+    "name": "Second Floor North Corridor - Room 214 (Faculty Dept)",
+    "type": "corridor",
+    "floor": 2,
+    "x": 380,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_N_213",
+    "name": "Second Floor North Corridor - Mathematics Dept 213",
+    "type": "corridor",
+    "floor": 2,
+    "x": 480,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_N_211",
+    "name": "Second Floor North Corridor - Engineering CR 211",
+    "type": "corridor",
+    "floor": 2,
+    "x": 670,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_N_201",
+    "name": "Second Floor North Corridor - Faculty 201",
+    "type": "corridor",
+    "floor": 2,
+    "x": 820,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_N_E",
+    "name": "Second Floor North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 2,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_2_E_MBA202",
+    "name": "Second Floor East Corridor MBA CR 202",
+    "type": "corridor",
+    "floor": 2,
+    "x": 900,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "N_2_E_MBA203",
+    "name": "Second Floor East Corridor MBA CR 203",
+    "type": "corridor",
+    "floor": 2,
+    "x": 900,
+    "y": 360,
+    "accessible": true
+  },
+  {
+    "id": "N_2_E_MID",
+    "name": "Second Floor East Corridor Central Junction",
+    "type": "intersection",
+    "floor": 2,
+    "x": 800,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_2_E_STAFF",
+    "name": "Second Floor East Corridor CS Staff & HOD",
+    "type": "corridor",
+    "floor": 2,
+    "x": 800,
+    "y": 610,
+    "accessible": true
+  },
+  {
+    "id": "N_2_E_CS_CR",
+    "name": "Second Floor East Corridor CS CR 226",
+    "type": "corridor",
+    "floor": 2,
+    "x": 800,
+    "y": 740,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_MID",
+    "name": "Second Floor Central Atrium Crossroads",
+    "type": "intersection",
+    "floor": 2,
+    "x": 500,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STAIR_A",
+    "name": "Second Floor Corridor near Staircase A",
+    "type": "intersection",
+    "floor": 2,
+    "x": 420,
+    "y": 440,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STAIR_B",
+    "name": "Second Floor Corridor near Staircase B",
+    "type": "intersection",
+    "floor": 2,
+    "x": 660,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STAIR_C",
+    "name": "Second Floor Corridor near Staircase C & CS CR 236",
+    "type": "intersection",
+    "floor": 2,
+    "x": 350,
+    "y": 660,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STUDY237",
+    "name": "Second Floor Corridor Study 237 & CS Lab",
+    "type": "corridor",
+    "floor": 2,
+    "x": 500,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "N_2_WS_BRIDGE",
+    "name": "Skybridge to Workshop (Floor 2)",
+    "type": "corridor",
+    "floor": 2,
+    "x": 285,
+    "y": 150,
+    "accessible": true
+  },
+  {
+    "id": "RN_R214",
+    "name": "Room 214 (Faculty Department)",
+    "type": "room",
+    "floor": 2,
+    "x": 380,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_MATH_DEPT",
+    "name": "Mathematics Department (Room 213)",
+    "type": "room",
+    "floor": 2,
+    "x": 480,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_ENG_CR_211",
+    "name": "Engineering Classroom 211",
+    "type": "room",
+    "floor": 2,
+    "x": 670,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_FACULTY_201",
+    "name": "Faculty Cabins 201",
+    "type": "room",
+    "floor": 2,
+    "x": 820,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_STUDENT_LOUNGE",
+    "name": "Student Lounge (Room 216)",
+    "type": "room",
+    "floor": 2,
+    "x": 235,
+    "y": 220,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_SPORTS",
+    "name": "Sports Gallery & Activities (Room 217)",
+    "type": "room",
+    "floor": 2,
+    "x": 135,
+    "y": 220,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_PHYSICS_LAB",
+    "name": "Physics Laboratory",
+    "type": "room",
+    "floor": 2,
+    "x": 140,
+    "y": 370,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_CHEMISTRY_LAB",
+    "name": "Chemistry Laboratory",
+    "type": "room",
+    "floor": 2,
+    "x": 140,
+    "y": 550,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_DRAWING_219",
+    "name": "Drawing & CAD Studio (Room 219)",
+    "type": "room",
+    "floor": 2,
+    "x": 330,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_INTEL_LAB",
+    "name": "Intel Intelligence & AI Lab (Room 220)",
+    "type": "room",
+    "floor": 2,
+    "x": 505,
+    "y": 470,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_STUDY_207",
+    "name": "Study Space 207",
+    "type": "room",
+    "floor": 2,
+    "x": 590,
+    "y": 450,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_IS_CR_206",
+    "name": "Information Science Classroom 206",
+    "type": "room",
+    "floor": 2,
+    "x": 725,
+    "y": 465,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_RESTROOM_204",
+    "name": "Restrooms 204/205",
+    "type": "room",
+    "floor": 2,
+    "x": 865,
+    "y": 465,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_MBA_CR_202",
+    "name": "MBA Classroom 202",
+    "type": "room",
+    "floor": 2,
+    "x": 825,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_MBA_CR_203",
+    "name": "MBA Classroom 203",
+    "type": "room",
+    "floor": 2,
+    "x": 825,
+    "y": 360,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_CIVIL_DEPT_209",
+    "name": "Civil & Structural Dept (Room 209)",
+    "type": "room",
+    "floor": 2,
+    "x": 485,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_STUDY_221",
+    "name": "Study Space 221",
+    "type": "room",
+    "floor": 2,
+    "x": 510,
+    "y": 590,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_STAFF_224",
+    "name": "Computer Science Staff Room (Room 224)",
+    "type": "room",
+    "floor": 2,
+    "x": 720,
+    "y": 610,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_CS_LAB_225",
+    "name": "CS Programming Lab 225",
+    "type": "room",
+    "floor": 2,
+    "x": 855,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_CS_CR_226",
+    "name": "CS Classroom 226",
+    "type": "room",
+    "floor": 2,
+    "x": 855,
+    "y": 740,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_IS_LAB_2",
+    "name": "Information Science Lab-2 (Room 228)",
+    "type": "room",
+    "floor": 2,
+    "x": 830,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_IS_LAB_3",
+    "name": "Information Science Lab-3 (Room 230)",
+    "type": "room",
+    "floor": 2,
+    "x": 700,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_SERVER_231",
+    "name": "Campus Server & Network Operations (Room 231)",
+    "type": "room",
+    "floor": 2,
+    "x": 635,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_IS_LAB_4",
+    "name": "Information Science Lab-4 (Room 232)",
+    "type": "room",
+    "floor": 2,
+    "x": 550,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_IS_LAB_5",
+    "name": "Information Science Lab-5 (Room 233)",
+    "type": "room",
+    "floor": 2,
+    "x": 430,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_CS_CR_236",
+    "name": "CS Classroom 236",
+    "type": "room",
+    "floor": 2,
+    "x": 505,
+    "y": 665,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_STUDY_237",
+    "name": "Study Space 237",
+    "type": "room",
+    "floor": 2,
+    "x": 635,
+    "y": 675,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_LIB_SF",
+    "name": "Central Library (Second Floor - SF) (Room 239)",
+    "type": "room",
+    "floor": 2,
+    "x": 235,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_WORKSHOP_243",
+    "name": "Workshop Hands-on Lab-2 (Room 243)",
+    "type": "room",
+    "floor": 2,
+    "x": 190,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_2_WORKSHOP_242",
+    "name": "Workshop Hands-on Lab-1 (Room 242)",
+    "type": "room",
+    "floor": 2,
+    "x": 390,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "N_3_S_W",
+    "name": "Third Floor South-West Junction (Terrace Pool)",
+    "type": "intersection",
+    "floor": 3,
+    "x": 215,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_3_S_337",
+    "name": "Third Floor South Corridor CR 337",
+    "type": "corridor",
+    "floor": 3,
+    "x": 420,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_3_S_339",
+    "name": "Third Floor South Corridor IS CR 339",
+    "type": "corridor",
+    "floor": 3,
+    "x": 570,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_3_S_E",
+    "name": "Third Floor South-East Corridor Junction",
+    "type": "intersection",
+    "floor": 3,
+    "x": 900,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "N_3_W_TERRACE",
+    "name": "Third Floor Terrace Entrance",
+    "type": "corridor",
+    "floor": 3,
+    "x": 215,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "N_3_W_LIFT",
+    "name": "Third Floor West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 3,
+    "x": 215,
+    "y": 670,
+    "accessible": true
+  },
+  {
+    "id": "N_3_W_MID",
+    "name": "Third Floor West Corridor Central Junction",
+    "type": "intersection",
+    "floor": 3,
+    "x": 215,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_3_W_N",
+    "name": "Third Floor North-West Corridor Junction",
+    "type": "intersection",
+    "floor": 3,
+    "x": 215,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_3_N_316",
+    "name": "Third Floor North Corridor Civil CR 316",
+    "type": "corridor",
+    "floor": 3,
+    "x": 240,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_3_N_318",
+    "name": "Third Floor North Corridor Class 318",
+    "type": "corridor",
+    "floor": 3,
+    "x": 360,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_3_N_STAFF",
+    "name": "Third Floor North Corridor Civil Staff Room",
+    "type": "corridor",
+    "floor": 3,
+    "x": 680,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_3_N_E",
+    "name": "Third Floor North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 3,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_3_E_301",
+    "name": "Third Floor East Corridor Civil CR 301",
+    "type": "corridor",
+    "floor": 3,
+    "x": 900,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "N_3_E_302",
+    "name": "Third Floor East Corridor Civil CR 302",
+    "type": "corridor",
+    "floor": 3,
+    "x": 900,
+    "y": 375,
+    "accessible": true
+  },
+  {
+    "id": "N_3_E_MID",
+    "name": "Third Floor East Corridor Central Junction",
+    "type": "intersection",
+    "floor": 3,
+    "x": 800,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_3_E_CAD",
+    "name": "Third Floor East Corridor Civil CAD Lab",
+    "type": "corridor",
+    "floor": 3,
+    "x": 800,
+    "y": 610,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_MID",
+    "name": "Third Floor Central Crossroads",
+    "type": "intersection",
+    "floor": 3,
+    "x": 500,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_STAIR_A",
+    "name": "Third Floor Corridor near Staircase A",
+    "type": "intersection",
+    "floor": 3,
+    "x": 420,
+    "y": 440,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_STAIR_B",
+    "name": "Third Floor Corridor near Staircase B",
+    "type": "intersection",
+    "floor": 3,
+    "x": 660,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_STAIR_C",
+    "name": "Third Floor Corridor near Staircase C",
+    "type": "intersection",
+    "floor": 3,
+    "x": 350,
+    "y": 660,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CIVIL_CR_316",
+    "name": "Civil Classroom 316",
+    "type": "room",
+    "floor": 3,
+    "x": 240,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CR_318",
+    "name": "Classroom 318",
+    "type": "room",
+    "floor": 3,
+    "x": 360,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CIVIL_STAFF",
+    "name": "Civil Engineering Staff Room",
+    "type": "room",
+    "floor": 3,
+    "x": 680,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CIVIL_CR_301",
+    "name": "Civil Classroom 301",
+    "type": "room",
+    "floor": 3,
+    "x": 840,
+    "y": 285,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CIVIL_CR_302",
+    "name": "Civil Classroom 302",
+    "type": "room",
+    "floor": 3,
+    "x": 840,
+    "y": 375,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_ENV_LAB",
+    "name": "Environmental Engineering Lab (Room 321)",
+    "type": "room",
+    "floor": 3,
+    "x": 330,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_TRAINING",
+    "name": "Training & Placement Cell (Room 334)",
+    "type": "room",
+    "floor": 3,
+    "x": 510,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CIVIL_CAD",
+    "name": "Civil CAD Lab-1",
+    "type": "room",
+    "floor": 3,
+    "x": 750,
+    "y": 610,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_CR_337",
+    "name": "Classroom 337",
+    "type": "room",
+    "floor": 3,
+    "x": 420,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_IS_CR_339",
+    "name": "Information Science Classroom 339",
+    "type": "room",
+    "floor": 3,
+    "x": 570,
+    "y": 880,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_3_ROOF_POOL",
+    "name": "Open-Air Water Feature & Terrace (Room 345)",
+    "type": "room",
+    "floor": 3,
+    "x": 220,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_W",
+    "name": "Fourth Floor North-West Corridor Junction",
+    "type": "intersection",
+    "floor": 4,
+    "x": 215,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_411",
+    "name": "Fourth Floor North Corridor E&C Lab-4",
+    "type": "corridor",
+    "floor": 4,
+    "x": 360,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_410",
+    "name": "Fourth Floor North Corridor E&C Lab-5",
+    "type": "corridor",
+    "floor": 4,
+    "x": 460,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_408",
+    "name": "Fourth Floor North Corridor E&C Lab-3",
+    "type": "corridor",
+    "floor": 4,
+    "x": 650,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_SPSS",
+    "name": "Fourth Floor North Corridor SPSS Lab 409",
+    "type": "corridor",
+    "floor": 4,
+    "x": 740,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_N_E",
+    "name": "Fourth Floor North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 4,
+    "x": 900,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_4_E_ENG",
+    "name": "Fourth Floor East Corridor E&C Engineering",
+    "type": "corridor",
+    "floor": 4,
+    "x": 830,
+    "y": 350,
+    "accessible": true
+  },
+  {
+    "id": "N_4_E_MID",
+    "name": "Fourth Floor East Corridor Central Junction",
+    "type": "intersection",
+    "floor": 4,
+    "x": 800,
+    "y": 465,
+    "accessible": true
+  },
+  {
+    "id": "N_4_C_MID",
+    "name": "Fourth Floor Central Crossroads",
+    "type": "intersection",
+    "floor": 4,
+    "x": 500,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_4_C_STAIR_B",
+    "name": "Fourth Floor Corridor near Staircase B",
+    "type": "intersection",
+    "floor": 4,
+    "x": 660,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_4_W_LIFT",
+    "name": "Fourth Floor West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 4,
+    "x": 215,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_4_TERRACE",
+    "name": "Fourth Floor Rooftop Garden Promenade",
+    "type": "corridor",
+    "floor": 4,
+    "x": 500,
+    "y": 650,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_EC_LAB_1",
+    "name": "E&C Communication Lab-1 (Room 401)",
+    "type": "room",
+    "floor": 4,
+    "x": 830,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_SPSS",
+    "name": "SPSS Statistical Computing Lab (Room 409)",
+    "type": "room",
+    "floor": 4,
+    "x": 740,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_EC_LAB_3",
+    "name": "E&C Microwave Lab-3 (Room 408)",
+    "type": "room",
+    "floor": 4,
+    "x": 650,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_EC_LAB_5",
+    "name": "E&C VLSI Design Lab-5 (Room 410)",
+    "type": "room",
+    "floor": 4,
+    "x": 460,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_EC_LAB_4",
+    "name": "E&C Signal Processing Lab-4 (Room 411)",
+    "type": "room",
+    "floor": 4,
+    "x": 360,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_DRESS_ROOM",
+    "name": "Common Room & Activity Center (Room 414)",
+    "type": "room",
+    "floor": 4,
+    "x": 240,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_EC_ENG",
+    "name": "E&C Engineering Hall",
+    "type": "room",
+    "floor": 4,
+    "x": 830,
+    "y": 350,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_STUDY_406",
+    "name": "Study Space 406",
+    "type": "room",
+    "floor": 4,
+    "x": 590,
+    "y": 450,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_TOILET_405",
+    "name": "Restrooms 404/405",
+    "type": "room",
+    "floor": 4,
+    "x": 730,
+    "y": 465,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_ROOFTOP_GARDEN",
+    "name": "Sky Garden & Rooftop Terrace",
+    "type": "room",
+    "floor": 4,
+    "x": 500,
+    "y": 750,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_4_GUEST_HOUSE",
+    "name": "Campus Guest House (Room 415)",
+    "type": "room",
+    "floor": 4,
+    "x": 290,
+    "y": 80,
+    "accessible": true
+  },
+  {
+    "id": "N_5_N_INCUBATION",
+    "name": "Fifth Floor Incubation Centre Foyer",
+    "type": "corridor",
+    "floor": 5,
+    "x": 600,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_5_N_ENTREPRENEUR",
+    "name": "Fifth Floor E-Cell Corridor",
+    "type": "corridor",
+    "floor": 5,
+    "x": 760,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_5_N_E",
+    "name": "Fifth Floor North-East Corridor Junction",
+    "type": "intersection",
+    "floor": 5,
+    "x": 870,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "N_5_E_DREAMERS",
+    "name": "Fifth Floor Dreamers R&D Entrance",
+    "type": "corridor",
+    "floor": 5,
+    "x": 870,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "N_5_E_MID",
+    "name": "Fifth Floor East Wing Restrooms Junction",
+    "type": "intersection",
+    "floor": 5,
+    "x": 870,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_5_C_APTRA",
+    "name": "Fifth Floor Aptra Innovation Lab Foyer",
+    "type": "corridor",
+    "floor": 5,
+    "x": 480,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "N_5_C_STAIR_B",
+    "name": "Fifth Floor Corridor near Staircase B",
+    "type": "intersection",
+    "floor": 5,
+    "x": 660,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_5_W_LIFT",
+    "name": "Fifth Floor Lift Foyer (Accessible)",
+    "type": "intersection",
+    "floor": 5,
+    "x": 215,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_5_TERRACE",
+    "name": "Fifth Floor Panoramic Riverview Promenade",
+    "type": "corridor",
+    "floor": 5,
+    "x": 500,
+    "y": 750,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_DIRECTOR",
+    "name": "Executive Board & Director's Chamber (Room 501)",
+    "type": "room",
+    "floor": 5,
+    "x": 870,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_INCUBATION",
+    "name": "Sahyadri Center for Social Innovation & Incubation (Room 510)",
+    "type": "room",
+    "floor": 5,
+    "x": 600,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_ENTREPRENEUR",
+    "name": "Entrepreneurship Cell (E-Cell 211/511)",
+    "type": "room",
+    "floor": 5,
+    "x": 760,
+    "y": 190,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_DREAMERS",
+    "name": "Dreamers R&D Facility (Room 502)",
+    "type": "room",
+    "floor": 5,
+    "x": 870,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_APTRA",
+    "name": "Aptra Innovation Lab (Room 509)",
+    "type": "room",
+    "floor": 5,
+    "x": 480,
+    "y": 320,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_RESTROOM_503",
+    "name": "Restrooms 503/504",
+    "type": "room",
+    "floor": 5,
+    "x": 870,
+    "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_STUDY_506",
+    "name": "Rooftop Study Space (Room 506)",
+    "type": "room",
+    "floor": 5,
+    "x": 590,
+    "y": 450,
+    "accessible": true
+  },
+  {
+    "id": "RN_LOC_5_ROOFTOP_TERRACE",
+    "name": "Panoramic Riverview Rooftop Promenade",
+    "type": "room",
+    "floor": 5,
+    "x": 500,
+    "y": 750,
+    "accessible": true
+  }
+]

@@ -1,0 +1,95 @@
+
+SPEC SHEET
+SAHYADRI NAV — Context-Aware Indoor Campus Navigation
+1. Purpose of this document
+The Spec Sheet is the project's source of truth for WHAT the hackathon solution must do. It converts the problem statement into concrete features, requirements, data, constraints, and acceptance criteria. The team should use it to decide what is in scope and prevent feature creep.
+2. Problem
+Build a user-friendly college campus navigation system that helps students, faculty, visitors, and new entrants locate rooms, laboratories, departments, offices, libraries, canteens, seminar halls, and other facilities, while providing a suitable route to the selected destination.
+3. Product vision
+Sahyadri Nav is a multi-floor indoor navigation system built around the actual Sahyadri campus floor plans. Instead of only finding the shortest path, it can select a route according to user needs and current campus conditions.
+4. Core differentiator
+The system treats 'best route' as context-dependent rather than distance-only.
+Fastest route
+Accessible route / avoid stairs
+Easy-to-follow route
+Normal shortest route
+Dynamic rerouting when a path is reported blocked or unavailable
+5. Primary users
+Students
+Faculty and staff
+Visitors and parents
+New students / first-time campus users
+Event participants
+6. Functional requirements
+ID
+Requirement
+Specification
+FR-01
+Destination search
+Search by room number, room name, department, lab, office, library, or common alias.
+FR-02
+Multi-floor navigation
+Navigate between floors through mapped stairs/elevators and building connections.
+FR-03
+Route calculation
+Calculate a route using a weighted indoor graph and A* pathfinding.
+FR-04
+Route modes
+Offer fastest, accessible/avoid-stairs, and easy-to-follow route modes.
+FR-05
+Interactive map
+Display floor, source, destination, route path, and floor transitions.
+FR-06
+Indoor positioning
+Support QR checkpoints as a reliable hackathon-friendly way to establish current location.
+FR-07
+Turn-by-turn guidance
+Convert the route into readable instructions such as turn, continue, take stairs, and destination.
+FR-08
+Dynamic rerouting
+Allow an authorized user/demo operator to mark an edge such as a staircase or corridor unavailable and recalculate.
+FR-09
+Location details
+Show floor, location type, and useful landmark information.
+FR-10
+Issue reporting
+Allow reporting of temporary obstacles or unavailable navigation links.
+7. Data model
+Locations: id, name, floor, type, coordinates, aliases, landmark description.
+Nodes: graph node id, floor, x/y position, node type.
+Edges: from_node, to_node, distance, stairs, accessibility, difficulty, active status.
+Floors: floor id, display name, map/SVG reference.
+Reports: location/edge, issue type, status, timestamp, reporter/demo operator.
+QR checkpoints: QR id, node id, floor, physical landmark.
+8. Non-functional requirements
+Responsive and usable on a laptop and mobile-sized screen.
+Route calculation should feel immediate for the campus graph.
+Map and navigation data should be maintainable separately from frontend code.
+The system should fail gracefully when indoor position is unknown.
+The demo must work without depending on live GPS inside the building.
+9. Recommended technology
+Frontend: React + Vite
+Map rendering: SVG floor plans
+Backend: Python + FastAPI
+Database: SQLite for the hackathon; PostgreSQL-compatible schema if expanded
+Routing: A*
+OCR: optional lightweight OCR for room-sign recognition
+Semantic search: aliases + fuzzy matching initially; embeddings can be added only if time permits
+10. Out of scope for the first release
+Full 3D digital twin
+Precise continuous indoor GPS replacement
+Complex AR navigation
+Large-scale machine-learning training
+Real-time crowd sensing hardware
+Every campus building if the main building can demonstrate the complete workflow
+11. Demo acceptance criteria
+A judge can search for a known room and receive a valid route.
+A route can cross floors using a mapped staircase/elevator.
+At least two route modes produce visibly different paths where the graph permits it.
+Scanning a demo QR checkpoint changes the current location.
+A blocked route segment triggers a new route.
+The interface explains the route rather than showing only a line.
+12. Hackathon priority
+P0: map + database + search + multi-floor graph + A* + route visualization.
+P1: route modes + QR positioning + dynamic rerouting + turn-by-turn instructions.
+P2: OCR + 'I'm Lost' assistance + campus memory/issue intelligence + voice search.
