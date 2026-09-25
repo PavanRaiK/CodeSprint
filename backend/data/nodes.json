@@ -5,17 +5,8 @@
     "type": "elevator",
     "floor": 0,
     "x": 215,
-    "y": 670,
+    "y": 760,
     "accessible": true
-  },
-  {
-    "id": "STAIR_B_0",
-    "name": "Staircase B (Floor 0)",
-    "type": "staircase",
-    "floor": 0,
-    "x": 660,
-    "y": 470,
-    "accessible": false
   },
   {
     "id": "ELEV_1_1",
@@ -23,17 +14,8 @@
     "type": "elevator",
     "floor": 1,
     "x": 215,
-    "y": 670,
+    "y": 760,
     "accessible": true
-  },
-  {
-    "id": "STAIR_B_1",
-    "name": "Staircase B (Floor 1)",
-    "type": "staircase",
-    "floor": 1,
-    "x": 660,
-    "y": 470,
-    "accessible": false
   },
   {
     "id": "ELEV_1_2",
@@ -41,69 +23,60 @@
     "type": "elevator",
     "floor": 2,
     "x": 215,
-    "y": 670,
+    "y": 760,
     "accessible": true
+  },
+  {
+    "id": "STAIR_B_0",
+    "name": "Staircase B (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 680,
+    "y": 470,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_B_1",
+    "name": "Staircase B (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 680,
+    "y": 470,
+    "accessible": false
   },
   {
     "id": "STAIR_B_2",
     "name": "Staircase B (Floor 2)",
     "type": "staircase",
     "floor": 2,
-    "x": 660,
+    "x": 680,
     "y": 470,
     "accessible": false
-  },
-  {
-    "id": "ELEV_1_3",
-    "name": "West Lift Bank (Floor 3)",
-    "type": "elevator",
-    "floor": 3,
-    "x": 215,
-    "y": 670,
-    "accessible": true
   },
   {
     "id": "STAIR_B_3",
     "name": "Staircase B (Floor 3)",
     "type": "staircase",
     "floor": 3,
-    "x": 660,
+    "x": 680,
     "y": 470,
     "accessible": false
-  },
-  {
-    "id": "ELEV_1_4",
-    "name": "West Lift Bank (Floor 4)",
-    "type": "elevator",
-    "floor": 4,
-    "x": 215,
-    "y": 670,
-    "accessible": true
   },
   {
     "id": "STAIR_B_4",
     "name": "Staircase B (Floor 4)",
     "type": "staircase",
     "floor": 4,
-    "x": 660,
+    "x": 680,
     "y": 470,
     "accessible": false
-  },
-  {
-    "id": "ELEV_1_5",
-    "name": "West Lift Bank (Floor 5)",
-    "type": "elevator",
-    "floor": 5,
-    "x": 215,
-    "y": 670,
-    "accessible": true
   },
   {
     "id": "STAIR_B_5",
     "name": "Staircase B (Floor 5)",
     "type": "staircase",
     "floor": 5,
-    "x": 660,
+    "x": 680,
     "y": 470,
     "accessible": false
   },
@@ -112,8 +85,44 @@
     "name": "Staircase A (Floor 0)",
     "type": "staircase",
     "floor": 0,
-    "x": 420,
-    "y": 390,
+    "x": 470,
+    "y": 420,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_1",
+    "name": "Staircase A (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 470,
+    "y": 420,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_2",
+    "name": "Staircase A (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 470,
+    "y": 420,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_3",
+    "name": "Staircase A (Floor 3)",
+    "type": "staircase",
+    "floor": 3,
+    "x": 470,
+    "y": 420,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_A_4",
+    "name": "Staircase A (Floor 4)",
+    "type": "staircase",
+    "floor": 4,
+    "x": 470,
+    "y": 420,
     "accessible": false
   },
   {
@@ -126,48 +135,12 @@
     "accessible": false
   },
   {
-    "id": "STAIR_D_0",
-    "name": "Staircase D (Floor 0)",
-    "type": "staircase",
-    "floor": 0,
-    "x": 410,
-    "y": 845,
-    "accessible": false
-  },
-  {
-    "id": "STAIR_A_1",
-    "name": "Staircase A (Floor 1)",
-    "type": "staircase",
-    "floor": 1,
-    "x": 420,
-    "y": 390,
-    "accessible": false
-  },
-  {
     "id": "STAIR_C_1",
     "name": "Staircase C (Floor 1)",
     "type": "staircase",
     "floor": 1,
     "x": 350,
     "y": 660,
-    "accessible": false
-  },
-  {
-    "id": "STAIR_D_1",
-    "name": "Staircase D (Floor 1)",
-    "type": "staircase",
-    "floor": 1,
-    "x": 410,
-    "y": 845,
-    "accessible": false
-  },
-  {
-    "id": "STAIR_A_2",
-    "name": "Staircase A (Floor 2)",
-    "type": "staircase",
-    "floor": 2,
-    "x": 420,
-    "y": 390,
     "accessible": false
   },
   {
@@ -180,24 +153,6 @@
     "accessible": false
   },
   {
-    "id": "STAIR_D_2",
-    "name": "Staircase D (Floor 2)",
-    "type": "staircase",
-    "floor": 2,
-    "x": 410,
-    "y": 845,
-    "accessible": false
-  },
-  {
-    "id": "STAIR_A_3",
-    "name": "Staircase A (Floor 3)",
-    "type": "staircase",
-    "floor": 3,
-    "x": 420,
-    "y": 390,
-    "accessible": false
-  },
-  {
     "id": "STAIR_C_3",
     "name": "Staircase C (Floor 3)",
     "type": "staircase",
@@ -207,12 +162,39 @@
     "accessible": false
   },
   {
+    "id": "STAIR_D_0",
+    "name": "Staircase D (Floor 0)",
+    "type": "staircase",
+    "floor": 0,
+    "x": 410,
+    "y": 880,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_1",
+    "name": "Staircase D (Floor 1)",
+    "type": "staircase",
+    "floor": 1,
+    "x": 410,
+    "y": 880,
+    "accessible": false
+  },
+  {
+    "id": "STAIR_D_2",
+    "name": "Staircase D (Floor 2)",
+    "type": "staircase",
+    "floor": 2,
+    "x": 410,
+    "y": 880,
+    "accessible": false
+  },
+  {
     "id": "STAIR_D_3",
     "name": "Staircase D (Floor 3)",
     "type": "staircase",
     "floor": 3,
     "x": 410,
-    "y": 845,
+    "y": 880,
     "accessible": false
   },
   {
@@ -290,10 +272,19 @@
   {
     "id": "CN_PARKING",
     "name": "Sahyadri College Parking",
-    "type": "entrance",
+    "type": "parking",
     "floor": -1,
-    "x": 46,
-    "y": 1464,
+    "x": 52,
+    "y": 1462,
+    "accessible": true
+  },
+  {
+    "id": "CN_PARK_RD",
+    "name": "Parking Access Way",
+    "type": "corridor",
+    "floor": -1,
+    "x": 150,
+    "y": 1500,
     "accessible": true
   },
   {
@@ -301,17 +292,17 @@
     "name": "Hindustan Petroleum (HP Petrol Bunk)",
     "type": "landmark",
     "floor": -1,
-    "x": 245,
-    "y": 1558,
+    "x": 290,
+    "y": 1590,
     "accessible": true
   },
   {
-    "id": "CN_SOUTH_ENTRY_ROAD",
-    "name": "Campus Main Entry Road",
+    "id": "CN_HIGHWAY_MID",
+    "name": "Campus Perimeter Road along Highway",
     "type": "corridor",
     "floor": -1,
-    "x": 400,
-    "y": 1440,
+    "x": 450,
+    "y": 1480,
     "accessible": true
   },
   {
@@ -319,17 +310,26 @@
     "name": "Campus Security Main Gate & Post Office",
     "type": "entrance",
     "floor": -1,
-    "x": 642,
-    "y": 1405,
+    "x": 650,
+    "y": 1440,
     "accessible": true
   },
   {
-    "id": "CN_DRIVEWAY_SOUTH",
-    "name": "South Main Driveway near Event Lawn",
+    "id": "CN_DRIVEWAY_1",
+    "name": "Main Driveway near Guard Post",
     "type": "corridor",
     "floor": -1,
-    "x": 540,
-    "y": 1150,
+    "x": 600,
+    "y": 1300,
+    "accessible": true
+  },
+  {
+    "id": "CN_DRIVEWAY_2",
+    "name": "Main Driveway by Event Pavilion",
+    "type": "corridor",
+    "floor": -1,
+    "x": 580,
+    "y": 1180,
     "accessible": true
   },
   {
@@ -337,8 +337,8 @@
     "name": "Sahyadri Open Lawn & Event Pavilion",
     "type": "landmark",
     "floor": -1,
-    "x": 350,
-    "y": 1150,
+    "x": 300,
+    "y": 1180,
     "accessible": true
   },
   {
@@ -346,17 +346,17 @@
     "name": "Y.S Administrative Annex",
     "type": "landmark",
     "floor": -1,
-    "x": 729,
-    "y": 1073,
+    "x": 720,
+    "y": 1190,
     "accessible": true
   },
   {
-    "id": "CN_CENTRAL_ROAD",
-    "name": "Central Campus Walkway & Crossroads",
-    "type": "intersection",
+    "id": "CN_DRIVEWAY_3",
+    "name": "Academic Complex Approach Road",
+    "type": "corridor",
     "floor": -1,
-    "x": 540,
-    "y": 750,
+    "x": 550,
+    "y": 1020,
     "accessible": true
   },
   {
@@ -364,8 +364,17 @@
     "name": "Sahyadri College Of Engineering (Main Portico)",
     "type": "entrance",
     "floor": -1,
-    "x": 451,
-    "y": 603,
+    "x": 480,
+    "y": 920,
+    "accessible": true
+  },
+  {
+    "id": "CN_MAIN_BLOCK_PIN",
+    "name": "Sahyadri College Of Engineering Pin",
+    "type": "landmark",
+    "floor": -1,
+    "x": 415,
+    "y": 977,
     "accessible": true
   },
   {
@@ -373,8 +382,26 @@
     "name": "Mechanical and Civil Block Portico",
     "type": "entrance",
     "floor": -1,
-    "x": 649,
-    "y": 533,
+    "x": 590,
+    "y": 800,
+    "accessible": true
+  },
+  {
+    "id": "CN_MECH_CIVIL_PIN",
+    "name": "Mechanical and Civil Block Pin",
+    "type": "landmark",
+    "floor": -1,
+    "x": 653,
+    "y": 840,
+    "accessible": true
+  },
+  {
+    "id": "CN_CENTRAL_ROAD",
+    "name": "Central Campus Crossroads",
+    "type": "intersection",
+    "floor": -1,
+    "x": 520,
+    "y": 715,
     "accessible": true
   },
   {
@@ -382,8 +409,8 @@
     "name": "Sahyadri Food Court (Cafeteria)",
     "type": "landmark",
     "floor": -1,
-    "x": 656,
-    "y": 718,
+    "x": 655,
+    "y": 715,
     "accessible": true
   },
   {
@@ -391,17 +418,26 @@
     "name": "Hostel & Telecom Office",
     "type": "landmark",
     "floor": -1,
-    "x": 836,
-    "y": 733,
+    "x": 835,
+    "y": 740,
     "accessible": true
   },
   {
-    "id": "CN_GUEST_HOUSE_RD",
+    "id": "CN_EAST_ROAD_1",
     "name": "East Campus Access Road",
     "type": "corridor",
     "floor": -1,
-    "x": 850,
-    "y": 540,
+    "x": 880,
+    "y": 680,
+    "accessible": true
+  },
+  {
+    "id": "CN_EAST_ROAD_2",
+    "name": "Guest House Driveway",
+    "type": "corridor",
+    "floor": -1,
+    "x": 930,
+    "y": 580,
     "accessible": true
   },
   {
@@ -409,17 +445,17 @@
     "name": "Heritage Guest House Sahyadri",
     "type": "landmark",
     "floor": -1,
-    "x": 991,
-    "y": 529,
+    "x": 994,
+    "y": 526,
     "accessible": true
   },
   {
-    "id": "CN_HOSTEL_RD",
-    "name": "Boys Hostel Approach Road",
-    "type": "corridor",
+    "id": "CN_HOSTEL_FORK",
+    "name": "Boys Hostel Road Fork",
+    "type": "intersection",
     "floor": -1,
-    "x": 1150,
-    "y": 560,
+    "x": 1140,
+    "y": 545,
     "accessible": true
   },
   {
@@ -427,17 +463,44 @@
     "name": "Sahyadri Boys Hostel",
     "type": "landmark",
     "floor": -1,
-    "x": 1319,
-    "y": 588,
+    "x": 1320,
+    "y": 640,
     "accessible": true
   },
   {
-    "id": "CN_NORTH_RD",
-    "name": "North Road toward Sports Field",
+    "id": "CN_NORTH_RD_1",
+    "name": "North Road past Food Court",
     "type": "corridor",
     "floor": -1,
-    "x": 580,
-    "y": 400,
+    "x": 515,
+    "y": 600,
+    "accessible": true
+  },
+  {
+    "id": "CN_NORTH_RD_2",
+    "name": "North Sports Approach Road",
+    "type": "corridor",
+    "floor": -1,
+    "x": 510,
+    "y": 480,
+    "accessible": true
+  },
+  {
+    "id": "CN_NORTH_RD_CURVE",
+    "name": "Sports Field Curve",
+    "type": "corridor",
+    "floor": -1,
+    "x": 540,
+    "y": 390,
+    "accessible": true
+  },
+  {
+    "id": "CN_CRICKET_APPROACH",
+    "name": "Cricket Ground West Approach",
+    "type": "corridor",
+    "floor": -1,
+    "x": 680,
+    "y": 370,
     "accessible": true
   },
   {
@@ -445,8 +508,8 @@
     "name": "Sahyadri Cricket Ground",
     "type": "landmark",
     "floor": -1,
-    "x": 823,
-    "y": 380,
+    "x": 820,
+    "y": 375,
     "accessible": true
   },
   {
@@ -454,17 +517,26 @@
     "name": "Cricket Ground Pavilion & Pitch",
     "type": "landmark",
     "floor": -1,
-    "x": 846,
+    "x": 850,
     "y": 205,
     "accessible": true
   },
   {
-    "id": "CN_SOUHARDHA_RD",
-    "name": "Northeast Grounds Access Road",
+    "id": "CN_SOUHARDHA_RD_1",
+    "name": "Souhardha Ground Access Road South",
     "type": "corridor",
     "floor": -1,
-    "x": 1100,
-    "y": 250,
+    "x": 1200,
+    "y": 380,
+    "accessible": true
+  },
+  {
+    "id": "CN_SOUHARDHA_RD_2",
+    "name": "Souhardha Ground Access Road North",
+    "type": "corridor",
+    "floor": -1,
+    "x": 1250,
+    "y": 220,
     "accessible": true
   },
   {
@@ -472,8 +544,8 @@
     "name": "Souhardha Cricket Ground (Sahyadri)",
     "type": "landmark",
     "floor": -1,
-    "x": 1316,
-    "y": 96,
+    "x": 1312,
+    "y": 99,
     "accessible": true
   },
   {
@@ -517,7 +589,7 @@
     "name": "South Corridor Central Junction",
     "type": "intersection",
     "floor": 0,
-    "x": 500,
+    "x": 570,
     "y": 880,
     "accessible": true
   },
@@ -558,39 +630,21 @@
     "accessible": true
   },
   {
-    "id": "N_G_W_PATIO",
-    "name": "West Patio Entrance Junction",
-    "type": "entrance",
+    "id": "N_G_W_LIFT",
+    "name": "West Corridor Lift Foyer (Accessible)",
+    "type": "intersection",
     "floor": 0,
     "x": 215,
     "y": 760,
     "accessible": true
   },
   {
-    "id": "N_G_W_LIFT",
-    "name": "West Corridor Lift Foyer (Accessible)",
-    "type": "intersection",
-    "floor": 0,
-    "x": 215,
-    "y": 670,
-    "accessible": true
-  },
-  {
     "id": "N_G_W_STUDY43",
-    "name": "West Corridor Study Space 43",
+    "name": "West Corridor Study Space 43 & Meeting 44",
     "type": "corridor",
     "floor": 0,
     "x": 215,
-    "y": 600,
-    "accessible": true
-  },
-  {
-    "id": "N_G_W_MID",
-    "name": "West Corridor Central Junction",
-    "type": "intersection",
-    "floor": 0,
-    "x": 215,
-    "y": 480,
+    "y": 550,
     "accessible": true
   },
   {
@@ -616,16 +670,16 @@
     "name": "North Corridor Exam Section 14",
     "type": "corridor",
     "floor": 0,
-    "x": 440,
+    "x": 360,
     "y": 190,
     "accessible": true
   },
   {
-    "id": "N_G_N_MID",
+    "id": "N_G_N_CENTRAL_JCT",
     "name": "North Corridor Central Junction",
     "type": "intersection",
     "floor": 0,
-    "x": 500,
+    "x": 560,
     "y": 190,
     "accessible": true
   },
@@ -634,7 +688,7 @@
     "name": "North Corridor Store 11",
     "type": "corridor",
     "floor": 0,
-    "x": 645,
+    "x": 650,
     "y": 190,
     "accessible": true
   },
@@ -702,12 +756,21 @@
     "accessible": true
   },
   {
-    "id": "N_G_C_MID",
-    "name": "Central Atrium Crossroads",
+    "id": "N_G_C_N_PASS",
+    "name": "Central Corridor between Room 7/8 and Courtyard 4",
+    "type": "corridor",
+    "floor": 0,
+    "x": 560,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_PLAZA",
+    "name": "Central Crossroads & Atrium Plaza",
     "type": "intersection",
     "floor": 0,
-    "x": 500,
-    "y": 480,
+    "x": 560,
+    "y": 460,
     "accessible": true
   },
   {
@@ -715,17 +778,35 @@
     "name": "Corridor Junction near Staircase A",
     "type": "intersection",
     "floor": 0,
-    "x": 420,
+    "x": 470,
     "y": 440,
     "accessible": true
   },
   {
     "id": "N_G_C_STAIR_B",
-    "name": "Corridor Junction near Staircase B & East Entry",
+    "name": "Corridor Junction near Staircase B",
     "type": "intersection",
     "floor": 0,
-    "x": 660,
-    "y": 480,
+    "x": 680,
+    "y": 470,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STUDY21",
+    "name": "Central Corridor near Study Space 21",
+    "type": "corridor",
+    "floor": 0,
+    "x": 560,
+    "y": 560,
+    "accessible": true
+  },
+  {
+    "id": "N_G_C_STUDY33",
+    "name": "Corridor Junction near Study Space 33",
+    "type": "intersection",
+    "floor": 0,
+    "x": 560,
+    "y": 680,
     "accessible": true
   },
   {
@@ -734,16 +815,7 @@
     "type": "intersection",
     "floor": 0,
     "x": 350,
-    "y": 660,
-    "accessible": true
-  },
-  {
-    "id": "N_G_C_STUDY32",
-    "name": "Central Corridor Study 32 & Seminar",
-    "type": "corridor",
-    "floor": 0,
-    "x": 500,
-    "y": 675,
+    "y": 680,
     "accessible": true
   },
   {
@@ -761,7 +833,7 @@
     "type": "room",
     "floor": 0,
     "x": 100,
-    "y": 810,
+    "y": 880,
     "accessible": true
   },
   {
@@ -769,8 +841,8 @@
     "name": "East Academic Entrance",
     "type": "room",
     "floor": 0,
-    "x": 650,
-    "y": 485,
+    "x": 820,
+    "y": 480,
     "accessible": true
   },
   {
@@ -814,7 +886,7 @@
     "name": "Central Store Room (Room 11)",
     "type": "room",
     "floor": 0,
-    "x": 645,
+    "x": 650,
     "y": 190,
     "accessible": true
   },
@@ -823,7 +895,7 @@
     "name": "Placement & Exam Cell (Room 14)",
     "type": "room",
     "floor": 0,
-    "x": 440,
+    "x": 360,
     "y": 190,
     "accessible": true
   },
@@ -841,8 +913,8 @@
     "name": "Study Space 21",
     "type": "room",
     "floor": 0,
-    "x": 575,
-    "y": 485,
+    "x": 560,
+    "y": 560,
     "accessible": true
   },
   {
@@ -886,8 +958,8 @@
     "name": "Seminar Hall & Discussion Room 32",
     "type": "room",
     "floor": 0,
-    "x": 550,
-    "y": 675,
+    "x": 500,
+    "y": 740,
     "accessible": true
   },
   {
@@ -896,7 +968,7 @@
     "type": "room",
     "floor": 0,
     "x": 645,
-    "y": 675,
+    "y": 680,
     "accessible": true
   },
   {
@@ -954,42 +1026,6 @@
     "accessible": true
   },
   {
-    "id": "RN_LOC_G_COURT_1",
-    "name": "Courtyard 1 / Lecture Hall-1",
-    "type": "room",
-    "floor": 0,
-    "x": 730,
-    "y": 735,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_G_COURT_2",
-    "name": "Courtyard 2 / Lecture Hall-2",
-    "type": "room",
-    "floor": 0,
-    "x": 380,
-    "y": 540,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_G_COURT_3",
-    "name": "Courtyard 3 / Lecture Hall-4",
-    "type": "room",
-    "floor": 0,
-    "x": 380,
-    "y": 310,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_G_COURT_4",
-    "name": "Courtyard 4 / Lecture Hall-3",
-    "type": "room",
-    "floor": 0,
-    "x": 715,
-    "y": 330,
-    "accessible": true
-  },
-  {
     "id": "RN_LOC_G_WORKSHOP_46",
     "name": "Workshop - Furnace & Forging (Room 46)",
     "type": "room",
@@ -1009,7 +1045,7 @@
   },
   {
     "id": "N_1_S_W",
-    "name": "First Floor South-West Junction (Central Library)",
+    "name": "First Floor South-West Junction",
     "type": "intersection",
     "floor": 1,
     "x": 215,
@@ -1021,7 +1057,7 @@
     "name": "First Floor South Corridor near E&C Lab-5",
     "type": "corridor",
     "floor": 1,
-    "x": 440,
+    "x": 410,
     "y": 880,
     "accessible": true
   },
@@ -1030,7 +1066,7 @@
     "name": "First Floor South Corridor near E&C Lab-4",
     "type": "corridor",
     "floor": 1,
-    "x": 590,
+    "x": 570,
     "y": 880,
     "accessible": true
   },
@@ -1058,7 +1094,7 @@
     "type": "corridor",
     "floor": 1,
     "x": 215,
-    "y": 800,
+    "y": 710,
     "accessible": true
   },
   {
@@ -1067,7 +1103,7 @@
     "type": "intersection",
     "floor": 1,
     "x": 215,
-    "y": 670,
+    "y": 760,
     "accessible": true
   },
   {
@@ -1077,15 +1113,6 @@
     "floor": 1,
     "x": 215,
     "y": 600,
-    "accessible": true
-  },
-  {
-    "id": "N_1_W_MID",
-    "name": "First Floor West Corridor Central Junction",
-    "type": "intersection",
-    "floor": 1,
-    "x": 215,
-    "y": 480,
     "accessible": true
   },
   {
@@ -1111,16 +1138,16 @@
     "name": "First Floor North Corridor CAED Lab 112",
     "type": "corridor",
     "floor": 1,
-    "x": 410,
+    "x": 360,
     "y": 190,
     "accessible": true
   },
   {
-    "id": "N_1_N_FACULTY",
-    "name": "First Floor North Corridor Faculty 111",
-    "type": "corridor",
+    "id": "N_1_N_CENTRAL_JCT",
+    "name": "First Floor North Corridor Central Junction",
+    "type": "intersection",
     "floor": 1,
-    "x": 580,
+    "x": 560,
     "y": 190,
     "accessible": true
   },
@@ -1197,12 +1224,21 @@
     "accessible": true
   },
   {
-    "id": "N_1_C_MID",
-    "name": "First Floor Central Atrium Crossroads",
+    "id": "N_1_C_N_PASS",
+    "name": "First Floor Central Corridor between MBA Library and Courtyard 4",
+    "type": "corridor",
+    "floor": 1,
+    "x": 560,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_PLAZA",
+    "name": "First Floor Central Crossroads",
     "type": "intersection",
     "floor": 1,
-    "x": 500,
-    "y": 480,
+    "x": 560,
+    "y": 460,
     "accessible": true
   },
   {
@@ -1210,7 +1246,7 @@
     "name": "First Floor Corridor near Staircase A",
     "type": "intersection",
     "floor": 1,
-    "x": 420,
+    "x": 470,
     "y": 440,
     "accessible": true
   },
@@ -1219,8 +1255,26 @@
     "name": "First Floor Corridor near Staircase B",
     "type": "intersection",
     "floor": 1,
-    "x": 660,
-    "y": 480,
+    "x": 680,
+    "y": 470,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STUDY119",
+    "name": "First Floor Central Corridor Study 119",
+    "type": "corridor",
+    "floor": 1,
+    "x": 560,
+    "y": 560,
+    "accessible": true
+  },
+  {
+    "id": "N_1_C_STUDY133",
+    "name": "First Floor Corridor Study 133",
+    "type": "intersection",
+    "floor": 1,
+    "x": 560,
+    "y": 680,
     "accessible": true
   },
   {
@@ -1229,16 +1283,7 @@
     "type": "intersection",
     "floor": 1,
     "x": 350,
-    "y": 660,
-    "accessible": true
-  },
-  {
-    "id": "N_1_C_STUDY133",
-    "name": "First Floor Corridor Study 133 & E&C Lab-6",
-    "type": "corridor",
-    "floor": 1,
-    "x": 500,
-    "y": 675,
+    "y": 680,
     "accessible": true
   },
   {
@@ -1513,7 +1558,7 @@
   },
   {
     "id": "N_2_S_W",
-    "name": "Second Floor South-West Junction (Library SF)",
+    "name": "Second Floor South-West Junction",
     "type": "intersection",
     "floor": 2,
     "x": 215,
@@ -1525,7 +1570,7 @@
     "name": "Second Floor South Corridor near IS Lab-5",
     "type": "corridor",
     "floor": 2,
-    "x": 430,
+    "x": 410,
     "y": 880,
     "accessible": true
   },
@@ -1534,7 +1579,7 @@
     "name": "Second Floor South Corridor near IS Lab-4",
     "type": "corridor",
     "floor": 2,
-    "x": 550,
+    "x": 570,
     "y": 880,
     "accessible": true
   },
@@ -1543,7 +1588,7 @@
     "name": "Second Floor South Corridor near Server Room",
     "type": "corridor",
     "floor": 2,
-    "x": 635,
+    "x": 650,
     "y": 880,
     "accessible": true
   },
@@ -1552,7 +1597,7 @@
     "name": "Second Floor South Corridor near IS Lab-3",
     "type": "corridor",
     "floor": 2,
-    "x": 700,
+    "x": 780,
     "y": 880,
     "accessible": true
   },
@@ -1571,7 +1616,7 @@
     "type": "corridor",
     "floor": 2,
     "x": 215,
-    "y": 800,
+    "y": 710,
     "accessible": true
   },
   {
@@ -1580,7 +1625,7 @@
     "type": "intersection",
     "floor": 2,
     "x": 215,
-    "y": 670,
+    "y": 760,
     "accessible": true
   },
   {
@@ -1593,30 +1638,12 @@
     "accessible": true
   },
   {
-    "id": "N_2_W_MID",
-    "name": "Second Floor West Corridor Central Junction",
-    "type": "intersection",
-    "floor": 2,
-    "x": 215,
-    "y": 480,
-    "accessible": true
-  },
-  {
     "id": "N_2_W_PHYSICS",
     "name": "Second Floor West Corridor Physics Lab",
     "type": "corridor",
     "floor": 2,
     "x": 215,
     "y": 370,
-    "accessible": true
-  },
-  {
-    "id": "N_2_W_LOUNGE",
-    "name": "Second Floor Student Lounge 216 & Bridge",
-    "type": "intersection",
-    "floor": 2,
-    "x": 215,
-    "y": 220,
     "accessible": true
   },
   {
@@ -1638,11 +1665,11 @@
     "accessible": true
   },
   {
-    "id": "N_2_N_213",
-    "name": "Second Floor North Corridor - Mathematics Dept 213",
-    "type": "corridor",
+    "id": "N_2_N_CENTRAL_JCT",
+    "name": "Second Floor North Corridor Central Junction",
+    "type": "intersection",
     "floor": 2,
-    "x": 480,
+    "x": 560,
     "y": 190,
     "accessible": true
   },
@@ -1719,12 +1746,21 @@
     "accessible": true
   },
   {
-    "id": "N_2_C_MID",
-    "name": "Second Floor Central Atrium Crossroads",
+    "id": "N_2_C_N_PASS",
+    "name": "Second Floor Central Corridor between Maths Dept and Courtyard 4",
+    "type": "corridor",
+    "floor": 2,
+    "x": 560,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_PLAZA",
+    "name": "Second Floor Central Crossroads",
     "type": "intersection",
     "floor": 2,
-    "x": 500,
-    "y": 480,
+    "x": 560,
+    "y": 460,
     "accessible": true
   },
   {
@@ -1732,7 +1768,7 @@
     "name": "Second Floor Corridor near Staircase A",
     "type": "intersection",
     "floor": 2,
-    "x": 420,
+    "x": 470,
     "y": 440,
     "accessible": true
   },
@@ -1741,8 +1777,26 @@
     "name": "Second Floor Corridor near Staircase B",
     "type": "intersection",
     "floor": 2,
-    "x": 660,
-    "y": 480,
+    "x": 680,
+    "y": 470,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STUDY221",
+    "name": "Second Floor Corridor Study 221",
+    "type": "corridor",
+    "floor": 2,
+    "x": 560,
+    "y": 560,
+    "accessible": true
+  },
+  {
+    "id": "N_2_C_STUDY237",
+    "name": "Second Floor Corridor Study 237",
+    "type": "intersection",
+    "floor": 2,
+    "x": 560,
+    "y": 680,
     "accessible": true
   },
   {
@@ -1751,25 +1805,7 @@
     "type": "intersection",
     "floor": 2,
     "x": 350,
-    "y": 660,
-    "accessible": true
-  },
-  {
-    "id": "N_2_C_STUDY237",
-    "name": "Second Floor Corridor Study 237 & CS Lab",
-    "type": "corridor",
-    "floor": 2,
-    "x": 500,
-    "y": 675,
-    "accessible": true
-  },
-  {
-    "id": "N_2_WS_BRIDGE",
-    "name": "Skybridge to Workshop (Floor 2)",
-    "type": "corridor",
-    "floor": 2,
-    "x": 285,
-    "y": 150,
+    "y": 680,
     "accessible": true
   },
   {
@@ -1782,7 +1818,7 @@
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_MATH_DEPT",
+    "id": "RN_LOC_2_MATH_213",
     "name": "Mathematics Department (Room 213)",
     "type": "room",
     "floor": 2,
@@ -1809,44 +1845,26 @@
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_STUDENT_LOUNGE",
-    "name": "Student Lounge (Room 216)",
+    "id": "RN_LOC_2_MBA_CR_202",
+    "name": "MBA Classroom 202",
     "type": "room",
     "floor": 2,
-    "x": 235,
-    "y": 220,
+    "x": 820,
+    "y": 285,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_SPORTS",
-    "name": "Sports Gallery & Activities (Room 217)",
+    "id": "RN_LOC_2_MBA_CR_203",
+    "name": "MBA Classroom 203",
     "type": "room",
     "floor": 2,
-    "x": 135,
-    "y": 220,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_2_PHYSICS_LAB",
-    "name": "Physics Laboratory",
-    "type": "room",
-    "floor": 2,
-    "x": 140,
-    "y": 370,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_2_CHEMISTRY_LAB",
-    "name": "Chemistry Laboratory",
-    "type": "room",
-    "floor": 2,
-    "x": 140,
-    "y": 550,
+    "x": 820,
+    "y": 360,
     "accessible": true
   },
   {
     "id": "RN_LOC_2_DRAWING_219",
-    "name": "Drawing & CAD Studio (Room 219)",
+    "name": "Drawing & Design Studio (Room 219)",
     "type": "room",
     "floor": 2,
     "x": 330,
@@ -1858,8 +1876,8 @@
     "name": "Intel Intelligence & AI Lab (Room 220)",
     "type": "room",
     "floor": 2,
-    "x": 505,
-    "y": 470,
+    "x": 510,
+    "y": 480,
     "accessible": true
   },
   {
@@ -1868,7 +1886,7 @@
     "type": "room",
     "floor": 2,
     "x": 590,
-    "y": 450,
+    "y": 440,
     "accessible": true
   },
   {
@@ -1876,44 +1894,35 @@
     "name": "Information Science Classroom 206",
     "type": "room",
     "floor": 2,
-    "x": 725,
+    "x": 740,
     "y": 465,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_RESTROOM_204",
-    "name": "Restrooms 204/205",
+    "id": "RN_LOC_2_PHYSICS_LAB",
+    "name": "Engineering Physics Lab (Room 217)",
     "type": "room",
     "floor": 2,
-    "x": 865,
-    "y": 465,
+    "x": 140,
+    "y": 370,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_MBA_CR_202",
-    "name": "MBA Classroom 202",
+    "id": "RN_LOC_2_CHEM_LAB",
+    "name": "Engineering Chemistry Lab (Room 240)",
     "type": "room",
     "floor": 2,
-    "x": 825,
-    "y": 285,
+    "x": 140,
+    "y": 550,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_MBA_CR_203",
-    "name": "MBA Classroom 203",
+    "id": "RN_LOC_2_LIB_SF",
+    "name": "Central Library (Second Floor Mezzanine)",
     "type": "room",
     "floor": 2,
-    "x": 825,
-    "y": 360,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_2_CIVIL_DEPT_209",
-    "name": "Civil & Structural Dept (Room 209)",
-    "type": "room",
-    "floor": 2,
-    "x": 485,
-    "y": 320,
+    "x": 235,
+    "y": 800,
     "accessible": true
   },
   {
@@ -1926,44 +1935,44 @@
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_STAFF_224",
-    "name": "Computer Science Staff Room (Room 224)",
+    "id": "RN_LOC_2_CS_HOD",
+    "name": "Department of Computer Science & HOD Chamber",
     "type": "room",
     "floor": 2,
-    "x": 720,
+    "x": 850,
     "y": 610,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_CS_LAB_225",
-    "name": "CS Programming Lab 225",
+    "id": "RN_LOC_2_STUDY_237",
+    "name": "Study Space 237",
     "type": "room",
     "floor": 2,
-    "x": 855,
-    "y": 670,
+    "x": 590,
+    "y": 675,
     "accessible": true
   },
   {
     "id": "RN_LOC_2_CS_CR_226",
-    "name": "CS Classroom 226",
+    "name": "Computer Science Classroom 226",
     "type": "room",
     "floor": 2,
-    "x": 855,
+    "x": 880,
     "y": 740,
     "accessible": true
   },
   {
     "id": "RN_LOC_2_IS_LAB_2",
-    "name": "Information Science Lab-2 (Room 228)",
+    "name": "IS Lab-2 (Room 229)",
     "type": "room",
     "floor": 2,
-    "x": 830,
+    "x": 880,
     "y": 880,
     "accessible": true
   },
   {
     "id": "RN_LOC_2_IS_LAB_3",
-    "name": "Information Science Lab-3 (Room 230)",
+    "name": "IS Lab-3 (Room 230)",
     "type": "room",
     "floor": 2,
     "x": 700,
@@ -1971,17 +1980,8 @@
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_SERVER_231",
-    "name": "Campus Server & Network Operations (Room 231)",
-    "type": "room",
-    "floor": 2,
-    "x": 635,
-    "y": 880,
-    "accessible": true
-  },
-  {
     "id": "RN_LOC_2_IS_LAB_4",
-    "name": "Information Science Lab-4 (Room 232)",
+    "name": "IS Lab-4 (Room 232)",
     "type": "room",
     "floor": 2,
     "x": 550,
@@ -1990,7 +1990,7 @@
   },
   {
     "id": "RN_LOC_2_IS_LAB_5",
-    "name": "Information Science Lab-5 (Room 233)",
+    "name": "IS Lab-5 (Room 233)",
     "type": "room",
     "floor": 2,
     "x": 430,
@@ -1999,64 +1999,46 @@
   },
   {
     "id": "RN_LOC_2_CS_CR_236",
-    "name": "CS Classroom 236",
+    "name": "Computer Science Classroom 236",
     "type": "room",
     "floor": 2,
-    "x": 505,
+    "x": 385,
     "y": 665,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_STUDY_237",
-    "name": "Study Space 237",
+    "id": "RN_LOC_2_WORKSHOP_242",
+    "name": "Workshop 2nd Floor - Hands-on Lab 1 (Room 242)",
     "type": "room",
     "floor": 2,
-    "x": 635,
-    "y": 675,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_2_LIB_SF",
-    "name": "Central Library (Second Floor - SF) (Room 239)",
-    "type": "room",
-    "floor": 2,
-    "x": 235,
-    "y": 800,
-    "accessible": true
-  },
-  {
-    "id": "RN_LOC_2_WORKSHOP_243",
-    "name": "Workshop Hands-on Lab-2 (Room 243)",
-    "type": "room",
-    "floor": 2,
-    "x": 190,
+    "x": 380,
     "y": 80,
     "accessible": true
   },
   {
-    "id": "RN_LOC_2_WORKSHOP_242",
-    "name": "Workshop Hands-on Lab-1 (Room 242)",
+    "id": "RN_LOC_2_WORKSHOP_243",
+    "name": "Workshop 2nd Floor - Hands-on Lab 2 (Room 243)",
     "type": "room",
     "floor": 2,
-    "x": 390,
+    "x": 200,
     "y": 80,
     "accessible": true
   },
   {
     "id": "N_3_S_W",
-    "name": "Third Floor South-West Junction (Terrace Pool)",
+    "name": "Third Floor South-West Junction",
     "type": "intersection",
     "floor": 3,
-    "x": 215,
+    "x": 350,
     "y": 880,
     "accessible": true
   },
   {
     "id": "N_3_S_337",
-    "name": "Third Floor South Corridor CR 337",
+    "name": "Third Floor South Corridor Classroom 337",
     "type": "corridor",
     "floor": 3,
-    "x": 420,
+    "x": 410,
     "y": 880,
     "accessible": true
   },
@@ -2080,29 +2062,20 @@
   },
   {
     "id": "N_3_W_TERRACE",
-    "name": "Third Floor Terrace Entrance",
+    "name": "Third Floor West Corridor Pool Terrace",
     "type": "corridor",
     "floor": 3,
     "x": 215,
-    "y": 800,
+    "y": 680,
     "accessible": true
   },
   {
-    "id": "N_3_W_LIFT",
-    "name": "Third Floor West Corridor Lift Foyer (Accessible)",
-    "type": "intersection",
+    "id": "N_3_W_CR",
+    "name": "Third Floor West Corridor Classroom Wing",
+    "type": "corridor",
     "floor": 3,
     "x": 215,
-    "y": 670,
-    "accessible": true
-  },
-  {
-    "id": "N_3_W_MID",
-    "name": "Third Floor West Corridor Central Junction",
-    "type": "intersection",
-    "floor": 3,
-    "x": 215,
-    "y": 480,
+    "y": 440,
     "accessible": true
   },
   {
@@ -2119,16 +2092,16 @@
     "name": "Third Floor North Corridor Civil CR 316",
     "type": "corridor",
     "floor": 3,
-    "x": 240,
+    "x": 360,
     "y": 190,
     "accessible": true
   },
   {
-    "id": "N_3_N_318",
-    "name": "Third Floor North Corridor Class 318",
-    "type": "corridor",
+    "id": "N_3_N_CENTRAL_JCT",
+    "name": "Third Floor North Corridor Central Junction",
+    "type": "intersection",
     "floor": 3,
-    "x": 360,
+    "x": 560,
     "y": 190,
     "accessible": true
   },
@@ -2187,12 +2160,21 @@
     "accessible": true
   },
   {
-    "id": "N_3_C_MID",
+    "id": "N_3_C_N_PASS",
+    "name": "Third Floor Central Corridor",
+    "type": "corridor",
+    "floor": 3,
+    "x": 560,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_PLAZA",
     "name": "Third Floor Central Crossroads",
     "type": "intersection",
     "floor": 3,
-    "x": 500,
-    "y": 480,
+    "x": 560,
+    "y": 460,
     "accessible": true
   },
   {
@@ -2200,7 +2182,7 @@
     "name": "Third Floor Corridor near Staircase A",
     "type": "intersection",
     "floor": 3,
-    "x": 420,
+    "x": 470,
     "y": 440,
     "accessible": true
   },
@@ -2209,8 +2191,17 @@
     "name": "Third Floor Corridor near Staircase B",
     "type": "intersection",
     "floor": 3,
-    "x": 660,
-    "y": 480,
+    "x": 680,
+    "y": 470,
+    "accessible": true
+  },
+  {
+    "id": "N_3_C_MID_SOUTH",
+    "name": "Third Floor Central South Corridor",
+    "type": "corridor",
+    "floor": 3,
+    "x": 560,
+    "y": 680,
     "accessible": true
   },
   {
@@ -2219,7 +2210,7 @@
     "type": "intersection",
     "floor": 3,
     "x": 350,
-    "y": 660,
+    "y": 680,
     "accessible": true
   },
   {
@@ -2322,7 +2313,7 @@
     "accessible": true
   },
   {
-    "id": "N_4_N_W",
+    "id": "N_4_W_N",
     "name": "Fourth Floor North-West Corridor Junction",
     "type": "intersection",
     "floor": 4,
@@ -2340,11 +2331,11 @@
     "accessible": true
   },
   {
-    "id": "N_4_N_410",
-    "name": "Fourth Floor North Corridor E&C Lab-5",
-    "type": "corridor",
+    "id": "N_4_N_CENTRAL_JCT",
+    "name": "Fourth Floor North Corridor Central Junction",
+    "type": "intersection",
     "floor": 4,
-    "x": 460,
+    "x": 560,
     "y": 190,
     "accessible": true
   },
@@ -2394,12 +2385,30 @@
     "accessible": true
   },
   {
-    "id": "N_4_C_MID",
+    "id": "N_4_C_N_PASS",
+    "name": "Fourth Floor Central Corridor",
+    "type": "corridor",
+    "floor": 4,
+    "x": 560,
+    "y": 330,
+    "accessible": true
+  },
+  {
+    "id": "N_4_C_PLAZA",
     "name": "Fourth Floor Central Crossroads",
     "type": "intersection",
     "floor": 4,
-    "x": 500,
+    "x": 560,
     "y": 460,
+    "accessible": true
+  },
+  {
+    "id": "N_4_C_STAIR_A",
+    "name": "Fourth Floor Corridor near Staircase A",
+    "type": "intersection",
+    "floor": 4,
+    "x": 470,
+    "y": 440,
     "accessible": true
   },
   {
@@ -2407,17 +2416,8 @@
     "name": "Fourth Floor Corridor near Staircase B",
     "type": "intersection",
     "floor": 4,
-    "x": 660,
-    "y": 460,
-    "accessible": true
-  },
-  {
-    "id": "N_4_W_LIFT",
-    "name": "Fourth Floor West Corridor Lift Foyer (Accessible)",
-    "type": "intersection",
-    "floor": 4,
-    "x": 215,
-    "y": 460,
+    "x": 680,
+    "y": 470,
     "accessible": true
   },
   {
@@ -2426,7 +2426,7 @@
     "type": "corridor",
     "floor": 4,
     "x": 500,
-    "y": 650,
+    "y": 600,
     "accessible": true
   },
   {
@@ -2516,7 +2516,7 @@
     "type": "room",
     "floor": 4,
     "x": 500,
-    "y": 750,
+    "y": 600,
     "accessible": true
   },
   {
@@ -2587,16 +2587,16 @@
     "name": "Fifth Floor Corridor near Staircase B",
     "type": "intersection",
     "floor": 5,
-    "x": 660,
-    "y": 460,
+    "x": 680,
+    "y": 470,
     "accessible": true
   },
   {
-    "id": "N_5_W_LIFT",
-    "name": "Fifth Floor Lift Foyer (Accessible)",
-    "type": "intersection",
+    "id": "N_5_C_STUDY506",
+    "name": "Fifth Floor Study Space 506",
+    "type": "corridor",
     "floor": 5,
-    "x": 215,
+    "x": 590,
     "y": 460,
     "accessible": true
   },
@@ -2606,7 +2606,7 @@
     "type": "corridor",
     "floor": 5,
     "x": 500,
-    "y": 750,
+    "y": 600,
     "accessible": true
   },
   {
@@ -2678,7 +2678,7 @@
     "type": "room",
     "floor": 5,
     "x": 500,
-    "y": 750,
+    "y": 600,
     "accessible": true
   }
 ]

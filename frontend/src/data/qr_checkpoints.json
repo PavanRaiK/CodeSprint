@@ -13,7 +13,7 @@
     "code": "SAHYADRI_QR_G_ENT_W",
     "name": "Ground Floor \u00b7 West Courtyard Gate",
     "floor": 0,
-    "node_id": "N_G_W_PATIO",
+    "node_id": "N_G_S_W",
     "physical_location": "West Gate Pillar near Visitors Lounge",
     "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_G_ENT_W"
   },

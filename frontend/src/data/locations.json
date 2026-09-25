@@ -4,9 +4,9 @@
     "name": "Sahyadri College Of Engineering & Management",
     "type": "building",
     "floor": -1,
-    "node_id": "CN_MAIN_BLOCK_PORTICO",
-    "x": 451,
-    "y": 603,
+    "node_id": "CN_MAIN_BLOCK_PIN",
+    "x": 415,
+    "y": 977,
     "department": "Main Campus",
     "aliases": [
       "main block",
@@ -17,16 +17,16 @@
       "admin block"
     ],
     "accessible": true,
-    "description": "Main 5-story academic complex with Central Courtyard, Principal Chamber, Dean Offices, Classrooms, and Laboratories."
+    "description": "Main 5-story academic complex with Central Courtyards, Principal Chamber, Dean Offices, Classrooms, and Laboratories."
   },
   {
     "id": "LOC_C_MECH_CIVIL",
     "name": "Sahyadri College Mechanical and Civil Block",
     "type": "building",
     "floor": -1,
-    "node_id": "CN_MECH_CIVIL_PORTICO",
-    "x": 649,
-    "y": 533,
+    "node_id": "CN_MECH_CIVIL_PIN",
+    "x": 653,
+    "y": 840,
     "department": "Mechanical & Civil",
     "aliases": [
       "mechanical and civil block",
@@ -45,8 +45,8 @@
     "type": "amenity",
     "floor": -1,
     "node_id": "CN_FOOD_COURT",
-    "x": 656,
-    "y": 718,
+    "x": 655,
+    "y": 715,
     "department": "Campus Amenities",
     "aliases": [
       "food court",
@@ -68,8 +68,8 @@
     "type": "office",
     "floor": -1,
     "node_id": "CN_TEL_OFFICE",
-    "x": 836,
-    "y": 733,
+    "x": 835,
+    "y": 740,
     "department": "Administration",
     "aliases": [
       "tel office",
@@ -87,8 +87,8 @@
     "type": "facility",
     "floor": -1,
     "node_id": "CN_GUEST_HOUSE",
-    "x": 991,
-    "y": 529,
+    "x": 994,
+    "y": 526,
     "department": "Hospitality",
     "aliases": [
       "heritage guest house",
@@ -106,8 +106,8 @@
     "type": "hostel",
     "floor": -1,
     "node_id": "CN_BOYS_HOSTEL",
-    "x": 1319,
-    "y": 588,
+    "x": 1320,
+    "y": 640,
     "department": "Student Housing",
     "aliases": [
       "boys hostel",
@@ -125,8 +125,8 @@
     "type": "sports",
     "floor": -1,
     "node_id": "CN_CRICKET_GROUND",
-    "x": 823,
-    "y": 380,
+    "x": 820,
+    "y": 375,
     "department": "Physical Education & Sports",
     "aliases": [
       "sahyadri cricket ground",
@@ -145,7 +145,7 @@
     "type": "sports",
     "floor": -1,
     "node_id": "CN_CRICKET_PITCH",
-    "x": 846,
+    "x": 850,
     "y": 205,
     "department": "Physical Education & Sports",
     "aliases": [
@@ -163,8 +163,8 @@
     "type": "sports",
     "floor": -1,
     "node_id": "CN_SOUHARDHA_GROUND",
-    "x": 1316,
-    "y": 96,
+    "x": 1312,
+    "y": 99,
     "department": "Physical Education & Sports",
     "aliases": [
       "souhardha cricket ground",
@@ -181,8 +181,8 @@
     "type": "parking",
     "floor": -1,
     "node_id": "CN_PARKING",
-    "x": 46,
-    "y": 1464,
+    "x": 52,
+    "y": 1462,
     "department": "Campus Security",
     "aliases": [
       "parking",
@@ -201,8 +201,8 @@
     "type": "amenity",
     "floor": -1,
     "node_id": "CN_PETROL",
-    "x": 245,
-    "y": 1558,
+    "x": 290,
+    "y": 1590,
     "department": "Transit",
     "aliases": [
       "hindustan petroleum",
@@ -220,8 +220,8 @@
     "type": "entrance",
     "floor": -1,
     "node_id": "CN_SOUTH_GATE",
-    "x": 642,
-    "y": 1405,
+    "x": 650,
+    "y": 1440,
     "department": "Security & Logistics",
     "aliases": [
       "post office",
@@ -240,8 +240,8 @@
     "type": "outdoor",
     "floor": -1,
     "node_id": "CN_EVENT_LAWN",
-    "x": 350,
-    "y": 1150,
+    "x": 300,
+    "y": 1180,
     "department": "Student Life",
     "aliases": [
       "open lawn",
@@ -260,8 +260,8 @@
     "type": "office",
     "floor": -1,
     "node_id": "CN_YS_OFFICE",
-    "x": 729,
-    "y": 1073,
+    "x": 720,
+    "y": 1190,
     "department": "Administration",
     "aliases": [
       "ys",
@@ -298,7 +298,7 @@
     "floor": 0,
     "node_id": "RN_LOC_G_WEST_ENT",
     "x": 100,
-    "y": 810,
+    "y": 880,
     "department": "Campus Entry",
     "aliases": [
       "west gate",
@@ -314,8 +314,8 @@
     "type": "entrance",
     "floor": 0,
     "node_id": "RN_LOC_G_EAST_ENT",
-    "x": 650,
-    "y": 485,
+    "x": 820,
+    "y": 480,
     "department": "Campus Entry",
     "aliases": [
       "east gate",
@@ -323,7 +323,7 @@
       "academic section gate"
     ],
     "accessible": true,
-    "description": "East entrance facing river quadrangle"
+    "description": "East entrance facing quadrangle"
   },
   {
     "id": "LOC_G_PRINCIPAL",
@@ -407,7 +407,7 @@
     "type": "room",
     "floor": 0,
     "node_id": "RN_LOC_G_STORE_11",
-    "x": 645,
+    "x": 650,
     "y": 190,
     "department": "Services",
     "aliases": [
@@ -426,7 +426,7 @@
     "type": "office",
     "floor": 0,
     "node_id": "RN_LOC_G_PLACEMENT_EXAM",
-    "x": 440,
+    "x": 360,
     "y": 190,
     "department": "Career Services",
     "aliases": [
@@ -464,8 +464,8 @@
     "type": "study_area",
     "floor": 0,
     "node_id": "RN_LOC_G_STUDY_21",
-    "x": 575,
-    "y": 485,
+    "x": 560,
+    "y": 560,
     "department": "Campus Common",
     "aliases": [
       "study space 21",
@@ -560,8 +560,8 @@
     "type": "hall",
     "floor": 0,
     "node_id": "RN_LOC_G_SEMINAR_32",
-    "x": 550,
-    "y": 675,
+    "x": 500,
+    "y": 740,
     "department": "Campus Common",
     "aliases": [
       "seminar 32",
@@ -579,7 +579,7 @@
     "floor": 0,
     "node_id": "RN_LOC_G_STUDY_33",
     "x": 645,
-    "y": 675,
+    "y": 680,
     "department": "Campus Common",
     "aliases": [
       "study space 33",
@@ -701,78 +701,6 @@
     ],
     "accessible": true,
     "description": "West corridor near Courtyard 2"
-  },
-  {
-    "id": "LOC_G_COURT_1",
-    "name": "Courtyard 1 / Lecture Hall-1",
-    "type": "hall",
-    "floor": 0,
-    "node_id": "RN_LOC_G_COURT_1",
-    "x": 730,
-    "y": 735,
-    "department": "Lecture Halls",
-    "aliases": [
-      "courtyard 1",
-      "lecture hall 1",
-      "hall 1",
-      "lh1"
-    ],
-    "accessible": true,
-    "description": "Open-air landscaped quadrangle 1"
-  },
-  {
-    "id": "LOC_G_COURT_2",
-    "name": "Courtyard 2 / Lecture Hall-2",
-    "type": "hall",
-    "floor": 0,
-    "node_id": "RN_LOC_G_COURT_2",
-    "x": 380,
-    "y": 540,
-    "department": "Lecture Halls",
-    "aliases": [
-      "courtyard 2",
-      "lecture hall 2",
-      "hall 2",
-      "lh2"
-    ],
-    "accessible": true,
-    "description": "Central-west landscaped courtyard 2"
-  },
-  {
-    "id": "LOC_G_COURT_3",
-    "name": "Courtyard 3 / Lecture Hall-4",
-    "type": "hall",
-    "floor": 0,
-    "node_id": "RN_LOC_G_COURT_3",
-    "x": 380,
-    "y": 310,
-    "department": "Lecture Halls",
-    "aliases": [
-      "courtyard 3",
-      "lecture hall 4",
-      "hall 4",
-      "lh4"
-    ],
-    "accessible": true,
-    "description": "North-west landscaped courtyard 3"
-  },
-  {
-    "id": "LOC_G_COURT_4",
-    "name": "Courtyard 4 / Lecture Hall-3",
-    "type": "hall",
-    "floor": 0,
-    "node_id": "RN_LOC_G_COURT_4",
-    "x": 715,
-    "y": 330,
-    "department": "Lecture Halls",
-    "aliases": [
-      "courtyard 4",
-      "lecture hall 3",
-      "hall 3",
-      "lh3"
-    ],
-    "accessible": true,
-    "description": "North-east landscaped courtyard 4"
   },
   {
     "id": "LOC_G_WORKSHOP_46",
@@ -1381,23 +1309,22 @@
     "description": "2nd Floor, north corridor near Mathematics Dept"
   },
   {
-    "id": "LOC_2_MATH_DEPT",
+    "id": "LOC_2_MATH_213",
     "name": "Mathematics Department (Room 213)",
     "type": "department",
     "floor": 2,
-    "node_id": "RN_LOC_2_MATH_DEPT",
+    "node_id": "RN_LOC_2_MATH_213",
     "x": 480,
     "y": 190,
     "department": "Mathematics",
     "aliases": [
-      "mathematics dept",
-      "maths dept",
       "mathematics",
+      "maths dept",
       "room 213",
       "213"
     ],
     "accessible": true,
-    "description": "2nd Floor, north corridor next to Room 214"
+    "description": "2nd Floor north corridor"
   },
   {
     "id": "LOC_2_ENG_CR_211",
@@ -1409,13 +1336,12 @@
     "y": 190,
     "department": "Engineering",
     "aliases": [
-      "eng cr 211",
       "room 211",
-      "classroom 211",
+      "cr 211",
       "211"
     ],
     "accessible": true,
-    "description": "2nd Floor, north corridor"
+    "description": "2nd Floor north corridor"
   },
   {
     "id": "LOC_2_FACULTY_201",
@@ -1432,83 +1358,47 @@
       "201"
     ],
     "accessible": true,
-    "description": "2nd Floor, north-east corner"
+    "description": "2nd Floor north-east corridor"
   },
   {
-    "id": "LOC_2_STUDENT_LOUNGE",
-    "name": "Student Lounge (Room 216)",
-    "type": "lounge",
+    "id": "LOC_2_MBA_CR_202",
+    "name": "MBA Classroom 202",
+    "type": "classroom",
     "floor": 2,
-    "node_id": "RN_LOC_2_STUDENT_LOUNGE",
-    "x": 235,
-    "y": 220,
-    "department": "Student Welfare",
+    "node_id": "RN_LOC_2_MBA_CR_202",
+    "x": 820,
+    "y": 285,
+    "department": "Management Studies",
     "aliases": [
-      "student lounge",
-      "recreation lounge",
-      "room 216",
-      "216"
+      "mba cr 202",
+      "mba 202",
+      "room 202",
+      "202"
     ],
     "accessible": true,
-    "description": "2nd Floor, north-west wing at Workshop Bridge"
+    "description": "2nd Floor east wing"
   },
   {
-    "id": "LOC_2_SPORTS",
-    "name": "Sports Gallery & Activities (Room 217)",
-    "type": "room",
+    "id": "LOC_2_MBA_CR_203",
+    "name": "MBA Classroom 203",
+    "type": "classroom",
     "floor": 2,
-    "node_id": "RN_LOC_2_SPORTS",
-    "x": 135,
-    "y": 220,
-    "department": "Physical Education",
+    "node_id": "RN_LOC_2_MBA_CR_203",
+    "x": 820,
+    "y": 360,
+    "department": "Management Studies",
     "aliases": [
-      "sports room",
-      "sports gallery",
-      "gym office",
-      "room 217",
-      "217"
+      "mba cr 203",
+      "mba 203",
+      "room 203",
+      "203"
     ],
     "accessible": true,
-    "description": "2nd Floor, west wing"
-  },
-  {
-    "id": "LOC_2_PHYSICS_LAB",
-    "name": "Physics Laboratory",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_PHYSICS_LAB",
-    "x": 140,
-    "y": 370,
-    "department": "Basic Sciences",
-    "aliases": [
-      "physics lab",
-      "engineering physics lab",
-      "physics laboratory",
-      "optics lab"
-    ],
-    "accessible": true,
-    "description": "2nd Floor, long west corridor lab"
-  },
-  {
-    "id": "LOC_2_CHEMISTRY_LAB",
-    "name": "Chemistry Laboratory",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_CHEMISTRY_LAB",
-    "x": 140,
-    "y": 550,
-    "department": "Basic Sciences",
-    "aliases": [
-      "chemistry lab",
-      "engineering chemistry lab",
-      "chemical science"
-    ],
-    "accessible": true,
-    "description": "2nd Floor, long west corridor lab"
+    "description": "2nd Floor east wing"
   },
   {
     "id": "LOC_2_DRAWING_219",
-    "name": "Drawing & CAD Studio (Room 219)",
+    "name": "Drawing & Design Studio (Room 219)",
     "type": "room",
     "floor": 2,
     "node_id": "RN_LOC_2_DRAWING_219",
@@ -1517,12 +1407,12 @@
     "department": "Engineering",
     "aliases": [
       "drawing room 219",
-      "studio 219",
+      "design studio",
       "room 219",
       "219"
     ],
     "accessible": true,
-    "description": "2nd Floor central hall facing Courtyard 2"
+    "description": "2nd Floor central hall"
   },
   {
     "id": "LOC_2_INTEL_LAB",
@@ -1530,18 +1420,18 @@
     "type": "lab",
     "floor": 2,
     "node_id": "RN_LOC_2_INTEL_LAB",
-    "x": 505,
-    "y": 470,
-    "department": "Computer Science",
+    "x": 510,
+    "y": 480,
+    "department": "Artificial Intelligence",
     "aliases": [
       "intel lab",
-      "intel intelligence lab",
       "ai lab",
+      "intel iot lab",
       "room 220",
       "220"
     ],
     "accessible": true,
-    "description": "2nd Floor central corridor research lab"
+    "description": "2nd Floor central lab"
   },
   {
     "id": "LOC_2_STUDY_207",
@@ -1550,7 +1440,7 @@
     "floor": 2,
     "node_id": "RN_LOC_2_STUDY_207",
     "x": 590,
-    "y": 450,
+    "y": 440,
     "department": "Campus Common",
     "aliases": [
       "study space 207",
@@ -1558,7 +1448,7 @@
       "207"
     ],
     "accessible": true,
-    "description": "Near Staircase B and IS Classroom"
+    "description": "Near Staircase B"
   },
   {
     "id": "LOC_2_IS_CR_206",
@@ -1566,92 +1456,73 @@
     "type": "classroom",
     "floor": 2,
     "node_id": "RN_LOC_2_IS_CR_206",
-    "x": 725,
+    "x": 740,
     "y": 465,
     "department": "Information Science",
     "aliases": [
       "is cr 206",
-      "ise classroom",
       "room 206",
       "206"
     ],
     "accessible": true,
-    "description": "2nd Floor central-east wing"
+    "description": "2nd Floor east central corridor"
   },
   {
-    "id": "LOC_2_RESTROOM_204",
-    "name": "Restrooms 204/205",
-    "type": "restroom",
+    "id": "LOC_2_PHYSICS_LAB",
+    "name": "Engineering Physics Lab (Room 217)",
+    "type": "lab",
     "floor": 2,
-    "node_id": "RN_LOC_2_RESTROOM_204",
-    "x": 865,
-    "y": 465,
-    "department": "Services",
+    "node_id": "RN_LOC_2_PHYSICS_LAB",
+    "x": 140,
+    "y": 370,
+    "department": "Physics",
     "aliases": [
-      "restroom 2nd floor",
-      "toilet 2nd floor",
-      "room 204",
-      "room 205",
-      "204",
-      "205"
+      "physics lab",
+      "physics laboratory",
+      "room 217",
+      "217"
     ],
     "accessible": true,
-    "description": "2nd Floor east wing restrooms"
+    "description": "2nd Floor west corridor"
   },
   {
-    "id": "LOC_2_MBA_CR_202",
-    "name": "MBA Classroom 202",
-    "type": "classroom",
+    "id": "LOC_2_CHEM_LAB",
+    "name": "Engineering Chemistry Lab (Room 240)",
+    "type": "lab",
     "floor": 2,
-    "node_id": "RN_LOC_2_MBA_CR_202",
-    "x": 825,
-    "y": 285,
-    "department": "Management Studies",
+    "node_id": "RN_LOC_2_CHEM_LAB",
+    "x": 140,
+    "y": 550,
+    "department": "Chemistry",
     "aliases": [
-      "mba 202",
-      "cr 202",
-      "room 202",
-      "202"
+      "chemistry lab",
+      "chemistry laboratory",
+      "chem lab",
+      "room 240",
+      "240"
     ],
     "accessible": true,
-    "description": "2nd Floor east corridor"
+    "description": "2nd Floor west corridor"
   },
   {
-    "id": "LOC_2_MBA_CR_203",
-    "name": "MBA Classroom 203",
-    "type": "classroom",
+    "id": "LOC_2_LIB_SF",
+    "name": "Central Library (Second Floor Mezzanine)",
+    "type": "library",
     "floor": 2,
-    "node_id": "RN_LOC_2_MBA_CR_203",
-    "x": 825,
-    "y": 360,
-    "department": "Management Studies",
+    "node_id": "RN_LOC_2_LIB_SF",
+    "x": 235,
+    "y": 800,
+    "department": "Library",
     "aliases": [
-      "mba 203",
-      "cr 203",
-      "room 203",
-      "203"
+      "library sf",
+      "library mezzanine",
+      "reading hall",
+      "digital library",
+      "room 239",
+      "239"
     ],
     "accessible": true,
-    "description": "2nd Floor east corridor"
-  },
-  {
-    "id": "LOC_2_CIVIL_DEPT_209",
-    "name": "Civil & Structural Dept (Room 209)",
-    "type": "department",
-    "floor": 2,
-    "node_id": "RN_LOC_2_CIVIL_DEPT_209",
-    "x": 485,
-    "y": 320,
-    "department": "Civil Engineering",
-    "aliases": [
-      "civil dept",
-      "civil engineering",
-      "structural dept",
-      "room 209",
-      "209"
-    ],
-    "accessible": true,
-    "description": "North-central wing between Courtyard 3 & 4"
+    "description": "2nd Floor west wing library"
   },
   {
     "id": "LOC_2_STUDY_221",
@@ -1668,170 +1539,24 @@
       "221"
     ],
     "accessible": true,
-    "description": "Central atrium mezzanine"
+    "description": "Central atrium study space"
   },
   {
-    "id": "LOC_2_STAFF_224",
-    "name": "Computer Science Staff Room (Room 224)",
+    "id": "LOC_2_CS_HOD",
+    "name": "Department of Computer Science & HOD Chamber",
     "type": "office",
     "floor": 2,
-    "node_id": "RN_LOC_2_STAFF_224",
-    "x": 720,
+    "node_id": "RN_LOC_2_CS_HOD",
+    "x": 850,
     "y": 610,
     "department": "Computer Science",
     "aliases": [
-      "cs staff room",
-      "cse faculty 224",
-      "room 224",
-      "224"
+      "cs hod",
+      "cse department 2nd floor",
+      "hod chamber"
     ],
     "accessible": true,
-    "description": "East corridor staff room"
-  },
-  {
-    "id": "LOC_2_CS_LAB_225",
-    "name": "CS Programming Lab 225",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_CS_LAB_225",
-    "x": 855,
-    "y": 670,
-    "department": "Computer Science",
-    "aliases": [
-      "cs lab 225",
-      "programming lab 225",
-      "room 225",
-      "225"
-    ],
-    "accessible": true,
-    "description": "East corridor computer lab"
-  },
-  {
-    "id": "LOC_2_CS_CR_226",
-    "name": "CS Classroom 226",
-    "type": "classroom",
-    "floor": 2,
-    "node_id": "RN_LOC_2_CS_CR_226",
-    "x": 855,
-    "y": 740,
-    "department": "Computer Science",
-    "aliases": [
-      "cs cr 226",
-      "cse 226",
-      "room 226",
-      "226"
-    ],
-    "accessible": true,
-    "description": "East corridor classroom"
-  },
-  {
-    "id": "LOC_2_IS_LAB_2",
-    "name": "Information Science Lab-2 (Room 228)",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_IS_LAB_2",
-    "x": 830,
-    "y": 880,
-    "department": "Information Science",
-    "aliases": [
-      "is lab 2",
-      "ise lab 2",
-      "room 228",
-      "228"
-    ],
-    "accessible": true,
-    "description": "South-east wing lab"
-  },
-  {
-    "id": "LOC_2_IS_LAB_3",
-    "name": "Information Science Lab-3 (Room 230)",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_IS_LAB_3",
-    "x": 700,
-    "y": 880,
-    "department": "Information Science",
-    "aliases": [
-      "is lab 3",
-      "ise lab 3",
-      "room 230",
-      "230"
-    ],
-    "accessible": true,
-    "description": "South corridor lab"
-  },
-  {
-    "id": "LOC_2_SERVER_231",
-    "name": "Campus Server & Network Operations (Room 231)",
-    "type": "room",
-    "floor": 2,
-    "node_id": "RN_LOC_2_SERVER_231",
-    "x": 635,
-    "y": 880,
-    "department": "IT Infrastructure",
-    "aliases": [
-      "server room",
-      "noc",
-      "network room",
-      "data center",
-      "room 231",
-      "231"
-    ],
-    "accessible": true,
-    "description": "South corridor IT center"
-  },
-  {
-    "id": "LOC_2_IS_LAB_4",
-    "name": "Information Science Lab-4 (Room 232)",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_IS_LAB_4",
-    "x": 550,
-    "y": 880,
-    "department": "Information Science",
-    "aliases": [
-      "is lab 4",
-      "ise lab 4",
-      "room 232",
-      "232"
-    ],
-    "accessible": true,
-    "description": "South corridor lab"
-  },
-  {
-    "id": "LOC_2_IS_LAB_5",
-    "name": "Information Science Lab-5 (Room 233)",
-    "type": "lab",
-    "floor": 2,
-    "node_id": "RN_LOC_2_IS_LAB_5",
-    "x": 430,
-    "y": 880,
-    "department": "Information Science",
-    "aliases": [
-      "is lab 5",
-      "ise lab 5",
-      "room 233",
-      "233"
-    ],
-    "accessible": true,
-    "description": "South corridor lab near Staircase D"
-  },
-  {
-    "id": "LOC_2_CS_CR_236",
-    "name": "CS Classroom 236",
-    "type": "classroom",
-    "floor": 2,
-    "node_id": "RN_LOC_2_CS_CR_236",
-    "x": 505,
-    "y": 665,
-    "department": "Computer Science",
-    "aliases": [
-      "cs cr 236",
-      "room 236",
-      "236"
-    ],
-    "accessible": true,
-    "description": "Center-south classroom"
+    "description": "East corridor academic section"
   },
   {
     "id": "LOC_2_STUDY_237",
@@ -1839,7 +1564,7 @@
     "type": "study_area",
     "floor": 2,
     "node_id": "RN_LOC_2_STUDY_237",
-    "x": 635,
+    "x": 590,
     "y": 675,
     "department": "Campus Common",
     "aliases": [
@@ -1848,63 +1573,145 @@
       "237"
     ],
     "accessible": true,
-    "description": "Courtyard 1 perimeter study area"
+    "description": "Courtyard 1 perimeter study deck"
   },
   {
-    "id": "LOC_2_LIB_SF",
-    "name": "Central Library (Second Floor - SF) (Room 239)",
-    "type": "library",
+    "id": "LOC_2_CS_CR_226",
+    "name": "Computer Science Classroom 226",
+    "type": "classroom",
     "floor": 2,
-    "node_id": "RN_LOC_2_LIB_SF",
-    "x": 235,
-    "y": 800,
-    "department": "Library",
+    "node_id": "RN_LOC_2_CS_CR_226",
+    "x": 880,
+    "y": 740,
+    "department": "Computer Science",
     "aliases": [
-      "library second floor",
-      "library sf",
-      "periodicals section",
-      "digital library",
-      "room 239",
-      "239"
+      "cs cr 226",
+      "room 226",
+      "226"
     ],
     "accessible": true,
-    "description": "Second floor library digital resources section"
+    "description": "East corridor classroom"
   },
   {
-    "id": "LOC_2_WORKSHOP_243",
-    "name": "Workshop Hands-on Lab-2 (Room 243)",
-    "type": "workshop",
+    "id": "LOC_2_IS_LAB_2",
+    "name": "IS Lab-2 (Room 229)",
+    "type": "lab",
     "floor": 2,
-    "node_id": "RN_LOC_2_WORKSHOP_243",
-    "x": 190,
-    "y": 80,
-    "department": "Mechanical",
+    "node_id": "RN_LOC_2_IS_LAB_2",
+    "x": 880,
+    "y": 880,
+    "department": "Information Science",
     "aliases": [
-      "hands-on lab 2",
-      "workshop 243",
-      "room 243",
-      "243"
+      "is lab 2",
+      "room 229",
+      "229"
     ],
     "accessible": true,
-    "description": "Workshop second floor"
+    "description": "South-east corner laboratory"
+  },
+  {
+    "id": "LOC_2_IS_LAB_3",
+    "name": "IS Lab-3 (Room 230)",
+    "type": "lab",
+    "floor": 2,
+    "node_id": "RN_LOC_2_IS_LAB_3",
+    "x": 700,
+    "y": 880,
+    "department": "Information Science",
+    "aliases": [
+      "is lab 3",
+      "room 230",
+      "230"
+    ],
+    "accessible": true,
+    "description": "South corridor laboratory"
+  },
+  {
+    "id": "LOC_2_IS_LAB_4",
+    "name": "IS Lab-4 (Room 232)",
+    "type": "lab",
+    "floor": 2,
+    "node_id": "RN_LOC_2_IS_LAB_4",
+    "x": 550,
+    "y": 880,
+    "department": "Information Science",
+    "aliases": [
+      "is lab 4",
+      "room 232",
+      "232"
+    ],
+    "accessible": true,
+    "description": "South corridor laboratory"
+  },
+  {
+    "id": "LOC_2_IS_LAB_5",
+    "name": "IS Lab-5 (Room 233)",
+    "type": "lab",
+    "floor": 2,
+    "node_id": "RN_LOC_2_IS_LAB_5",
+    "x": 430,
+    "y": 880,
+    "department": "Information Science",
+    "aliases": [
+      "is lab 5",
+      "room 233",
+      "233"
+    ],
+    "accessible": true,
+    "description": "South corridor laboratory near Staircase D"
+  },
+  {
+    "id": "LOC_2_CS_CR_236",
+    "name": "Computer Science Classroom 236",
+    "type": "classroom",
+    "floor": 2,
+    "node_id": "RN_LOC_2_CS_CR_236",
+    "x": 385,
+    "y": 665,
+    "department": "Computer Science",
+    "aliases": [
+      "cs cr 236",
+      "room 236",
+      "236"
+    ],
+    "accessible": true,
+    "description": "Center west classroom near Staircase C"
   },
   {
     "id": "LOC_2_WORKSHOP_242",
-    "name": "Workshop Hands-on Lab-1 (Room 242)",
+    "name": "Workshop 2nd Floor - Hands-on Lab 1 (Room 242)",
     "type": "workshop",
     "floor": 2,
     "node_id": "RN_LOC_2_WORKSHOP_242",
-    "x": 390,
+    "x": 380,
     "y": 80,
     "department": "Mechanical",
     "aliases": [
-      "hands-on lab 1",
       "workshop 242",
+      "hands on lab 1",
       "room 242",
       "242"
     ],
     "accessible": true,
-    "description": "Workshop second floor"
+    "description": "Workshop second floor wing"
+  },
+  {
+    "id": "LOC_2_WORKSHOP_243",
+    "name": "Workshop 2nd Floor - Hands-on Lab 2 (Room 243)",
+    "type": "workshop",
+    "floor": 2,
+    "node_id": "RN_LOC_2_WORKSHOP_243",
+    "x": 200,
+    "y": 80,
+    "department": "Mechanical",
+    "aliases": [
+      "workshop 243",
+      "hands on lab 2",
+      "room 243",
+      "243"
+    ],
+    "accessible": true,
+    "description": "Workshop second floor wing"
   },
   {
     "id": "LOC_3_CIVIL_CR_316",
@@ -2267,7 +2074,7 @@
     "floor": 4,
     "node_id": "RN_LOC_4_ROOFTOP_GARDEN",
     "x": 500,
-    "y": 750,
+    "y": 600,
     "department": "Campus Common",
     "aliases": [
       "sky garden",
@@ -2435,7 +2242,7 @@
     "floor": 5,
     "node_id": "RN_LOC_5_ROOFTOP_TERRACE",
     "x": 500,
-    "y": 750,
+    "y": 600,
     "department": "Campus Common",
     "aliases": [
       "riverview promenade",

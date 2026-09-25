@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import {
   Floor,
   CampusLocation,
@@ -12,21 +12,9 @@ import {
   ZoomOut,
   Maximize2,
   Navigation,
-  MapPin,
-  AlertTriangle,
-  MoveVertical,
-  Layers,
-  Accessibility,
-  Footprints,
   Compass,
-  Utensils,
-  Home,
-  Bed,
-  Car,
-  Fuel,
-  Mail,
-  Tent,
-  GraduationCap
+  Footprints,
+  MoveVertical
 } from 'lucide-react';
 
 interface InteractiveMapProps {
@@ -42,9 +30,37 @@ interface InteractiveMapProps {
   highlightedNodeId: string | null;
   isNavigating?: boolean;
   activeStepIndex?: number;
+  isSimulating?: boolean;
+  simSpeed?: number;
   onSelectLocation: (location: CampusLocation) => void;
   onSelectNodeAsStart?: (node: CampusNode) => void;
+  onFloorChange?: (floor: number) => void;
+  onStepIndexChange?: (stepIndex: number) => void;
+  onSimulationComplete?: () => void;
 }
+
+interface WalkerState {
+  x: number;
+  y: number;
+  angle: number;
+  floor: number;
+  segmentIndex: number;
+  progress: number; // 0 to 1
+  isTransitioning: boolean;
+  transitionRemainingMs: number;
+  transitionMessage: string;
+}
+
+const calcAngle = (x1: number, y1: number, x2: number, y2: number): number => {
+  return Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI) + 90;
+};
+
+const lerpAngle = (current: number, target: number, t: number): number => {
+  let diff = (target - current) % 360;
+  if (diff < -180) diff += 360;
+  if (diff > 180) diff -= 360;
+  return current + diff * t;
+};
 
 export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   currentFloor,
@@ -59,8 +75,13 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   highlightedNodeId,
   isNavigating = false,
   activeStepIndex = 0,
+  isSimulating = false,
+  simSpeed = 1,
   onSelectLocation,
-  onSelectNodeAsStart
+  onSelectNodeAsStart,
+  onFloorChange,
+  onStepIndexChange,
+  onSimulationComplete
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [zoom, setZoom] = useState(1);
@@ -78,49 +99,326 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   const floorNodes = nodes.filter(n => n.floor === currentFloor.floor);
   const floorLocations = locations.filter(l => l.floor === currentFloor.floor);
 
-  // Active step node resolution for Live Navigation
+  // Active step node resolution for Live Navigation (fallback if not simulating)
   const currentInstruction = activeRoute?.instructions[activeStepIndex];
   const activeNavNode = isNavigating && activeRoute
     ? (currentInstruction?.node_id ? nodes.find(n => n.id === currentInstruction.node_id) : (startNode || activeRoute.nodes[0]))
     : null;
 
-  // Auto-follow / center camera on active navigation node
+  // Walker state for continuous walking animation
+  const [walker, setWalker] = useState<WalkerState | null>(null);
+  const walkerRef = useRef<WalkerState | null>(null);
+  walkerRef.current = walker;
+
+  const animFrameRef = useRef<number | null>(null);
+  const lastTimeRef = useRef<number | null>(null);
+
+  // Base speed in pixels per second.
+  // Calibrated so a typical 70-80px corridor takes ~2.2s at 1x, or 4.4s at 0.5x.
+  const BASE_WALK_SPEED_PX = 36;
+
+  // Initialize or reset walker when activeRoute or isNavigating changes
   useEffect(() => {
-    if (isNavigating && activeNavNode && activeNavNode.floor === currentFloor.floor && containerRef.current) {
+    if (isNavigating && activeRoute && activeRoute.nodes && activeRoute.nodes.length > 0) {
+      const firstNode = activeRoute.nodes[0];
+      const secondNode = activeRoute.nodes[1];
+      const initialAngle = secondNode ? calcAngle(firstNode.x, firstNode.y, secondNode.x, secondNode.y) : 0;
+
+      const initialWalker: WalkerState = {
+        x: firstNode.x,
+        y: firstNode.y,
+        angle: initialAngle,
+        floor: firstNode.floor,
+        segmentIndex: 0,
+        progress: 0,
+        isTransitioning: false,
+        transitionRemainingMs: 0,
+        transitionMessage: ''
+      };
+      setWalker(initialWalker);
+      walkerRef.current = initialWalker;
+    } else {
+      setWalker(null);
+      walkerRef.current = null;
+    }
+  }, [isNavigating, activeRoute]);
+
+  // Main 60 FPS Animation Loop for Smooth Walking
+  useEffect(() => {
+    if (!isNavigating || !isSimulating || !activeRoute || !activeRoute.nodes || activeRoute.nodes.length < 2) {
+      if (animFrameRef.current) {
+        cancelAnimationFrame(animFrameRef.current);
+        animFrameRef.current = null;
+      }
+      lastTimeRef.current = null;
+      return;
+    }
+
+    const routeNodes = activeRoute.nodes;
+
+    const animate = (timestamp: number) => {
+      if (lastTimeRef.current === null) {
+        lastTimeRef.current = timestamp;
+      }
+      const rawDt = (timestamp - lastTimeRef.current) / 1000;
+      lastTimeRef.current = timestamp;
+      // Clamp dt to avoid big jumps if tab is throttled
+      const dt = Math.min(rawDt, 0.08);
+
+      const currentWalker = walkerRef.current;
+      if (!currentWalker) {
+        animFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
+      // Check if we already reached destination
+      if (currentWalker.segmentIndex >= routeNodes.length - 1) {
+        if (onSimulationComplete) onSimulationComplete();
+        return;
+      }
+
+      // 1. Handle Floor Transition Pause (Elevator / Stairs)
+      if (currentWalker.isTransitioning) {
+        const remaining = currentWalker.transitionRemainingMs - dt * 1000;
+        if (remaining <= 0) {
+          // Transition complete! Move walker to target floor landing node
+          const nextSegmentIdx = currentWalker.segmentIndex + 1;
+          const targetNode = routeNodes[nextSegmentIdx];
+          const subsequentNode = routeNodes[nextSegmentIdx + 1];
+          const targetAngle = subsequentNode
+            ? calcAngle(targetNode.x, targetNode.y, subsequentNode.x, subsequentNode.y)
+            : currentWalker.angle;
+
+          const updated: WalkerState = {
+            ...currentWalker,
+            x: targetNode.x,
+            y: targetNode.y,
+            floor: targetNode.floor,
+            angle: targetAngle,
+            segmentIndex: nextSegmentIdx,
+            progress: 0,
+            isTransitioning: false,
+            transitionRemainingMs: 0,
+            transitionMessage: ''
+          };
+
+          walkerRef.current = updated;
+          setWalker(updated);
+
+          // Automatically switch the visual floor in App
+          if (onFloorChange) {
+            onFloorChange(targetNode.floor);
+          }
+        } else {
+          const updated: WalkerState = {
+            ...currentWalker,
+            transitionRemainingMs: remaining
+          };
+          walkerRef.current = updated;
+          setWalker(updated);
+        }
+        animFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
+      // 2. Normal Walking Along Current Segment
+      const fromNode = routeNodes[currentWalker.segmentIndex];
+      const toNode = routeNodes[currentWalker.segmentIndex + 1];
+
+      if (!toNode) {
+        if (onSimulationComplete) onSimulationComplete();
+        return;
+      }
+
+      // Check if this segment represents a floor transition
+      if (fromNode.floor !== toNode.floor) {
+        // Start floor transition sequence
+        const isUp = toNode.floor > fromNode.floor;
+        const targetFloorName = toNode.floor === -1 ? 'Campus' : toNode.floor === 0 ? 'Ground Floor' : `Floor ${toNode.floor}`;
+        const modeName = fromNode.type === 'elevator' ? 'West Elevator' : 'Staircase';
+        const msg = `${isUp ? 'Ascending' : 'Descending'} to ${targetFloorName} via ${modeName}`;
+
+        const transitioningWalker: WalkerState = {
+          ...currentWalker,
+          x: fromNode.x,
+          y: fromNode.y,
+          floor: fromNode.floor,
+          isTransitioning: true,
+          transitionRemainingMs: 2000,
+          transitionMessage: msg
+        };
+
+        walkerRef.current = transitioningWalker;
+        setWalker(transitioningWalker);
+        animFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
+      // Same floor segment: calculate distance and step progress
+      const segmentDist = Math.hypot(toNode.x - fromNode.x, toNode.y - fromNode.y);
+      const speed = BASE_WALK_SPEED_PX * simSpeed;
+
+      if (segmentDist <= 1) {
+        // Negligible distance: advance immediately
+        const nextSegment = currentWalker.segmentIndex + 1;
+        const updated: WalkerState = {
+          ...currentWalker,
+          x: toNode.x,
+          y: toNode.y,
+          segmentIndex: nextSegment,
+          progress: 0
+        };
+        walkerRef.current = updated;
+        setWalker(updated);
+        animFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
+      const deltaProgress = (speed * dt) / segmentDist;
+      const nextProgress = currentWalker.progress + deltaProgress;
+
+      // Calculate target direction angle and smoothly interpolate
+      const targetAngle = calcAngle(fromNode.x, fromNode.y, toNode.x, toNode.y);
+      const smoothAngle = lerpAngle(currentWalker.angle, targetAngle, Math.min(1, 9 * dt));
+
+      if (nextProgress < 1.0) {
+        const curX = fromNode.x + (toNode.x - fromNode.x) * nextProgress;
+        const curY = fromNode.y + (toNode.y - fromNode.y) * nextProgress;
+
+        const updated: WalkerState = {
+          ...currentWalker,
+          x: curX,
+          y: curY,
+          angle: smoothAngle,
+          progress: nextProgress
+        };
+        walkerRef.current = updated;
+        setWalker(updated);
+
+        // Smooth camera auto-follow while simulating (offsetting Y downward so walker is clear of top HUD)
+        if (!isDragging && containerRef.current && currentWalker.floor === currentFloor.floor) {
+          const containerW = containerRef.current.clientWidth;
+          const containerH = containerRef.current.clientHeight;
+          const targetPanX = containerW / 2 - curX;
+          const targetPanY = (containerH / 2 + 85) - curY;
+          setPan(prev => ({
+            x: prev.x + (targetPanX - prev.x) * 0.08,
+            y: prev.y + (targetPanY - prev.y) * 0.08
+          }));
+        }
+      } else {
+        // Segment finished: arrive at toNode
+        const nextSegment = currentWalker.segmentIndex + 1;
+
+        // Check if instruction step should advance
+        if (activeRoute.instructions) {
+          // Find matching instruction
+          const matchingIdx = activeRoute.instructions.findIndex(
+            (inst, idx) => inst.node_id === toNode.id || (idx > 0 && activeRoute.instructions[idx - 1]?.node_id === fromNode.id)
+          );
+          if (matchingIdx !== -1 && matchingIdx !== activeStepIndex && onStepIndexChange) {
+            onStepIndexChange(matchingIdx);
+          }
+        }
+
+        if (nextSegment >= routeNodes.length - 1) {
+          // Destination reached!
+          const finishedWalker: WalkerState = {
+            ...currentWalker,
+            x: toNode.x,
+            y: toNode.y,
+            segmentIndex: nextSegment,
+            progress: 1,
+            angle: smoothAngle
+          };
+          walkerRef.current = finishedWalker;
+          setWalker(finishedWalker);
+          if (onSimulationComplete) onSimulationComplete();
+          return;
+        }
+
+        const nextSubsequentNode = routeNodes[nextSegment + 1];
+        const nextTargetAngle = nextSubsequentNode
+          ? calcAngle(toNode.x, toNode.y, nextSubsequentNode.x, nextSubsequentNode.y)
+          : smoothAngle;
+
+        const updated: WalkerState = {
+          ...currentWalker,
+          x: toNode.x,
+          y: toNode.y,
+          segmentIndex: nextSegment,
+          progress: 0,
+          angle: nextTargetAngle
+        };
+        walkerRef.current = updated;
+        setWalker(updated);
+      }
+
+      animFrameRef.current = requestAnimationFrame(animate);
+    };
+
+    animFrameRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animFrameRef.current) {
+        cancelAnimationFrame(animFrameRef.current);
+        animFrameRef.current = null;
+      }
+    };
+  }, [isNavigating, isSimulating, activeRoute, simSpeed, activeStepIndex, currentFloor.floor, isDragging, onFloorChange, onStepIndexChange, onSimulationComplete]);
+
+  // Center camera when starting navigation
+  useEffect(() => {
+    if (isNavigating && activeNavNode && activeNavNode.floor === currentFloor.floor && containerRef.current && !isSimulating) {
       const containerW = containerRef.current.clientWidth;
       const containerH = containerRef.current.clientHeight;
       setPan({
         x: containerW / 2 - activeNavNode.x,
-        y: containerH / 2 - activeNavNode.y
+        y: (containerH / 2 + 85) - activeNavNode.y
       });
       setZoom(1.35);
     }
-  }, [isNavigating, activeNavNode?.id, currentFloor.floor]);
+  }, [isNavigating, activeNavNode?.id, currentFloor.floor, isSimulating]);
 
-  // Get active issues for this floor
+  // Active hazards
   const floorIssues = activeIssues.filter(
     i => i.status === 'active' && (i.floor === currentFloor.floor || i.floor === -1)
   );
   const blockedNodeIds = new Set<string>();
   floorIssues.forEach(i => i.node_ids.forEach(n => blockedNodeIds.add(n)));
 
-  // Generate SVG path for the active route on this floor
+  // Route Segments partitioning for this floor
   const getRouteSegmentsForFloor = () => {
     if (!activeRoute || !activeRoute.nodes || activeRoute.nodes.length < 2) return [];
 
-    const segments: Array<{ from: CampusNode; to: CampusNode; isFloorTransition: boolean; elev: boolean; isVisited: boolean }> = [];
+    const segments: Array<{
+      idx: number;
+      from: CampusNode;
+      to: CampusNode;
+      status: 'visited' | 'active' | 'upcoming';
+      isFloorTransition: boolean;
+      elev: boolean;
+    }> = [];
+
+    const currentSegmentIdx = walker ? walker.segmentIndex : activeStepIndex;
+
     for (let i = 0; i < activeRoute.nodes.length - 1; i++) {
       const u = activeRoute.nodes[i];
       const v = activeRoute.nodes[i + 1];
-      const isVisited = isNavigating && activeStepIndex > 0 && i < activeStepIndex;
 
-      // Segment is on this floor if both are on this floor, or if one is on this floor transitioning
+      let status: 'visited' | 'active' | 'upcoming' = 'upcoming';
+      if (isNavigating) {
+        if (i < currentSegmentIdx) status = 'visited';
+        else if (i === currentSegmentIdx) status = 'active';
+        else status = 'upcoming';
+      }
+
       if (u.floor === currentFloor.floor && v.floor === currentFloor.floor) {
-        segments.push({ from: u, to: v, isFloorTransition: false, elev: false, isVisited });
+        segments.push({ idx: i, from: u, to: v, status, isFloorTransition: false, elev: false });
       } else if (u.floor === currentFloor.floor && v.floor !== currentFloor.floor) {
-        segments.push({ from: u, to: v, isFloorTransition: true, elev: u.type === 'elevator', isVisited });
+        segments.push({ idx: i, from: u, to: v, status, isFloorTransition: true, elev: u.type === 'elevator' });
       } else if (u.floor !== currentFloor.floor && v.floor === currentFloor.floor) {
-        segments.push({ from: u, to: v, isFloorTransition: true, elev: v.type === 'elevator', isVisited });
+        segments.push({ idx: i, from: u, to: v, status, isFloorTransition: true, elev: v.type === 'elevator' });
       }
     }
     return segments;
@@ -159,50 +457,90 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   const handleRecenter = () => {
     const containerW = containerRef.current?.clientWidth || 800;
     const containerH = containerRef.current?.clientHeight || 800;
+    const offsetY = isNavigating ? 85 : 0;
 
-    if (isNavigating && activeNavNode && activeNavNode.floor === currentFloor.floor) {
-      setPan({ x: containerW / 2 - activeNavNode.x, y: containerH / 2 - activeNavNode.y });
+    if (walker && walker.floor === currentFloor.floor) {
+      setPan({ x: containerW / 2 - walker.x, y: (containerH / 2 + offsetY) - walker.y });
+      setZoom(1.35);
+    } else if (isNavigating && activeNavNode && activeNavNode.floor === currentFloor.floor) {
+      setPan({ x: containerW / 2 - activeNavNode.x, y: (containerH / 2 + offsetY) - activeNavNode.y });
       setZoom(1.35);
     } else if (destinationLocation && destinationLocation.floor === currentFloor.floor) {
-      setPan({ x: containerW / 2 - destinationLocation.x, y: containerH / 2 - destinationLocation.y });
+      setPan({ x: containerW / 2 - destinationLocation.x, y: (containerH / 2 + offsetY) - destinationLocation.y });
       setZoom(1.4);
     } else if (startNode && startNode.floor === currentFloor.floor) {
-      setPan({ x: containerW / 2 - startNode.x, y: containerH / 2 - startNode.y });
+      setPan({ x: containerW / 2 - startNode.x, y: (containerH / 2 + offsetY) - startNode.y });
       setZoom(1.4);
     } else {
       handleResetView();
     }
   };
 
-  // Helper to get campus marker visual styling
+  // Helper for campus markers styling and names
   const getCampusMarkerConfig = (locId: string) => {
     switch (locId) {
       case 'LOC_C_CRICKET_GROUND':
       case 'LOC_C_CRICKET_PITCH':
       case 'LOC_C_SOUHARDHA_GROUND':
-        return { color: '#10b981', bg: 'rgba(16, 185, 129, 0.2)', label: 'CRICKET' };
+        return { color: '#10b981', bg: 'rgba(16, 185, 129, 0.2)' };
       case 'LOC_C_FOOD_COURT':
-        return { color: '#f97316', bg: 'rgba(249, 115, 22, 0.2)', label: 'FOOD COURT' };
+        return { color: '#f97316', bg: 'rgba(249, 115, 22, 0.2)' };
       case 'LOC_C_GUEST_HOUSE':
-        return { color: '#ec4899', bg: 'rgba(236, 72, 153, 0.2)', label: 'GUEST HOUSE' };
+        return { color: '#ec4899', bg: 'rgba(236, 72, 153, 0.2)' };
       case 'LOC_C_BOYS_HOSTEL':
-        return { color: '#8b5cf6', bg: 'rgba(139, 92, 246, 0.2)', label: 'BOYS HOSTEL' };
+        return { color: '#8b5cf6', bg: 'rgba(139, 92, 246, 0.2)' };
       case 'LOC_C_PARKING':
-        return { color: '#38bdf8', bg: 'rgba(56, 189, 248, 0.2)', label: 'PARKING' };
+        return { color: '#38bdf8', bg: 'rgba(56, 189, 248, 0.2)' };
       case 'LOC_C_PETROL_BUNK':
-        return { color: '#ef4444', bg: 'rgba(239, 68, 68, 0.2)', label: 'PETROL BUNK' };
+        return { color: '#ef4444', bg: 'rgba(239, 68, 68, 0.2)' };
       case 'LOC_C_SECURITY_GATE':
-        return { color: '#06b6d4', bg: 'rgba(6, 182, 212, 0.2)', label: 'GATE / PO' };
+        return { color: '#06b6d4', bg: 'rgba(6, 182, 212, 0.2)' };
       case 'LOC_C_EVENT_LAWN':
-        return { color: '#eab308', bg: 'rgba(234, 179, 8, 0.2)', label: 'EVENT LAWN' };
+        return { color: '#eab308', bg: 'rgba(234, 179, 8, 0.2)' };
       case 'LOC_C_MAIN_BLOCK':
-        return { color: '#007afc', bg: 'rgba(0, 122, 252, 0.25)', label: 'MAIN ACADEMIC BLOCK' };
+        return { color: '#007afc', bg: 'rgba(0, 122, 252, 0.25)' };
       case 'LOC_C_MECH_CIVIL':
-        return { color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.2)', label: 'MECH & CIVIL BLOCK' };
+        return { color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.2)' };
       case 'LOC_C_TEL_OFFICE':
-        return { color: '#94a3b8', bg: 'rgba(148, 163, 184, 0.2)', label: 'TEL / HOSTEL OFFICE' };
+        return { color: '#94a3b8', bg: 'rgba(148, 163, 184, 0.2)' };
+      case 'LOC_C_YS_ADMIN':
+        return { color: '#a855f7', bg: 'rgba(168, 85, 247, 0.2)' };
       default:
-        return { color: '#007afc', bg: 'rgba(0, 122, 252, 0.2)', label: 'CAMPUS' };
+        return { color: '#007afc', bg: 'rgba(0, 122, 252, 0.2)' };
+    }
+  };
+
+  const getCampusDisplayName = (loc: CampusLocation): string => {
+    switch (loc.id) {
+      case 'LOC_C_MAIN_BLOCK': return 'Main Academic Block';
+      case 'LOC_C_MECH_CIVIL': return 'Mech & Civil Block';
+      case 'LOC_C_FOOD_COURT': return 'Food Court';
+      case 'LOC_C_TEL_OFFICE': return 'Hostel & Tel Office';
+      case 'LOC_C_GUEST_HOUSE': return 'Heritage Guest House';
+      case 'LOC_C_BOYS_HOSTEL': return 'Boys Hostel';
+      case 'LOC_C_CRICKET_GROUND': return 'Cricket Ground';
+      case 'LOC_C_CRICKET_PITCH': return 'Cricket Pitch';
+      case 'LOC_C_SOUHARDHA_GROUND': return 'Souhardha Ground';
+      case 'LOC_C_PARKING': return 'College Parking';
+      case 'LOC_C_PETROL_BUNK': return 'HP Petrol Pump';
+      case 'LOC_C_SECURITY_GATE': return 'Main Gate & Post Office';
+      case 'LOC_C_EVENT_LAWN': return 'Open Lawn';
+      case 'LOC_C_YS_ADMIN': return 'Admin Annex';
+      default: return loc.name.split('(')[0].trim();
+    }
+  };
+
+  const getCampusLabelOffset = (locId: string): { x: number; y: number } => {
+    switch (locId) {
+      case 'LOC_C_MECH_CIVIL': return { x: 0, y: 28 };
+      case 'LOC_C_FOOD_COURT': return { x: -35, y: -26 };
+      case 'LOC_C_TEL_OFFICE': return { x: 45, y: -26 };
+      case 'LOC_C_CRICKET_GROUND': return { x: 0, y: 28 };
+      case 'LOC_C_CRICKET_PITCH': return { x: 0, y: -26 };
+      case 'LOC_C_PARKING': return { x: 45, y: -26 };
+      case 'LOC_C_YS_ADMIN': return { x: 40, y: 26 };
+      case 'LOC_C_EVENT_LAWN': return { x: -30, y: 26 };
+      default: return { x: 0, y: -26 };
     }
   };
 
@@ -221,7 +559,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
         style={{
           transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
           transformOrigin: 'center center',
-          transition: isDragging ? 'none' : 'transform 0.15s ease-out',
+          transition: isDragging ? 'none' : 'transform 0.12s ease-out',
           width: `${mapWidth}px`,
           height: `${mapHeight}px`
         }}
@@ -258,6 +596,13 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
+
+            {/* Moving Arrow Heading Cone Beam */}
+            <radialGradient id="walkerHeadingBeam" cx="50%" cy="100%" r="100%">
+              <stop offset="0%" stopColor="#007afc" stopOpacity="0.45" />
+              <stop offset="65%" stopColor="#38bdf8" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#38bdf8" stopOpacity="0" />
+            </radialGradient>
           </defs>
 
           {/* 1. Base Corridor Graph Network Lines */}
@@ -303,29 +648,12 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
               </g>
             ))}
 
-          {/* 3. ACTIVE ROUTE OVERLAY */}
+          {/* 3. ACTIVE ROUTE OVERLAY (Visited vs Dynamic Active vs Upcoming) */}
           {routeSegments.length > 0 && (
             <g className="active-route-group">
-              {/* Outer Glow Halo for remaining segments */}
+              {/* 3a. Visited Segments (Subdued steel gray behind walker) */}
               {routeSegments
-                .filter(seg => !seg.isVisited)
-                .map((seg, idx) => (
-                  <line
-                    key={`halo-${idx}`}
-                    x1={seg.from.x}
-                    y1={seg.from.y}
-                    x2={seg.to.x}
-                    y2={seg.to.y}
-                    stroke="rgba(0, 122, 252, 0.5)"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    filter="url(#routeGlow)"
-                  />
-                ))}
-
-              {/* Visited path (subdued dark steel) */}
-              {routeSegments
-                .filter(seg => seg.isVisited)
+                .filter(seg => seg.status === 'visited')
                 .map((seg, idx) => (
                   <line
                     key={`visited-${idx}`}
@@ -336,42 +664,101 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
                     stroke="#4b5563"
                     strokeWidth="6"
                     strokeLinecap="round"
-                    className="opacity-70"
+                    className="opacity-60"
                   />
                 ))}
 
-              {/* Main Signal Blue Solid Track for active segments */}
+              {/* 3b. Upcoming Segments (Glow halo + Signal blue + animated dashes) */}
               {routeSegments
-                .filter(seg => !seg.isVisited)
+                .filter(seg => seg.status === 'upcoming')
                 .map((seg, idx) => (
-                  <line
-                    key={`track-${idx}`}
-                    x1={seg.from.x}
-                    y1={seg.from.y}
-                    x2={seg.to.x}
-                    y2={seg.to.y}
-                    stroke="#007afc"
-                    strokeWidth="7"
-                    strokeLinecap="round"
-                  />
+                  <g key={`upcoming-${idx}`}>
+                    <line
+                      x1={seg.from.x}
+                      y1={seg.from.y}
+                      x2={seg.to.x}
+                      y2={seg.to.y}
+                      stroke="rgba(0, 122, 252, 0.45)"
+                      strokeWidth="15"
+                      strokeLinecap="round"
+                      filter="url(#routeGlow)"
+                    />
+                    <line
+                      x1={seg.from.x}
+                      y1={seg.from.y}
+                      x2={seg.to.x}
+                      y2={seg.to.y}
+                      stroke="#007afc"
+                      strokeWidth="7"
+                      strokeLinecap="round"
+                    />
+                    <line
+                      x1={seg.from.x}
+                      y1={seg.from.y}
+                      x2={seg.to.x}
+                      y2={seg.to.y}
+                      stroke="#ffffff"
+                      strokeWidth="3.5"
+                      strokeLinecap="round"
+                      className="route-animated"
+                    />
+                  </g>
                 ))}
 
-              {/* Animated Marching Dashed Line for active segments */}
+              {/* 3c. Current Active Segment (Split at walker position if on this floor) */}
               {routeSegments
-                .filter(seg => !seg.isVisited)
-                .map((seg, idx) => (
-                  <line
-                    key={`anim-${idx}`}
-                    x1={seg.from.x}
-                    y1={seg.from.y}
-                    x2={seg.to.x}
-                    y2={seg.to.y}
-                    stroke="#ffffff"
-                    strokeWidth="3.5"
-                    strokeLinecap="round"
-                    className="route-animated"
-                  />
-                ))}
+                .filter(seg => seg.status === 'active')
+                .map((seg, idx) => {
+                  const isCurrentFloorWalker = walker && walker.floor === currentFloor.floor;
+                  const splitX = isCurrentFloorWalker ? walker.x : seg.from.x;
+                  const splitY = isCurrentFloorWalker ? walker.y : seg.from.y;
+
+                  return (
+                    <g key={`active-seg-${idx}`}>
+                      {/* Traversed portion of current segment */}
+                      <line
+                        x1={seg.from.x}
+                        y1={seg.from.y}
+                        x2={splitX}
+                        y2={splitY}
+                        stroke="#4b5563"
+                        strokeWidth="6"
+                        strokeLinecap="round"
+                        className="opacity-60"
+                      />
+                      {/* Remaining portion ahead of walker */}
+                      <line
+                        x1={splitX}
+                        y1={splitY}
+                        x2={seg.to.x}
+                        y2={seg.to.y}
+                        stroke="rgba(0, 122, 252, 0.5)"
+                        strokeWidth="15"
+                        strokeLinecap="round"
+                        filter="url(#routeGlow)"
+                      />
+                      <line
+                        x1={splitX}
+                        y1={splitY}
+                        x2={seg.to.x}
+                        y2={seg.to.y}
+                        stroke="#007afc"
+                        strokeWidth="7"
+                        strokeLinecap="round"
+                      />
+                      <line
+                        x1={splitX}
+                        y1={splitY}
+                        x2={seg.to.x}
+                        y2={seg.to.y}
+                        stroke="#ffffff"
+                        strokeWidth="3.5"
+                        strokeLinecap="round"
+                        className="route-animated"
+                      />
+                    </g>
+                  );
+                })}
             </g>
           )}
 
@@ -380,7 +767,6 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
             floorNodes
               .filter(n => n.type === 'staircase' || n.type === 'elevator')
               .map(n => {
-                const isStair = n.type === 'staircase';
                 const isElev = n.type === 'elevator';
                 const isInRoute = activeRoute?.route_node_ids.includes(n.id);
                 const isBlocked = blockedNodeIds.has(n.id);
@@ -439,9 +825,9 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
             const isHovered = hoveredLocation?.id === loc.id;
             const isHighlighted = highlightedNodeId === loc.node_id;
             const campusStyle = isCampus ? getCampusMarkerConfig(loc.id) : null;
-
+            const labelOffset = isCampus ? getCampusLabelOffset(loc.id) : { x: 0, y: -22 };
             const displayName = isCampus
-              ? (loc.id === 'LOC_C_MAIN_BLOCK' ? 'Main Academic Block' : loc.id === 'LOC_C_MECH_CIVIL' ? 'Mech & Civil Block' : loc.id === 'LOC_C_GUEST_HOUSE' ? 'Heritage Guest House' : loc.name.split('(')[0].trim())
+              ? getCampusDisplayName(loc)
               : (loc.name.length > 20 ? loc.name.slice(0, 18) + '...' : loc.name);
 
             return (
@@ -472,7 +858,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
 
                 {/* Prominent Badge / Label */}
                 {(isDestination || isHovered || isHighlighted || isCampus || loc.id === 'R214') && (
-                  <g transform={`translate(0, ${isCampus ? -24 : -22})`} className="pointer-events-none">
+                  <g transform={`translate(${labelOffset.x}, ${labelOffset.y})`} className="pointer-events-none">
                     <rect
                       x={-((displayName.length * 6.5) / 2 + 10)}
                       y="-11"
@@ -515,24 +901,105 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
             </g>
           )}
 
-          {/* 7. LIVE NAVIGATION WALKER PUCK (When Navigating) */}
-          {isNavigating && activeNavNode && activeNavNode.floor === currentFloor.floor && (
-            <g transform={`translate(${activeNavNode.x}, ${activeNavNode.y})`} className="z-40">
-              {/* Radar pulsing ripple wave */}
+          {/* 7. SLOW & SMOOTH ANIMATED MOVING ARROW (During Live Navigation) */}
+          {isNavigating && walker && walker.floor === currentFloor.floor && (
+            <g transform={`translate(${walker.x}, ${walker.y})`} className="z-50 pointer-events-none">
+              {/* Pulsing radar waves */}
               <circle r="36" fill="rgba(0, 122, 252, 0.2)" className="animate-ping" />
-              <circle r="24" fill="rgba(0, 122, 252, 0.35)" className="beacon-wave" />
-              {/* Core navigation blue circle */}
-              <circle r="16" fill="#007afc" stroke="#ffffff" strokeWidth="3.5" filter="url(#routeGlow)" className="shadow-2xl" />
-              {/* Direction pointer center */}
-              <circle r="6" fill="#ffffff" />
+              <circle r="24" fill="rgba(0, 122, 252, 0.3)" className="beacon-wave" />
 
-              {/* Floating Live Badge */}
-              <g transform="translate(0, -28)" className="pointer-events-none">
-                <rect x="-56" y="-12" width="112" height="22" rx="11" fill="#007afc" stroke="#ffffff" strokeWidth="1.5" className="shadow-2xl" />
-                <text x="0" y="2.5" textAnchor="middle" fill="#ffffff" fontSize="9.5" fontWeight="bold" letterSpacing="0.5">
-                  LIVE POSITION
+              {/* Forward Heading Cone Beam pointing in the travel direction */}
+              <g transform={`rotate(${walker.angle})`}>
+                <path
+                  d="M 0 0 L -35 -85 A 90 90 0 0 1 35 -85 Z"
+                  fill="url(#walkerHeadingBeam)"
+                />
+              </g>
+
+              {/* Navigation Puck Base */}
+              <circle
+                r="16"
+                fill="#0d1117"
+                stroke="#ffffff"
+                strokeWidth="2.5"
+                filter="url(#routeGlow)"
+                className="shadow-2xl"
+              />
+
+              {/* Directional Navigation Chevron Arrow pointing towards destination */}
+              <g transform={`rotate(${walker.angle})`}>
+                {/* Outer prominent signal-blue chevron */}
+                <polygon
+                  points="0,-16 11,11 0,6 -11,11"
+                  fill="#007afc"
+                  stroke="#ffffff"
+                  strokeWidth="2"
+                />
+                {/* Inner bright highlight chevron */}
+                <polygon
+                  points="0,-12 7,8 0,4 -7,8"
+                  fill="#60a5fa"
+                />
+                {/* Center pinpoint */}
+                <circle cx="0" cy="5" r="2" fill="#ffffff" />
+              </g>
+
+              {/* Floating Live Simulation Badge */}
+              <g transform="translate(0, -32)">
+                <rect
+                  x="-46"
+                  y="-12"
+                  width="92"
+                  height="22"
+                  rx="11"
+                  fill={walker.isTransitioning ? '#f59e0b' : '#007afc'}
+                  stroke="#ffffff"
+                  strokeWidth="1.5"
+                  className="shadow-2xl"
+                />
+                <text
+                  x="0"
+                  y="2.5"
+                  textAnchor="middle"
+                  fill="#ffffff"
+                  fontSize="9.5"
+                  fontWeight="bold"
+                  letterSpacing="0.5"
+                >
+                  {walker.isTransitioning
+                    ? 'TRANSITION'
+                    : isSimulating
+                    ? `WALKING · ${simSpeed}x`
+                    : 'PAUSED'}
                 </text>
               </g>
+
+              {/* Floor Transition Banner if taking Elevator or Stairs */}
+              {walker.isTransitioning && (
+                <g transform="translate(0, -60)">
+                  <rect
+                    x="-105"
+                    y="-14"
+                    width="210"
+                    height="26"
+                    rx="8"
+                    fill="#15171b"
+                    stroke="#f59e0b"
+                    strokeWidth="1.5"
+                    className="shadow-2xl"
+                  />
+                  <text
+                    x="0"
+                    y="3"
+                    textAnchor="middle"
+                    fill="#fbbf24"
+                    fontSize="9.5"
+                    fontWeight="bold"
+                  >
+                    {walker.transitionMessage}
+                  </text>
+                </g>
+              )}
             </g>
           )}
 
@@ -551,7 +1018,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
         <button
           onClick={handleRecenter}
           className="w-10 h-10 rounded-pill bg-charcoal/90 hover:bg-graphite border border-gunmetal text-fog hover:text-white flex items-center justify-center shadow-xl transition"
-          title="Recenter on active route / location"
+          title="Recenter on moving arrow / active position"
         >
           <Navigation className="w-4 h-4 text-signal" />
         </button>
@@ -605,6 +1072,25 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
               Dest on {destinationLocation.floor === -1 ? 'Campus Map' : destinationLocation.floor === 0 ? 'Ground Floor' : `Floor ${destinationLocation.floor}`}
             </span>
           )}
+        </div>
+      )}
+
+      {/* Notice if walker is currently moving on a different floor */}
+      {isNavigating && walker && walker.floor !== currentFloor.floor && (
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-charcoal/95 backdrop-blur-md px-4 py-2 rounded-pill border border-amber-500/50 shadow-2xl flex items-center space-x-3 text-xs z-30">
+          <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          <span className="text-fog">
+            Arrow is currently walking on{' '}
+            <strong className="text-white">
+              {walker.floor === -1 ? 'Campus Grounds' : walker.floor === 0 ? 'Ground Floor' : `Floor ${walker.floor}`}
+            </strong>
+          </span>
+          <button
+            onClick={() => onFloorChange && onFloorChange(walker.floor)}
+            className="px-2.5 py-1 rounded-pill bg-signal text-white font-semibold text-[11px] hover:bg-signal-hover transition"
+          >
+            Switch to Floor
+          </button>
         </div>
       )}
     </div>

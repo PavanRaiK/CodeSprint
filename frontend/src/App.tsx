@@ -271,34 +271,24 @@ export const App: React.FC = () => {
     setIsSimulating(prev => !prev);
   };
 
-  // Simulation timer: auto-advances through steps at realistic walking intervals
-  useEffect(() => {
-    if (!isNavigating || !isSimulating || !activeRoute) return;
+  // Synchronize simulation step change from InteractiveMap 60 FPS animation
+  const handleSimulationStepChange = useCallback((stepIdx: number) => {
+    setCurrentStepIndex(stepIdx);
+    if (activeRoute?.instructions[stepIdx]) {
+      const step = activeRoute.instructions[stepIdx];
+      if (step.floor !== selectedFloor) {
+        setSelectedFloor(step.floor);
+      }
+      speakInstruction(step.text);
+    }
+  }, [activeRoute, selectedFloor, speakInstruction]);
 
-    const intervalTime = Math.max(1200, 3200 / simSpeed);
-    const timer = setInterval(() => {
-      setCurrentStepIndex(curr => {
-        if (curr < activeRoute.instructions.length - 1) {
-          const next = curr + 1;
-          const nextStep = activeRoute.instructions[next];
-          if (nextStep) {
-            if (nextStep.floor !== selectedFloor) {
-              setSelectedFloor(nextStep.floor);
-            }
-            speakInstruction(nextStep.text);
-          }
-          return next;
-        } else {
-          setIsSimulating(false);
-          speakInstruction(`You have arrived at ${destinationLocation?.name}`);
-          addToast('success', 'Destination Reached!', `You have reached ${destinationLocation?.name}.`);
-          return curr;
-        }
-      });
-    }, intervalTime);
-
-    return () => clearInterval(timer);
-  }, [isNavigating, isSimulating, simSpeed, activeRoute, selectedFloor, isMuted, destinationLocation]);
+  // Simulation completed arrival handler
+  const handleSimulationComplete = useCallback(() => {
+    setIsSimulating(false);
+    speakInstruction(`You have arrived at ${destinationLocation?.name}`);
+    addToast('success', 'Destination Reached!', `You have reached ${destinationLocation?.name}.`);
+  }, [destinationLocation?.name, speakInstruction]);
 
   // Scripted Demo Scenarios for Judges
   const handleRunDemoScenario = (scenarioId: string) => {
@@ -523,11 +513,16 @@ export const App: React.FC = () => {
             highlightedNodeId={highlightedNodeId}
             isNavigating={isNavigating}
             activeStepIndex={currentStepIndex}
+            isSimulating={isSimulating}
+            simSpeed={simSpeed}
             onSelectLocation={handleSelectDestination}
             onSelectNodeAsStart={node => {
               setStartNode(node);
               addToast('info', 'Origin Set', `Starting from ${node.name}`);
             }}
+            onFloorChange={setSelectedFloor}
+            onStepIndexChange={handleSimulationStepChange}
+            onSimulationComplete={handleSimulationComplete}
           />
 
           {/* Floating Vertical Floor Selector on Map Left Edge */}

@@ -196,13 +196,14 @@ export const LiveNavigationHUD: React.FC<LiveNavigationHUDProps> = ({
             {/* Speed Selector */}
             {isSimulating && (
               <div className="flex items-center rounded-pill bg-graphite border border-gunmetal p-0.5 text-[11px]">
-                {[1, 2, 4].map(s => (
+                {[0.5, 1, 2].map(s => (
                   <button
                     key={s}
                     onClick={() => onChangeSpeed(s)}
                     className={`px-2 py-0.5 rounded-pill transition font-semibold ${
                       simSpeed === s ? 'bg-signal text-white' : 'text-fog hover:text-white'
                     }`}
+                    title={s === 0.5 ? 'Slow Walk (0.5x)' : s === 1 ? 'Normal Walk (1x)' : 'Brisk Walk (2x)'}
                   >
                     {s}x
                   </button>
