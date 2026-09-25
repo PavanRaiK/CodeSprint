@@ -7,6 +7,8 @@ export interface Floor {
   short_name: string;
   bg_image: string;
   elevation: number;
+  width?: number;
+  height?: number;
 }
 
 export interface CampusLocation {

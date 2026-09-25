@@ -97,5 +97,41 @@
     "node_id": "N_5_N_INCUBATION",
     "physical_location": "Startup Incubation Reception Desk",
     "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_5_INCUB"
+  },
+  {
+    "id": "QR-C-PARK",
+    "code": "SAHYADRI_QR_C_PARK",
+    "name": "Campus Grounds \u00b7 Parking Area",
+    "floor": -1,
+    "node_id": "CN_PARKING",
+    "physical_location": "Parking Security Booth Pillar",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_PARK"
+  },
+  {
+    "id": "QR-C-FOOD",
+    "code": "SAHYADRI_QR_C_FOOD",
+    "name": "Campus Grounds \u00b7 Food Court Entrance",
+    "floor": -1,
+    "node_id": "CN_FOOD_COURT",
+    "physical_location": "Food Court Portico Entrance",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_FOOD"
+  },
+  {
+    "id": "QR-C-CRICKET",
+    "code": "SAHYADRI_QR_C_CRICKET",
+    "name": "Campus Grounds \u00b7 Cricket Pavilion",
+    "floor": -1,
+    "node_id": "CN_CRICKET_GROUND",
+    "physical_location": "Cricket Ground Pavilion Gate",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_CRICKET"
+  },
+  {
+    "id": "QR-C-HOSTEL",
+    "code": "SAHYADRI_QR_C_HOSTEL",
+    "name": "Campus Grounds \u00b7 Boys Hostel Gate",
+    "floor": -1,
+    "node_id": "CN_BOYS_HOSTEL",
+    "physical_location": "Boys Hostel Main Entry Arch",
+    "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_HOSTEL"
   }
 ]

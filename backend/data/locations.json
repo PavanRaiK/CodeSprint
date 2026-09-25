@@ -1,5 +1,278 @@
 [
   {
+    "id": "LOC_C_MAIN_BLOCK",
+    "name": "Sahyadri College Of Engineering & Management",
+    "type": "building",
+    "floor": -1,
+    "node_id": "CN_MAIN_BLOCK_PORTICO",
+    "x": 451,
+    "y": 603,
+    "department": "Main Campus",
+    "aliases": [
+      "main block",
+      "main building",
+      "sahyadri college of engineering",
+      "engineering college",
+      "academic block",
+      "admin block"
+    ],
+    "accessible": true,
+    "description": "Main 5-story academic complex with Central Courtyard, Principal Chamber, Dean Offices, Classrooms, and Laboratories."
+  },
+  {
+    "id": "LOC_C_MECH_CIVIL",
+    "name": "Sahyadri College Mechanical and Civil Block",
+    "type": "building",
+    "floor": -1,
+    "node_id": "CN_MECH_CIVIL_PORTICO",
+    "x": 649,
+    "y": 533,
+    "department": "Mechanical & Civil",
+    "aliases": [
+      "mechanical and civil block",
+      "mech block",
+      "civil block",
+      "mechanical building",
+      "civil building",
+      "mech civil"
+    ],
+    "accessible": true,
+    "description": "Dedicated academic and workshop block for Mechanical and Civil Engineering."
+  },
+  {
+    "id": "LOC_C_FOOD_COURT",
+    "name": "Sahyadri Food Court (Cafeteria & Canteen)",
+    "type": "amenity",
+    "floor": -1,
+    "node_id": "CN_FOOD_COURT",
+    "x": 656,
+    "y": 718,
+    "department": "Campus Amenities",
+    "aliases": [
+      "food court",
+      "sahyadri food court",
+      "canteen",
+      "cafeteria",
+      "mess",
+      "dining",
+      "snacks",
+      "cafe",
+      "food"
+    ],
+    "accessible": true,
+    "description": "Central multi-cuisine food court and student cafeteria."
+  },
+  {
+    "id": "LOC_C_TEL_OFFICE",
+    "name": "Hostel & Telephone Administration Office",
+    "type": "office",
+    "floor": -1,
+    "node_id": "CN_TEL_OFFICE",
+    "x": 836,
+    "y": 733,
+    "department": "Administration",
+    "aliases": [
+      "tel office",
+      "telephone office",
+      "hostel office",
+      "estate office",
+      "telecom office"
+    ],
+    "accessible": true,
+    "description": "Campus telecommunication, hostel admissions, and facilities office."
+  },
+  {
+    "id": "LOC_C_GUEST_HOUSE",
+    "name": "Heritage Guest House Sahyadri College",
+    "type": "facility",
+    "floor": -1,
+    "node_id": "CN_GUEST_HOUSE",
+    "x": 991,
+    "y": 529,
+    "department": "Hospitality",
+    "aliases": [
+      "heritage guest house",
+      "guest house",
+      "vip guest house",
+      "visitors guesthouse",
+      "heritage house"
+    ],
+    "accessible": true,
+    "description": "Guest suites for visiting professors, dignitaries, and academic delegates."
+  },
+  {
+    "id": "LOC_C_BOYS_HOSTEL",
+    "name": "Sahyadri Boys Hostel",
+    "type": "hostel",
+    "floor": -1,
+    "node_id": "CN_BOYS_HOSTEL",
+    "x": 1319,
+    "y": 588,
+    "department": "Student Housing",
+    "aliases": [
+      "boys hostel",
+      "sahyadri boys hostel",
+      "hostel",
+      "mens hostel",
+      "residence hall"
+    ],
+    "accessible": true,
+    "description": "On-campus boys residence and student living quarters."
+  },
+  {
+    "id": "LOC_C_CRICKET_GROUND",
+    "name": "Sahyadri Cricket Ground",
+    "type": "sports",
+    "floor": -1,
+    "node_id": "CN_CRICKET_GROUND",
+    "x": 823,
+    "y": 380,
+    "department": "Physical Education & Sports",
+    "aliases": [
+      "sahyadri cricket ground",
+      "cricket ground",
+      "main ground",
+      "sports ground",
+      "playground",
+      "stadium"
+    ],
+    "accessible": true,
+    "description": "Collegiate turf cricket ground and track field."
+  },
+  {
+    "id": "LOC_C_CRICKET_PITCH",
+    "name": "Cricket Pitch & North Pavillion",
+    "type": "sports",
+    "floor": -1,
+    "node_id": "CN_CRICKET_PITCH",
+    "x": 846,
+    "y": 205,
+    "department": "Physical Education & Sports",
+    "aliases": [
+      "cricket pitch",
+      "pitch",
+      "pavilion",
+      "north ground"
+    ],
+    "accessible": true,
+    "description": "Cricket pitch practice wicket and north pavilion."
+  },
+  {
+    "id": "LOC_C_SOUHARDHA_GROUND",
+    "name": "Souhardha Cricket Ground (Sahyadri)",
+    "type": "sports",
+    "floor": -1,
+    "node_id": "CN_SOUHARDHA_GROUND",
+    "x": 1316,
+    "y": 96,
+    "department": "Physical Education & Sports",
+    "aliases": [
+      "souhardha cricket ground",
+      "souhardha ground",
+      "second cricket ground",
+      "northeast ground"
+    ],
+    "accessible": true,
+    "description": "Souhardha athletic field and practice cricket oval on the northeast campus perimeter."
+  },
+  {
+    "id": "LOC_C_PARKING",
+    "name": "Sahyadri College Parking",
+    "type": "parking",
+    "floor": -1,
+    "node_id": "CN_PARKING",
+    "x": 46,
+    "y": 1464,
+    "department": "Campus Security",
+    "aliases": [
+      "parking",
+      "college parking",
+      "sahyadri parking",
+      "car parking",
+      "bike parking",
+      "two wheeler parking"
+    ],
+    "accessible": true,
+    "description": "Multi-vehicle campus parking lot for two-wheelers, cars, and buses."
+  },
+  {
+    "id": "LOC_C_PETROL_BUNK",
+    "name": "Hindustan Petroleum (HP Petrol Pump)",
+    "type": "amenity",
+    "floor": -1,
+    "node_id": "CN_PETROL",
+    "x": 245,
+    "y": 1558,
+    "department": "Transit",
+    "aliases": [
+      "hindustan petroleum",
+      "petrol pump",
+      "fuel station",
+      "hp petrol bunk",
+      "gas station"
+    ],
+    "accessible": true,
+    "description": "Hindustan Petroleum fueling station located right at the national highway campus entry point."
+  },
+  {
+    "id": "LOC_C_SECURITY_GATE",
+    "name": "Campus Security Main Gate & Post Office",
+    "type": "entrance",
+    "floor": -1,
+    "node_id": "CN_SOUTH_GATE",
+    "x": 642,
+    "y": 1405,
+    "department": "Security & Logistics",
+    "aliases": [
+      "post office",
+      "security gate",
+      "main gate",
+      "security check",
+      "po",
+      "campus entrance gate"
+    ],
+    "accessible": true,
+    "description": "Primary security gateway, guard outpost, and on-campus postal clearance window."
+  },
+  {
+    "id": "LOC_C_EVENT_LAWN",
+    "name": "Sahyadri Open Lawn & Event Pavilion",
+    "type": "outdoor",
+    "floor": -1,
+    "node_id": "CN_EVENT_LAWN",
+    "x": 350,
+    "y": 1150,
+    "department": "Student Life",
+    "aliases": [
+      "open lawn",
+      "event pavilion",
+      "pavilion",
+      "big tent",
+      "fest lawn",
+      "canopy"
+    ],
+    "accessible": true,
+    "description": "Central event lawn featuring the large canopy structure for convocations and cultural fests."
+  },
+  {
+    "id": "LOC_C_YS_ADMIN",
+    "name": "Y.S / Admin Extension",
+    "type": "office",
+    "floor": -1,
+    "node_id": "CN_YS_OFFICE",
+    "x": 729,
+    "y": 1073,
+    "department": "Administration",
+    "aliases": [
+      "ys",
+      "y.s",
+      "admin extension",
+      "south administrative annex"
+    ],
+    "accessible": true,
+    "description": "Administrative annex and campus security support facility."
+  },
+  {
     "id": "LOC_G_MAIN_ENT",
     "name": "Main Campus Entrance",
     "type": "entrance",

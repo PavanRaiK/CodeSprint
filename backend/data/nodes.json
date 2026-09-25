@@ -288,6 +288,195 @@
     "accessible": false
   },
   {
+    "id": "CN_PARKING",
+    "name": "Sahyadri College Parking",
+    "type": "entrance",
+    "floor": -1,
+    "x": 46,
+    "y": 1464,
+    "accessible": true
+  },
+  {
+    "id": "CN_PETROL",
+    "name": "Hindustan Petroleum (HP Petrol Bunk)",
+    "type": "landmark",
+    "floor": -1,
+    "x": 245,
+    "y": 1558,
+    "accessible": true
+  },
+  {
+    "id": "CN_SOUTH_ENTRY_ROAD",
+    "name": "Campus Main Entry Road",
+    "type": "corridor",
+    "floor": -1,
+    "x": 400,
+    "y": 1440,
+    "accessible": true
+  },
+  {
+    "id": "CN_SOUTH_GATE",
+    "name": "Campus Security Main Gate & Post Office",
+    "type": "entrance",
+    "floor": -1,
+    "x": 642,
+    "y": 1405,
+    "accessible": true
+  },
+  {
+    "id": "CN_DRIVEWAY_SOUTH",
+    "name": "South Main Driveway near Event Lawn",
+    "type": "corridor",
+    "floor": -1,
+    "x": 540,
+    "y": 1150,
+    "accessible": true
+  },
+  {
+    "id": "CN_EVENT_LAWN",
+    "name": "Sahyadri Open Lawn & Event Pavilion",
+    "type": "landmark",
+    "floor": -1,
+    "x": 350,
+    "y": 1150,
+    "accessible": true
+  },
+  {
+    "id": "CN_YS_OFFICE",
+    "name": "Y.S Administrative Annex",
+    "type": "landmark",
+    "floor": -1,
+    "x": 729,
+    "y": 1073,
+    "accessible": true
+  },
+  {
+    "id": "CN_CENTRAL_ROAD",
+    "name": "Central Campus Walkway & Crossroads",
+    "type": "intersection",
+    "floor": -1,
+    "x": 540,
+    "y": 750,
+    "accessible": true
+  },
+  {
+    "id": "CN_MAIN_BLOCK_PORTICO",
+    "name": "Sahyadri College Of Engineering (Main Portico)",
+    "type": "entrance",
+    "floor": -1,
+    "x": 451,
+    "y": 603,
+    "accessible": true
+  },
+  {
+    "id": "CN_MECH_CIVIL_PORTICO",
+    "name": "Mechanical and Civil Block Portico",
+    "type": "entrance",
+    "floor": -1,
+    "x": 649,
+    "y": 533,
+    "accessible": true
+  },
+  {
+    "id": "CN_FOOD_COURT",
+    "name": "Sahyadri Food Court (Cafeteria)",
+    "type": "landmark",
+    "floor": -1,
+    "x": 656,
+    "y": 718,
+    "accessible": true
+  },
+  {
+    "id": "CN_TEL_OFFICE",
+    "name": "Hostel & Telecom Office",
+    "type": "landmark",
+    "floor": -1,
+    "x": 836,
+    "y": 733,
+    "accessible": true
+  },
+  {
+    "id": "CN_GUEST_HOUSE_RD",
+    "name": "East Campus Access Road",
+    "type": "corridor",
+    "floor": -1,
+    "x": 850,
+    "y": 540,
+    "accessible": true
+  },
+  {
+    "id": "CN_GUEST_HOUSE",
+    "name": "Heritage Guest House Sahyadri",
+    "type": "landmark",
+    "floor": -1,
+    "x": 991,
+    "y": 529,
+    "accessible": true
+  },
+  {
+    "id": "CN_HOSTEL_RD",
+    "name": "Boys Hostel Approach Road",
+    "type": "corridor",
+    "floor": -1,
+    "x": 1150,
+    "y": 560,
+    "accessible": true
+  },
+  {
+    "id": "CN_BOYS_HOSTEL",
+    "name": "Sahyadri Boys Hostel",
+    "type": "landmark",
+    "floor": -1,
+    "x": 1319,
+    "y": 588,
+    "accessible": true
+  },
+  {
+    "id": "CN_NORTH_RD",
+    "name": "North Road toward Sports Field",
+    "type": "corridor",
+    "floor": -1,
+    "x": 580,
+    "y": 400,
+    "accessible": true
+  },
+  {
+    "id": "CN_CRICKET_GROUND",
+    "name": "Sahyadri Cricket Ground",
+    "type": "landmark",
+    "floor": -1,
+    "x": 823,
+    "y": 380,
+    "accessible": true
+  },
+  {
+    "id": "CN_CRICKET_PITCH",
+    "name": "Cricket Ground Pavilion & Pitch",
+    "type": "landmark",
+    "floor": -1,
+    "x": 846,
+    "y": 205,
+    "accessible": true
+  },
+  {
+    "id": "CN_SOUHARDHA_RD",
+    "name": "Northeast Grounds Access Road",
+    "type": "corridor",
+    "floor": -1,
+    "x": 1100,
+    "y": 250,
+    "accessible": true
+  },
+  {
+    "id": "CN_SOUHARDHA_GROUND",
+    "name": "Souhardha Cricket Ground (Sahyadri)",
+    "type": "landmark",
+    "floor": -1,
+    "x": 1316,
+    "y": 96,
+    "accessible": true
+  },
+  {
     "id": "N_G_S_W",
     "name": "South-West Corridor Junction",
     "type": "intersection",

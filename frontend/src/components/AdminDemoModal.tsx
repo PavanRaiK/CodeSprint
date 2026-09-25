@@ -100,15 +100,15 @@ export const AdminDemoModal: React.FC<AdminDemoModalProps> = ({
             >
               <div>
                 <div className="text-xs font-semibold text-white flex items-center gap-1.5">
-                  <RefreshCw className="w-3 h-3 text-signal" />
-                  <span>3. Simulate QR Checkpoint Scan</span>
+                  <Play className="w-3 h-3 text-signal" />
+                  <span>3. Multi-Tier: Campus Parking to Room 214</span>
                 </div>
                 <div className="text-[11px] text-fog mt-0.5">
-                  Snaps position to 2nd Floor Staircase B Checkpoint and continues nav
+                  Routes from outdoor campus parking through grounds into 2nd floor room
                 </div>
               </div>
               <span className="text-[10px] px-2.5 py-1 rounded-pill bg-signal/20 text-signal font-semibold shrink-0">
-                Scan QR
+                Run
               </span>
             </div>
 

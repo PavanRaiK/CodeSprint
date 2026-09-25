@@ -12,8 +12,15 @@ def test_api():
     print("\nTesting /api/floors ...")
     r = client.get("/api/floors")
     assert r.status_code == 200
-    assert len(r.json()) == 6
+    assert len(r.json()) == 7
     print(f"Floors count: {len(r.json())}")
+
+    print("\nTesting /api/locations/search?q=food court ...")
+    r = client.get("/api/locations/search?q=food court")
+    assert r.status_code == 200
+    results = r.json()
+    assert len(results) > 0
+    print(f"Search 'food court' top match: {results[0]['name']} on floor {results[0]['floor']}")
 
     print("\nTesting /api/locations/search?q=214 ...")
     r = client.get("/api/locations/search?q=214")

@@ -215,10 +215,30 @@ export class OfflineRouter {
       currDist += edge.distance;
 
       if (u.floor !== v.floor) {
-        if (edge.elevator) {
+        if ((u.floor === -1 && v.floor === 0) || (u.floor === 0 && v.floor === -1)) {
+          if (v.floor === 0) {
+            steps.push({
+              step: stepIdx++,
+              text: 'Enter Sahyadri Main Academic Block through Ground South Entrance',
+              type: 'turn',
+              floor: 0,
+              node_id: v.id
+            });
+          } else {
+            steps.push({
+              step: stepIdx++,
+              text: 'Exit Main Academic Block onto Campus Grounds via South Entrance',
+              type: 'turn',
+              floor: -1,
+              node_id: v.id
+            });
+          }
+        } else if (edge.elevator) {
+          const uFl = u.floor === 0 ? 'Ground Floor' : `Floor ${u.floor}`;
+          const vFl = v.floor === 0 ? 'Ground Floor' : `Floor ${v.floor}`;
           steps.push({
             step: stepIdx++,
-            text: `Take West Elevator from Floor ${u.floor} to Floor ${v.floor}`,
+            text: `Take West Elevator from ${uFl} to ${vFl}`,
             type: 'elevator',
             floor: v.floor,
             node_id: v.id
@@ -231,9 +251,11 @@ export class OfflineRouter {
           else if (u.id.includes('STAIR_D')) stairName = 'Staircase D (South Wing)';
           else if (u.id.includes('STAIR_LIB')) stairName = 'Library Spiral Staircase';
 
+          const direction = v.floor > u.floor ? 'up' : 'down';
+          const targetFloor = v.floor === 0 ? 'Ground Floor' : `Floor ${v.floor}`;
           steps.push({
             step: stepIdx++,
-            text: `Take ${stairName} up to Floor ${v.floor}`,
+            text: `Take ${stairName} ${direction} to ${targetFloor}`,
             type: 'stairs',
             floor: v.floor,
             node_id: v.id

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, MapPin, Building, ArrowRight, Check } from 'lucide-react';
+import { Search, X, MapPin, Building, ArrowRight, Compass } from 'lucide-react';
 import { CampusLocation } from '../types';
 import { CampusAPI } from '../services/api';
 
@@ -20,13 +20,15 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
 
-  // Quick recommendation chips for demo
+  // Quick recommendation chips for both Campus and Indoors
   const quickChips = [
+    { label: 'Food Court', query: 'food court' },
+    { label: 'Cricket Ground', query: 'cricket' },
+    { label: 'Boys Hostel', query: 'hostel' },
+    { label: 'Parking', query: 'parking' },
     { label: 'Room 214', query: '214' },
     { label: "Principal's Chamber", query: 'principal' },
-    { label: 'Central Library', query: 'library' },
-    { label: 'Computer Lab 5', query: 'lab 5' },
-    { label: 'Incubation Centre', query: 'incubation' }
+    { label: 'Central Library', query: 'library' }
   ];
 
   useEffect(() => {
@@ -76,6 +78,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({
 
   const floorNames = ['Ground Floor', '1st Floor', '2nd Floor', '3rd Floor', '4th Floor', '5th Floor'];
 
+  const getFloorBadge = (fl: number) => {
+    if (fl === -1) return 'Campus Map';
+    if (fl === 0) return 'Ground Floor';
+    return floorNames[fl] || `${fl}th Floor`;
+  };
+
   return (
     <div ref={searchRef} className="relative w-full">
       {/* Search Input Bar */}
@@ -91,7 +99,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
             setIsOpen(true);
           }}
           onFocus={() => setIsOpen(true)}
-          placeholder="Where do you want to go?"
+          placeholder="Search campus, rooms, food court, hostel..."
           className="w-full h-11 pl-10 pr-9 rounded-pill bg-charcoal hover:bg-graphite focus:bg-charcoal border border-gunmetal focus:border-signal text-white placeholder-fog text-sm transition outline-none shadow-md"
         />
         {query && (
@@ -129,17 +137,29 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       {selectedDestination && (
         <div className="mt-2.5 p-3 rounded-card bg-graphite border border-signal/30 flex items-center justify-between">
           <div className="flex items-center space-x-2.5">
-            <div className="w-7 h-7 rounded-full bg-signal/20 text-signal flex items-center justify-center shrink-0">
-              <MapPin className="w-4 h-4" />
+            <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 ${
+              selectedDestination.floor === -1
+                ? 'bg-mapgreen/20 text-mapgreen'
+                : 'bg-signal/20 text-signal'
+            }`}>
+              {selectedDestination.floor === -1 ? (
+                <Compass className="w-4 h-4" />
+              ) : (
+                <MapPin className="w-4 h-4" />
+              )}
             </div>
             <div>
               <div className="text-xs font-semibold text-white flex items-center gap-1.5">
                 <span>{selectedDestination.name}</span>
-                <span className="text-[10px] font-normal px-1.5 py-0.2 rounded bg-signal/20 text-signal border border-signal/30">
-                  {floorNames[selectedDestination.floor]}
+                <span className={`text-[10px] font-semibold px-1.5 py-0.2 rounded border ${
+                  selectedDestination.floor === -1
+                    ? 'bg-mapgreen/20 text-mapgreen border-mapgreen/30'
+                    : 'bg-signal/20 text-signal border-signal/30'
+                }`}>
+                  {getFloorBadge(selectedDestination.floor)}
                 </span>
               </div>
-              <p className="text-[11px] text-fog leading-tight">
+              <p className="text-[11px] text-fog leading-tight mt-0.5">
                 {selectedDestination.description || selectedDestination.department}
               </p>
             </div>
@@ -164,7 +184,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
 
           {!isLoading && results.length === 0 && query.trim() && (
             <div className="py-4 text-center text-xs text-fog">
-              Location not found in verified Sahyadri blueprint.
+              Location not found in verified Sahyadri campus map.
             </div>
           )}
 
@@ -175,8 +195,16 @@ export const SearchBar: React.FC<SearchBarProps> = ({
               className="flex items-center justify-between p-2.5 rounded-chip hover:bg-graphite cursor-pointer transition group"
             >
               <div className="flex items-center space-x-2.5 min-w-0">
-                <div className="w-7 h-7 rounded-sharp bg-gunmetal group-hover:bg-signal/20 text-fog group-hover:text-signal flex items-center justify-center shrink-0 transition">
-                  <Building className="w-3.5 h-3.5" />
+                <div className={`w-7 h-7 rounded-sharp flex items-center justify-center shrink-0 transition ${
+                  loc.floor === -1
+                    ? 'bg-emerald-950/60 text-emerald-400 group-hover:bg-emerald-900'
+                    : 'bg-gunmetal group-hover:bg-signal/20 text-fog group-hover:text-signal'
+                }`}>
+                  {loc.floor === -1 ? (
+                    <Compass className="w-3.5 h-3.5" />
+                  ) : (
+                    <Building className="w-3.5 h-3.5" />
+                  )}
                 </div>
                 <div className="truncate">
                   <div className="text-xs font-medium text-white group-hover:text-signal transition truncate">
@@ -188,8 +216,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({
                 </div>
               </div>
               <div className="flex items-center space-x-2 shrink-0 ml-2">
-                <span className="text-[10px] uppercase font-semibold px-2 py-0.5 rounded bg-gunmetal text-fog border border-steel/30">
-                  {floorNames[loc.floor]}
+                <span className={`text-[10px] uppercase font-semibold px-2 py-0.5 rounded border ${
+                  loc.floor === -1
+                    ? 'bg-emerald-950/80 text-emerald-400 border-emerald-700/50'
+                    : 'bg-gunmetal text-fog border-steel/30'
+                }`}>
+                  {getFloorBadge(loc.floor)}
                 </span>
                 <ArrowRight className="w-3 h-3 text-steel group-hover:text-signal transition" />
               </div>

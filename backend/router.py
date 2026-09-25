@@ -184,12 +184,31 @@ class Router:
             v = nodes[i+1]
             curr_seg_dist += edge['distance']
 
-            # Check if this is a floor change via stairs or elevator
+            # Check if this is a floor change via stairs, elevator, or campus entrance
             if u['floor'] != v['floor']:
-                if edge.get('elevator', False):
+                if (u['floor'] == -1 and v['floor'] == 0) or (u['floor'] == 0 and v['floor'] == -1):
+                    if v['floor'] == 0:
+                        steps.append({
+                            "step": step_idx,
+                            "text": "Enter Sahyadri Main Academic Block through Ground South Entrance",
+                            "type": "turn",
+                            "floor": 0,
+                            "node_id": v['id']
+                        })
+                    else:
+                        steps.append({
+                            "step": step_idx,
+                            "text": "Exit Main Academic Block onto Campus Grounds via South Entrance",
+                            "type": "turn",
+                            "floor": -1,
+                            "node_id": v['id']
+                        })
+                elif edge.get('elevator', False):
+                    u_fl = "Ground Floor" if u['floor'] == 0 else f"Floor {u['floor']}"
+                    v_fl = "Ground Floor" if v['floor'] == 0 else f"Floor {v['floor']}"
                     steps.append({
                         "step": step_idx,
-                        "text": f"Take West Elevator from Floor {u['floor']} to Floor {v['floor']}",
+                        "text": f"Take West Elevator from {u_fl} to {v_fl}",
                         "type": "elevator",
                         "floor": v['floor'],
                         "node_id": v['id']
@@ -202,9 +221,11 @@ class Router:
                     elif "STAIR_D" in u['id']: stair_name = "Staircase D (South Wing)"
                     elif "STAIR_LIB" in u['id']: stair_name = "Library Internal Spiral Staircase"
 
+                    direction = "up" if v['floor'] > u['floor'] else "down"
+                    target_floor = "Ground Floor" if v['floor'] == 0 else f"Floor {v['floor']}"
                     steps.append({
                         "step": step_idx,
-                        "text": f"Take {stair_name} up to Floor {v['floor']}",
+                        "text": f"Take {stair_name} {direction} to {target_floor}",
                         "type": "stairs",
                         "floor": v['floor'],
                         "node_id": v['id']

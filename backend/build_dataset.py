@@ -5,12 +5,13 @@ import math
 def create_dataset():
     # 1. Floors
     floors = [
-        {"floor": 0, "id": "G", "name": "Ground Floor", "short_name": "Ground", "bg_image": "/blueprints/ground.png", "elevation": 0},
-        {"floor": 1, "id": "1", "name": "First Floor", "short_name": "1st", "bg_image": "/blueprints/first.png", "elevation": 4},
-        {"floor": 2, "id": "2", "name": "Second Floor", "short_name": "2nd", "bg_image": "/blueprints/second.png", "elevation": 8},
-        {"floor": 3, "id": "3", "name": "Third Floor", "short_name": "3rd", "bg_image": "/blueprints/third.png", "elevation": 12},
-        {"floor": 4, "id": "4", "name": "Fourth Floor", "short_name": "4th", "bg_image": "/blueprints/fourth.png", "elevation": 16},
-        {"floor": 5, "id": "5", "name": "Fifth Floor", "short_name": "5th", "bg_image": "/blueprints/fifth.png", "elevation": 20}
+        {"floor": -1, "id": "Campus", "name": "Campus Overview Map", "short_name": "Campus", "bg_image": "/blueprints/campus.png", "elevation": -5, "width": 1380, "height": 1600},
+        {"floor": 0, "id": "G", "name": "Ground Floor", "short_name": "Ground", "bg_image": "/blueprints/ground.png", "elevation": 0, "width": 1000, "height": 1200},
+        {"floor": 1, "id": "1", "name": "First Floor", "short_name": "1st", "bg_image": "/blueprints/first.png", "elevation": 4, "width": 1000, "height": 1200},
+        {"floor": 2, "id": "2", "name": "Second Floor", "short_name": "2nd", "bg_image": "/blueprints/second.png", "elevation": 8, "width": 1000, "height": 1200},
+        {"floor": 3, "id": "3", "name": "Third Floor", "short_name": "3rd", "bg_image": "/blueprints/third.png", "elevation": 12, "width": 1000, "height": 1200},
+        {"floor": 4, "id": "4", "name": "Fourth Floor", "short_name": "4th", "bg_image": "/blueprints/fourth.png", "elevation": 16, "width": 1000, "height": 1200},
+        {"floor": 5, "id": "5", "name": "Fifth Floor", "short_name": "5th", "bg_image": "/blueprints/fifth.png", "elevation": 20, "width": 1000, "height": 1200}
     ]
 
     nodes = []
@@ -27,11 +28,14 @@ def create_dataset():
             if n1 and n2 and n1["floor"] == n2["floor"]:
                 dx = n1["x"] - n2["x"]
                 dy = n1["y"] - n2["y"]
-                distance = round(math.sqrt(dx*dx + dy*dy) * 0.25, 1) # scale factor 0.25m per coordinate unit
+                scale = 0.35 if n1["floor"] == -1 else 0.25 # scale factor for campus outdoor map vs indoor blueprints
+                distance = round(math.sqrt(dx*dx + dy*dy) * scale, 1)
             elif stairs:
                 distance = 15.0 # standard floor stairs length
             elif elevator:
                 distance = 10.0 # elevator floor transition
+            elif n1 and n2 and ((n1["floor"] == -1 and n2["floor"] == 0) or (n1["floor"] == 0 and n2["floor"] == -1)):
+                distance = 15.0 # building entrance transition
             else:
                 distance = 20.0
         
@@ -161,6 +165,110 @@ def create_dataset():
         })
         if f > 0:
             add_edge(f"STAIR_WS_{f-1}", f"STAIR_WS_{f}", distance=14.0, stairs=True, accessible=False, difficulty=2, turn_complexity=1, notes="Workshop stair")
+
+    # ==========================================
+    # CAMPUS LEVEL — OUTDOOR GROUNDS & BUILDINGS (FLOOR -1)
+    # ==========================================
+    campus_corridor_nodes = [
+        # Parking & Highway entry
+        ("CN_PARKING", "Sahyadri College Parking", "entrance", -1, 46, 1464),
+        ("CN_PETROL", "Hindustan Petroleum (HP Petrol Bunk)", "landmark", -1, 245, 1558),
+        ("CN_SOUTH_ENTRY_ROAD", "Campus Main Entry Road", "corridor", -1, 400, 1440),
+        ("CN_SOUTH_GATE", "Campus Security Main Gate & Post Office", "entrance", -1, 642, 1405),
+
+        # Lawn & Driveway
+        ("CN_DRIVEWAY_SOUTH", "South Main Driveway near Event Lawn", "corridor", -1, 540, 1150),
+        ("CN_EVENT_LAWN", "Sahyadri Open Lawn & Event Pavilion", "landmark", -1, 350, 1150),
+        ("CN_YS_OFFICE", "Y.S Administrative Annex", "landmark", -1, 729, 1073),
+
+        # Central Quadrangle & Academic Complex
+        ("CN_CENTRAL_ROAD", "Central Campus Walkway & Crossroads", "intersection", -1, 540, 750),
+        ("CN_MAIN_BLOCK_PORTICO", "Sahyadri College Of Engineering (Main Portico)", "entrance", -1, 451, 603),
+        ("CN_MECH_CIVIL_PORTICO", "Mechanical and Civil Block Portico", "entrance", -1, 649, 533),
+
+        # Food Court, Tel Office & Guest House
+        ("CN_FOOD_COURT", "Sahyadri Food Court (Cafeteria)", "landmark", -1, 656, 718),
+        ("CN_TEL_OFFICE", "Hostel & Telecom Office", "landmark", -1, 836, 733),
+        ("CN_GUEST_HOUSE_RD", "East Campus Access Road", "corridor", -1, 850, 540),
+        ("CN_GUEST_HOUSE", "Heritage Guest House Sahyadri", "landmark", -1, 991, 529),
+
+        # Boys Hostel
+        ("CN_HOSTEL_RD", "Boys Hostel Approach Road", "corridor", -1, 1150, 560),
+        ("CN_BOYS_HOSTEL", "Sahyadri Boys Hostel", "landmark", -1, 1319, 588),
+
+        # Cricket Grounds (North)
+        ("CN_NORTH_RD", "North Road toward Sports Field", "corridor", -1, 580, 400),
+        ("CN_CRICKET_GROUND", "Sahyadri Cricket Ground", "landmark", -1, 823, 380),
+        ("CN_CRICKET_PITCH", "Cricket Ground Pavilion & Pitch", "landmark", -1, 846, 205),
+        ("CN_SOUHARDHA_RD", "Northeast Grounds Access Road", "corridor", -1, 1100, 250),
+        ("CN_SOUHARDHA_GROUND", "Souhardha Cricket Ground (Sahyadri)", "landmark", -1, 1316, 96),
+    ]
+    for cid, cname, ctype, cfloor, cx, cy in campus_corridor_nodes:
+        nodes.append({"id": cid, "name": cname, "type": ctype, "floor": cfloor, "x": cx, "y": cy, "accessible": True})
+
+    # Campus Road & Walkway Edges
+    add_edge("CN_PARKING", "CN_SOUTH_ENTRY_ROAD", notes="Walkway from Parking")
+    add_edge("CN_PETROL", "CN_SOUTH_ENTRY_ROAD", notes="Highway access")
+    add_edge("CN_SOUTH_GATE", "CN_SOUTH_ENTRY_ROAD", notes="Gate checkpoint")
+    add_edge("CN_SOUTH_ENTRY_ROAD", "CN_DRIVEWAY_SOUTH", notes="Campus South Driveway")
+    add_edge("CN_DRIVEWAY_SOUTH", "CN_EVENT_LAWN", notes="Lawn path")
+    add_edge("CN_DRIVEWAY_SOUTH", "CN_YS_OFFICE", notes="YS Annex path")
+    add_edge("CN_DRIVEWAY_SOUTH", "CN_CENTRAL_ROAD", notes="Driveway to Central Plaza")
+
+    add_edge("CN_CENTRAL_ROAD", "CN_MAIN_BLOCK_PORTICO", notes="Walkway to Main Academic Block")
+    add_edge("CN_CENTRAL_ROAD", "CN_MECH_CIVIL_PORTICO", notes="Walkway to Mech & Civil Block")
+    add_edge("CN_CENTRAL_ROAD", "CN_FOOD_COURT", notes="Main path to Food Court")
+    add_edge("CN_FOOD_COURT", "CN_TEL_OFFICE", notes="Walkway past Food Court")
+    add_edge("CN_TEL_OFFICE", "CN_GUEST_HOUSE_RD", notes="Road to Guest House")
+    add_edge("CN_CENTRAL_ROAD", "CN_GUEST_HOUSE_RD", notes="East roadway")
+    add_edge("CN_GUEST_HOUSE_RD", "CN_GUEST_HOUSE", notes="Guest house driveway")
+    add_edge("CN_GUEST_HOUSE", "CN_HOSTEL_RD", notes="Road to Boys Hostel")
+    add_edge("CN_HOSTEL_RD", "CN_BOYS_HOSTEL", notes="Boys Hostel entrance path")
+
+    add_edge("CN_CENTRAL_ROAD", "CN_NORTH_RD", notes="North roadway toward sports grounds")
+    add_edge("CN_NORTH_RD", "CN_CRICKET_GROUND", notes="Cricket Ground entry")
+    add_edge("CN_CRICKET_GROUND", "CN_CRICKET_PITCH", notes="Cricket pitch access")
+    add_edge("CN_CRICKET_GROUND", "CN_SOUHARDHA_RD", notes="Cross-field access road")
+    add_edge("CN_HOSTEL_RD", "CN_SOUHARDHA_RD", notes="Hostel to Northeast road")
+    add_edge("CN_SOUHARDHA_RD", "CN_SOUHARDHA_GROUND", notes="Souhardha ground entry")
+
+    # Connect Campus Outdoor Network to Indoor Floor 0:
+    # 1. Main Block Portico connects to Ground Floor Main South Entrance (N_G_S_ENT)
+    add_edge("CN_MAIN_BLOCK_PORTICO", "N_G_S_ENT", distance=15.0, notes="Enter Main Academic Block from Campus")
+    # 2. Mech & Civil Portico connects to Ground Floor East Entrance (N_G_E_MID)
+    add_edge("CN_MECH_CIVIL_PORTICO", "N_G_E_MID", distance=25.0, notes="Enter Academic Complex via East Wing")
+
+    # Campus Key Locations / Landmarks
+    campus_locations_data = [
+        ("LOC_C_MAIN_BLOCK", "Sahyadri College Of Engineering & Management", "building", -1, 451, 603, "Main Campus", ["main block", "main building", "sahyadri college of engineering", "engineering college", "academic block", "admin block"], "Main 5-story academic complex with Central Courtyard, Principal Chamber, Dean Offices, Classrooms, and Laboratories.", "CN_MAIN_BLOCK_PORTICO"),
+        ("LOC_C_MECH_CIVIL", "Sahyadri College Mechanical and Civil Block", "building", -1, 649, 533, "Mechanical & Civil", ["mechanical and civil block", "mech block", "civil block", "mechanical building", "civil building", "mech civil"], "Dedicated academic and workshop block for Mechanical and Civil Engineering.", "CN_MECH_CIVIL_PORTICO"),
+        ("LOC_C_FOOD_COURT", "Sahyadri Food Court (Cafeteria & Canteen)", "amenity", -1, 656, 718, "Campus Amenities", ["food court", "sahyadri food court", "canteen", "cafeteria", "mess", "dining", "snacks", "cafe", "food"], "Central multi-cuisine food court and student cafeteria.", "CN_FOOD_COURT"),
+        ("LOC_C_TEL_OFFICE", "Hostel & Telephone Administration Office", "office", -1, 836, 733, "Administration", ["tel office", "telephone office", "hostel office", "estate office", "telecom office"], "Campus telecommunication, hostel admissions, and facilities office.", "CN_TEL_OFFICE"),
+        ("LOC_C_GUEST_HOUSE", "Heritage Guest House Sahyadri College", "facility", -1, 991, 529, "Hospitality", ["heritage guest house", "guest house", "vip guest house", "visitors guesthouse", "heritage house"], "Guest suites for visiting professors, dignitaries, and academic delegates.", "CN_GUEST_HOUSE"),
+        ("LOC_C_BOYS_HOSTEL", "Sahyadri Boys Hostel", "hostel", -1, 1319, 588, "Student Housing", ["boys hostel", "sahyadri boys hostel", "hostel", "mens hostel", "residence hall"], "On-campus boys residence and student living quarters.", "CN_BOYS_HOSTEL"),
+        ("LOC_C_CRICKET_GROUND", "Sahyadri Cricket Ground", "sports", -1, 823, 380, "Physical Education & Sports", ["sahyadri cricket ground", "cricket ground", "main ground", "sports ground", "playground", "stadium"], "Collegiate turf cricket ground and track field.", "CN_CRICKET_GROUND"),
+        ("LOC_C_CRICKET_PITCH", "Cricket Pitch & North Pavillion", "sports", -1, 846, 205, "Physical Education & Sports", ["cricket pitch", "pitch", "pavilion", "north ground"], "Cricket pitch practice wicket and north pavilion.", "CN_CRICKET_PITCH"),
+        ("LOC_C_SOUHARDHA_GROUND", "Souhardha Cricket Ground (Sahyadri)", "sports", -1, 1316, 96, "Physical Education & Sports", ["souhardha cricket ground", "souhardha ground", "second cricket ground", "northeast ground"], "Souhardha athletic field and practice cricket oval on the northeast campus perimeter.", "CN_SOUHARDHA_GROUND"),
+        ("LOC_C_PARKING", "Sahyadri College Parking", "parking", -1, 46, 1464, "Campus Security", ["parking", "college parking", "sahyadri parking", "car parking", "bike parking", "two wheeler parking"], "Multi-vehicle campus parking lot for two-wheelers, cars, and buses.", "CN_PARKING"),
+        ("LOC_C_PETROL_BUNK", "Hindustan Petroleum (HP Petrol Pump)", "amenity", -1, 245, 1558, "Transit", ["hindustan petroleum", "petrol pump", "fuel station", "hp petrol bunk", "gas station"], "Hindustan Petroleum fueling station located right at the national highway campus entry point.", "CN_PETROL"),
+        ("LOC_C_SECURITY_GATE", "Campus Security Main Gate & Post Office", "entrance", -1, 642, 1405, "Security & Logistics", ["post office", "security gate", "main gate", "security check", "po", "campus entrance gate"], "Primary security gateway, guard outpost, and on-campus postal clearance window.", "CN_SOUTH_GATE"),
+        ("LOC_C_EVENT_LAWN", "Sahyadri Open Lawn & Event Pavilion", "outdoor", -1, 350, 1150, "Student Life", ["open lawn", "event pavilion", "pavilion", "big tent", "fest lawn", "canopy"], "Central event lawn featuring the large canopy structure for convocations and cultural fests.", "CN_EVENT_LAWN"),
+        ("LOC_C_YS_ADMIN", "Y.S / Admin Extension", "office", -1, 729, 1073, "Administration", ["ys", "y.s", "admin extension", "south administrative annex"], "Administrative annex and campus security support facility.", "CN_YS_OFFICE")
+    ]
+    for lid, lname, ltype, lfloor, lx, ly, ldept, laliases, ldesc, lconn in campus_locations_data:
+        locations.append({
+            "id": lid,
+            "name": lname,
+            "type": ltype,
+            "floor": lfloor,
+            "node_id": lconn,
+            "x": lx,
+            "y": ly,
+            "department": ldept,
+            "aliases": laliases,
+            "accessible": True,
+            "description": ldesc
+        })
 
     # ==========================================
     # FLOOR 0 — GROUND FLOOR
@@ -832,7 +940,11 @@ def create_dataset():
         {"id": "QR-2-214", "code": "SAHYADRI_QR_2_214", "name": "2nd Floor · Room 214 Doorpost", "floor": 2, "node_id": "N_2_N_214", "physical_location": "Faculty Department Room 214 Door Sign", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_2_214"},
         {"id": "QR-3-CIVIL", "code": "SAHYADRI_QR_3_CIVIL", "name": "3rd Floor · Civil Engineering Dept", "floor": 3, "node_id": "N_3_N_STAFF", "physical_location": "Civil Department Staff Room Entrance", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_3_CIVIL"},
         {"id": "QR-4-GARDEN", "code": "SAHYADRI_QR_4_GARDEN", "name": "4th Floor · Sky Garden Promenade", "floor": 4, "node_id": "N_4_TERRACE", "physical_location": "Rooftop Garden Entry Archway", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_4_GARDEN"},
-        {"id": "QR-5-INCUB", "code": "SAHYADRI_QR_5_INCUB", "name": "5th Floor · Incubation Centre Checkpoint", "floor": 5, "node_id": "N_5_N_INCUBATION", "physical_location": "Startup Incubation Reception Desk", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_5_INCUB"}
+        {"id": "QR-5-INCUB", "code": "SAHYADRI_QR_5_INCUB", "name": "5th Floor · Incubation Centre Checkpoint", "floor": 5, "node_id": "N_5_N_INCUBATION", "physical_location": "Startup Incubation Reception Desk", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_5_INCUB"},
+        {"id": "QR-C-PARK", "code": "SAHYADRI_QR_C_PARK", "name": "Campus Grounds · Parking Area", "floor": -1, "node_id": "CN_PARKING", "physical_location": "Parking Security Booth Pillar", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_PARK"},
+        {"id": "QR-C-FOOD", "code": "SAHYADRI_QR_C_FOOD", "name": "Campus Grounds · Food Court Entrance", "floor": -1, "node_id": "CN_FOOD_COURT", "physical_location": "Food Court Portico Entrance", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_FOOD"},
+        {"id": "QR-C-CRICKET", "code": "SAHYADRI_QR_C_CRICKET", "name": "Campus Grounds · Cricket Pavilion", "floor": -1, "node_id": "CN_CRICKET_GROUND", "physical_location": "Cricket Ground Pavilion Gate", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_CRICKET"},
+        {"id": "QR-C-HOSTEL", "code": "SAHYADRI_QR_C_HOSTEL", "name": "Campus Grounds · Boys Hostel Gate", "floor": -1, "node_id": "CN_BOYS_HOSTEL", "physical_location": "Boys Hostel Main Entry Arch", "sample_qr_data": "https://sahyadri-nav.campus/qr?code=SAHYADRI_QR_C_HOSTEL"}
     ]
 
     # ==========================================

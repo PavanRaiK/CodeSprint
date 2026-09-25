@@ -59,6 +59,9 @@ export const LostModeModal: React.FC<LostModeModalProps> = ({
 
   // Prominent landmarks for quick manual identification
   const landmarkOptions = [
+    { label: 'Campus Food Court (Cafeteria)', nodeId: 'CN_FOOD_COURT', floor: -1 },
+    { label: 'Campus Parking Area', nodeId: 'CN_PARKING', floor: -1 },
+    { label: 'Sahyadri Cricket Ground', nodeId: 'CN_CRICKET_GROUND', floor: -1 },
     { label: 'Ground Floor Main Entrance', nodeId: 'N_G_S_ENT', floor: 0 },
     { label: 'Central Library (1st Floor Entrance)', nodeId: 'N_1_W_LIB', floor: 1 },
     { label: 'West Elevator Lobby (Ground Floor)', nodeId: 'ELEV_1_0', floor: 0 },

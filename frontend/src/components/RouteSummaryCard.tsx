@@ -45,7 +45,7 @@ export const RouteSummaryCard: React.FC<RouteSummaryCardProps> = ({
           <span className="w-2 h-2 rounded-full bg-mapgreen shrink-0"></span>
           <span className="truncate">To: <strong className="text-white">{destination.name}</strong></span>
           <span className="text-[10px] px-1.5 py-0.5 rounded bg-gunmetal text-fog shrink-0">
-            Floor {destination.floor}
+            {destination.floor === -1 ? 'Campus Grounds' : destination.floor === 0 ? 'Ground Floor' : `Floor ${destination.floor}`}
           </span>
         </div>
       </div>

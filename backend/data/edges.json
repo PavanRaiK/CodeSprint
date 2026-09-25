@@ -701,442 +701,624 @@
   },
   {
     "id": "E_51",
-    "from": "N_G_S_W",
-    "to": "N_G_S_ENT",
-    "distance": 24.2,
-    "travel_time_estimate": 20.2,
+    "from": "CN_PARKING",
+    "to": "CN_SOUTH_ENTRY_ROAD",
+    "distance": 124.2,
+    "travel_time_estimate": 103.5,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway from Parking"
   },
   {
     "id": "E_52",
-    "from": "N_G_S_ENT",
-    "to": "N_G_S_W",
-    "distance": 24.2,
-    "travel_time_estimate": 20.2,
+    "from": "CN_SOUTH_ENTRY_ROAD",
+    "to": "CN_PARKING",
+    "distance": 124.2,
+    "travel_time_estimate": 103.5,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway from Parking"
   },
   {
     "id": "E_53",
-    "from": "N_G_S_ENT",
-    "to": "N_G_S_40",
-    "distance": 9.5,
-    "travel_time_estimate": 7.9,
+    "from": "CN_PETROL",
+    "to": "CN_SOUTH_ENTRY_ROAD",
+    "distance": 68.2,
+    "travel_time_estimate": 56.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Highway access"
   },
   {
     "id": "E_54",
-    "from": "N_G_S_40",
-    "to": "N_G_S_ENT",
-    "distance": 9.5,
-    "travel_time_estimate": 7.9,
+    "from": "CN_SOUTH_ENTRY_ROAD",
+    "to": "CN_PETROL",
+    "distance": 68.2,
+    "travel_time_estimate": 56.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Highway access"
   },
   {
     "id": "E_55",
-    "from": "N_G_S_40",
-    "to": "N_G_S_STAIR_D",
-    "distance": 15.0,
-    "travel_time_estimate": 12.5,
+    "from": "CN_SOUTH_GATE",
+    "to": "CN_SOUTH_ENTRY_ROAD",
+    "distance": 85.6,
+    "travel_time_estimate": 71.3,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Gate checkpoint"
   },
   {
     "id": "E_56",
-    "from": "N_G_S_STAIR_D",
-    "to": "N_G_S_40",
-    "distance": 15.0,
-    "travel_time_estimate": 12.5,
+    "from": "CN_SOUTH_ENTRY_ROAD",
+    "to": "CN_SOUTH_GATE",
+    "distance": 85.6,
+    "travel_time_estimate": 71.3,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Gate checkpoint"
   },
   {
     "id": "E_57",
-    "from": "N_G_S_STAIR_D",
-    "to": "N_G_S_MID",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
+    "from": "CN_SOUTH_ENTRY_ROAD",
+    "to": "CN_DRIVEWAY_SOUTH",
+    "distance": 112.7,
+    "travel_time_estimate": 93.9,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Campus South Driveway"
   },
   {
     "id": "E_58",
-    "from": "N_G_S_MID",
-    "to": "N_G_S_STAIR_D",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
+    "from": "CN_DRIVEWAY_SOUTH",
+    "to": "CN_SOUTH_ENTRY_ROAD",
+    "distance": 112.7,
+    "travel_time_estimate": 93.9,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Campus South Driveway"
   },
   {
     "id": "E_59",
-    "from": "N_G_S_MID",
-    "to": "N_G_S_E1",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
+    "from": "CN_DRIVEWAY_SOUTH",
+    "to": "CN_EVENT_LAWN",
+    "distance": 66.5,
+    "travel_time_estimate": 55.4,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Lawn path"
   },
   {
     "id": "E_60",
-    "from": "N_G_S_E1",
-    "to": "N_G_S_MID",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
+    "from": "CN_EVENT_LAWN",
+    "to": "CN_DRIVEWAY_SOUTH",
+    "distance": 66.5,
+    "travel_time_estimate": 55.4,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Lawn path"
   },
   {
     "id": "E_61",
-    "from": "N_G_S_E1",
-    "to": "N_G_S_E2",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
+    "from": "CN_DRIVEWAY_SOUTH",
+    "to": "CN_YS_OFFICE",
+    "distance": 71.4,
+    "travel_time_estimate": 59.5,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "YS Annex path"
   },
   {
     "id": "E_62",
-    "from": "N_G_S_E2",
-    "to": "N_G_S_E1",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
+    "from": "CN_YS_OFFICE",
+    "to": "CN_DRIVEWAY_SOUTH",
+    "distance": 71.4,
+    "travel_time_estimate": 59.5,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "YS Annex path"
   },
   {
     "id": "E_63",
-    "from": "N_G_S_E2",
-    "to": "N_G_S_E",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
+    "from": "CN_DRIVEWAY_SOUTH",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 140.0,
+    "travel_time_estimate": 116.7,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Driveway to Central Plaza"
   },
   {
     "id": "E_64",
-    "from": "N_G_S_E",
-    "to": "N_G_S_E2",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_DRIVEWAY_SOUTH",
+    "distance": 140.0,
+    "travel_time_estimate": 116.7,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Driveway to Central Plaza"
   },
   {
     "id": "E_65",
-    "from": "N_G_S_W",
-    "to": "N_G_W_VISITORS",
-    "distance": 13.8,
-    "travel_time_estimate": 11.5,
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_MAIN_BLOCK_PORTICO",
+    "distance": 60.1,
+    "travel_time_estimate": 50.1,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway to Main Academic Block"
   },
   {
     "id": "E_66",
-    "from": "N_G_W_VISITORS",
-    "to": "N_G_S_W",
-    "distance": 13.8,
-    "travel_time_estimate": 11.5,
+    "from": "CN_MAIN_BLOCK_PORTICO",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 60.1,
+    "travel_time_estimate": 50.1,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway to Main Academic Block"
   },
   {
     "id": "E_67",
-    "from": "N_G_W_VISITORS",
-    "to": "N_G_W_PATIO",
-    "distance": 16.2,
-    "travel_time_estimate": 13.5,
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_MECH_CIVIL_PORTICO",
+    "distance": 85.0,
+    "travel_time_estimate": 70.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway to Mech & Civil Block"
   },
   {
     "id": "E_68",
-    "from": "N_G_W_PATIO",
-    "to": "N_G_W_VISITORS",
-    "distance": 16.2,
-    "travel_time_estimate": 13.5,
+    "from": "CN_MECH_CIVIL_PORTICO",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 85.0,
+    "travel_time_estimate": 70.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway to Mech & Civil Block"
   },
   {
     "id": "E_69",
-    "from": "N_G_W_PATIO",
-    "to": "N_G_W_LIFT",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_FOOD_COURT",
+    "distance": 42.1,
+    "travel_time_estimate": 35.1,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Main path to Food Court"
   },
   {
     "id": "E_70",
-    "from": "N_G_W_LIFT",
-    "to": "N_G_W_PATIO",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
+    "from": "CN_FOOD_COURT",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 42.1,
+    "travel_time_estimate": 35.1,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Main path to Food Court"
   },
   {
     "id": "E_71",
-    "from": "N_G_W_LIFT",
-    "to": "N_G_W_STUDY43",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
+    "from": "CN_FOOD_COURT",
+    "to": "CN_TEL_OFFICE",
+    "distance": 63.2,
+    "travel_time_estimate": 52.7,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway past Food Court"
   },
   {
     "id": "E_72",
-    "from": "N_G_W_STUDY43",
-    "to": "N_G_W_LIFT",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
+    "from": "CN_TEL_OFFICE",
+    "to": "CN_FOOD_COURT",
+    "distance": 63.2,
+    "travel_time_estimate": 52.7,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Walkway past Food Court"
   },
   {
     "id": "E_73",
-    "from": "N_G_W_STUDY43",
-    "to": "N_G_W_MID",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
+    "from": "CN_TEL_OFFICE",
+    "to": "CN_GUEST_HOUSE_RD",
+    "distance": 67.7,
+    "travel_time_estimate": 56.4,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Road to Guest House"
   },
   {
     "id": "E_74",
-    "from": "N_G_W_MID",
-    "to": "N_G_W_STUDY43",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
+    "from": "CN_GUEST_HOUSE_RD",
+    "to": "CN_TEL_OFFICE",
+    "distance": 67.7,
+    "travel_time_estimate": 56.4,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Road to Guest House"
   },
   {
     "id": "E_75",
-    "from": "N_G_W_MID",
-    "to": "N_G_W_PLACEMENT",
-    "distance": 26.2,
-    "travel_time_estimate": 21.8,
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_GUEST_HOUSE_RD",
+    "distance": 131.1,
+    "travel_time_estimate": 109.2,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "East roadway"
   },
   {
     "id": "E_76",
-    "from": "N_G_W_PLACEMENT",
-    "to": "N_G_W_MID",
-    "distance": 26.2,
-    "travel_time_estimate": 21.8,
+    "from": "CN_GUEST_HOUSE_RD",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 131.1,
+    "travel_time_estimate": 109.2,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "East roadway"
   },
   {
     "id": "E_77",
-    "from": "N_G_W_PLACEMENT",
-    "to": "N_G_W_N",
-    "distance": 46.2,
-    "travel_time_estimate": 38.5,
+    "from": "CN_GUEST_HOUSE_RD",
+    "to": "CN_GUEST_HOUSE",
+    "distance": 49.5,
+    "travel_time_estimate": 41.2,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Guest house driveway"
   },
   {
     "id": "E_78",
-    "from": "N_G_W_N",
-    "to": "N_G_W_PLACEMENT",
-    "distance": 46.2,
-    "travel_time_estimate": 38.5,
+    "from": "CN_GUEST_HOUSE",
+    "to": "CN_GUEST_HOUSE_RD",
+    "distance": 49.5,
+    "travel_time_estimate": 41.2,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Guest house driveway"
   },
   {
     "id": "E_79",
-    "from": "N_G_W_N",
-    "to": "N_G_N_EXAM",
-    "distance": 56.2,
-    "travel_time_estimate": 46.8,
+    "from": "CN_GUEST_HOUSE",
+    "to": "CN_HOSTEL_RD",
+    "distance": 56.7,
+    "travel_time_estimate": 47.3,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Road to Boys Hostel"
   },
   {
     "id": "E_80",
-    "from": "N_G_N_EXAM",
-    "to": "N_G_W_N",
-    "distance": 56.2,
-    "travel_time_estimate": 46.8,
+    "from": "CN_HOSTEL_RD",
+    "to": "CN_GUEST_HOUSE",
+    "distance": 56.7,
+    "travel_time_estimate": 47.3,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Road to Boys Hostel"
   },
   {
     "id": "E_81",
-    "from": "N_G_N_EXAM",
-    "to": "N_G_N_MID",
-    "distance": 15.0,
-    "travel_time_estimate": 12.5,
+    "from": "CN_HOSTEL_RD",
+    "to": "CN_BOYS_HOSTEL",
+    "distance": 60.0,
+    "travel_time_estimate": 50.0,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Boys Hostel entrance path"
   },
   {
     "id": "E_82",
-    "from": "N_G_N_MID",
-    "to": "N_G_N_EXAM",
+    "from": "CN_BOYS_HOSTEL",
+    "to": "CN_HOSTEL_RD",
+    "distance": 60.0,
+    "travel_time_estimate": 50.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Boys Hostel entrance path"
+  },
+  {
+    "id": "E_83",
+    "from": "CN_CENTRAL_ROAD",
+    "to": "CN_NORTH_RD",
+    "distance": 123.3,
+    "travel_time_estimate": 102.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "North roadway toward sports grounds"
+  },
+  {
+    "id": "E_84",
+    "from": "CN_NORTH_RD",
+    "to": "CN_CENTRAL_ROAD",
+    "distance": 123.3,
+    "travel_time_estimate": 102.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "North roadway toward sports grounds"
+  },
+  {
+    "id": "E_85",
+    "from": "CN_NORTH_RD",
+    "to": "CN_CRICKET_GROUND",
+    "distance": 85.3,
+    "travel_time_estimate": 71.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cricket Ground entry"
+  },
+  {
+    "id": "E_86",
+    "from": "CN_CRICKET_GROUND",
+    "to": "CN_NORTH_RD",
+    "distance": 85.3,
+    "travel_time_estimate": 71.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cricket Ground entry"
+  },
+  {
+    "id": "E_87",
+    "from": "CN_CRICKET_GROUND",
+    "to": "CN_CRICKET_PITCH",
+    "distance": 61.8,
+    "travel_time_estimate": 51.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cricket pitch access"
+  },
+  {
+    "id": "E_88",
+    "from": "CN_CRICKET_PITCH",
+    "to": "CN_CRICKET_GROUND",
+    "distance": 61.8,
+    "travel_time_estimate": 51.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cricket pitch access"
+  },
+  {
+    "id": "E_89",
+    "from": "CN_CRICKET_GROUND",
+    "to": "CN_SOUHARDHA_RD",
+    "distance": 107.1,
+    "travel_time_estimate": 89.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cross-field access road"
+  },
+  {
+    "id": "E_90",
+    "from": "CN_SOUHARDHA_RD",
+    "to": "CN_CRICKET_GROUND",
+    "distance": 107.1,
+    "travel_time_estimate": 89.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Cross-field access road"
+  },
+  {
+    "id": "E_91",
+    "from": "CN_HOSTEL_RD",
+    "to": "CN_SOUHARDHA_RD",
+    "distance": 109.9,
+    "travel_time_estimate": 91.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Hostel to Northeast road"
+  },
+  {
+    "id": "E_92",
+    "from": "CN_SOUHARDHA_RD",
+    "to": "CN_HOSTEL_RD",
+    "distance": 109.9,
+    "travel_time_estimate": 91.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Hostel to Northeast road"
+  },
+  {
+    "id": "E_93",
+    "from": "CN_SOUHARDHA_RD",
+    "to": "CN_SOUHARDHA_GROUND",
+    "distance": 92.8,
+    "travel_time_estimate": 77.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Souhardha ground entry"
+  },
+  {
+    "id": "E_94",
+    "from": "CN_SOUHARDHA_GROUND",
+    "to": "CN_SOUHARDHA_RD",
+    "distance": 92.8,
+    "travel_time_estimate": 77.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": "Souhardha ground entry"
+  },
+  {
+    "id": "E_95",
+    "from": "CN_MAIN_BLOCK_PORTICO",
+    "to": "N_G_S_ENT",
     "distance": 15.0,
     "travel_time_estimate": 12.5,
     "stairs": false,
@@ -1145,238 +1327,56 @@
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_83",
-    "from": "N_G_N_MID",
-    "to": "N_G_N_STORE",
-    "distance": 36.2,
-    "travel_time_estimate": 30.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_84",
-    "from": "N_G_N_STORE",
-    "to": "N_G_N_MID",
-    "distance": 36.2,
-    "travel_time_estimate": 30.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_85",
-    "from": "N_G_N_STORE",
-    "to": "N_G_N_DIR",
-    "distance": 26.2,
-    "travel_time_estimate": 21.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_86",
-    "from": "N_G_N_DIR",
-    "to": "N_G_N_STORE",
-    "distance": 26.2,
-    "travel_time_estimate": 21.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_87",
-    "from": "N_G_N_DIR",
-    "to": "N_G_N_E",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_88",
-    "from": "N_G_N_E",
-    "to": "N_G_N_DIR",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_89",
-    "from": "N_G_N_E",
-    "to": "N_G_E_PRINCIPAL",
-    "distance": 25.0,
-    "travel_time_estimate": 20.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_90",
-    "from": "N_G_E_PRINCIPAL",
-    "to": "N_G_N_E",
-    "distance": 25.0,
-    "travel_time_estimate": 20.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_91",
-    "from": "N_G_E_PRINCIPAL",
-    "to": "N_G_E_ACADEMIC",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_92",
-    "from": "N_G_E_ACADEMIC",
-    "to": "N_G_E_PRINCIPAL",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_93",
-    "from": "N_G_E_ACADEMIC",
-    "to": "N_G_E_MID",
-    "distance": 37.2,
-    "travel_time_estimate": 31.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_94",
-    "from": "N_G_E_MID",
-    "to": "N_G_E_ACADEMIC",
-    "distance": 37.2,
-    "travel_time_estimate": 31.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_95",
-    "from": "N_G_E_MID",
-    "to": "N_G_E_COMP",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
+    "notes": "Enter Main Academic Block from Campus"
   },
   {
     "id": "E_96",
-    "from": "N_G_E_COMP",
-    "to": "N_G_E_MID",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
+    "from": "N_G_S_ENT",
+    "to": "CN_MAIN_BLOCK_PORTICO",
+    "distance": 15.0,
+    "travel_time_estimate": 12.5,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Enter Main Academic Block from Campus"
   },
   {
     "id": "E_97",
-    "from": "N_G_E_COMP",
-    "to": "N_G_E_LAB5",
-    "distance": 27.5,
-    "travel_time_estimate": 22.9,
+    "from": "CN_MECH_CIVIL_PORTICO",
+    "to": "N_G_E_MID",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Enter Academic Complex via East Wing"
   },
   {
     "id": "E_98",
-    "from": "N_G_E_LAB5",
-    "to": "N_G_E_COMP",
-    "distance": 27.5,
-    "travel_time_estimate": 22.9,
+    "from": "N_G_E_MID",
+    "to": "CN_MECH_CIVIL_PORTICO",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
     "difficulty": 0,
     "turn_complexity": 0,
     "active": true,
-    "notes": ""
+    "notes": "Enter Academic Complex via East Wing"
   },
   {
     "id": "E_99",
-    "from": "N_G_E_LAB5",
-    "to": "N_G_S_E",
-    "distance": 49.3,
-    "travel_time_estimate": 41.1,
+    "from": "N_G_S_W",
+    "to": "N_G_S_ENT",
+    "distance": 24.2,
+    "travel_time_estimate": 20.2,
     "stairs": false,
     "elevator": false,
     "accessible": true,
@@ -1387,6 +1387,678 @@
   },
   {
     "id": "E_100",
+    "from": "N_G_S_ENT",
+    "to": "N_G_S_W",
+    "distance": 24.2,
+    "travel_time_estimate": 20.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_101",
+    "from": "N_G_S_ENT",
+    "to": "N_G_S_40",
+    "distance": 9.5,
+    "travel_time_estimate": 7.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_102",
+    "from": "N_G_S_40",
+    "to": "N_G_S_ENT",
+    "distance": 9.5,
+    "travel_time_estimate": 7.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_103",
+    "from": "N_G_S_40",
+    "to": "N_G_S_STAIR_D",
+    "distance": 15.0,
+    "travel_time_estimate": 12.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_104",
+    "from": "N_G_S_STAIR_D",
+    "to": "N_G_S_40",
+    "distance": 15.0,
+    "travel_time_estimate": 12.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_105",
+    "from": "N_G_S_STAIR_D",
+    "to": "N_G_S_MID",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_106",
+    "from": "N_G_S_MID",
+    "to": "N_G_S_STAIR_D",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_107",
+    "from": "N_G_S_MID",
+    "to": "N_G_S_E1",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_108",
+    "from": "N_G_S_E1",
+    "to": "N_G_S_MID",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_109",
+    "from": "N_G_S_E1",
+    "to": "N_G_S_E2",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_110",
+    "from": "N_G_S_E2",
+    "to": "N_G_S_E1",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_111",
+    "from": "N_G_S_E2",
+    "to": "N_G_S_E",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_112",
+    "from": "N_G_S_E",
+    "to": "N_G_S_E2",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_113",
+    "from": "N_G_S_W",
+    "to": "N_G_W_VISITORS",
+    "distance": 13.8,
+    "travel_time_estimate": 11.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_114",
+    "from": "N_G_W_VISITORS",
+    "to": "N_G_S_W",
+    "distance": 13.8,
+    "travel_time_estimate": 11.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_115",
+    "from": "N_G_W_VISITORS",
+    "to": "N_G_W_PATIO",
+    "distance": 16.2,
+    "travel_time_estimate": 13.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_116",
+    "from": "N_G_W_PATIO",
+    "to": "N_G_W_VISITORS",
+    "distance": 16.2,
+    "travel_time_estimate": 13.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_117",
+    "from": "N_G_W_PATIO",
+    "to": "N_G_W_LIFT",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_118",
+    "from": "N_G_W_LIFT",
+    "to": "N_G_W_PATIO",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_119",
+    "from": "N_G_W_LIFT",
+    "to": "N_G_W_STUDY43",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_120",
+    "from": "N_G_W_STUDY43",
+    "to": "N_G_W_LIFT",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_121",
+    "from": "N_G_W_STUDY43",
+    "to": "N_G_W_MID",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_122",
+    "from": "N_G_W_MID",
+    "to": "N_G_W_STUDY43",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_123",
+    "from": "N_G_W_MID",
+    "to": "N_G_W_PLACEMENT",
+    "distance": 26.2,
+    "travel_time_estimate": 21.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_124",
+    "from": "N_G_W_PLACEMENT",
+    "to": "N_G_W_MID",
+    "distance": 26.2,
+    "travel_time_estimate": 21.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_125",
+    "from": "N_G_W_PLACEMENT",
+    "to": "N_G_W_N",
+    "distance": 46.2,
+    "travel_time_estimate": 38.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_126",
+    "from": "N_G_W_N",
+    "to": "N_G_W_PLACEMENT",
+    "distance": 46.2,
+    "travel_time_estimate": 38.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_127",
+    "from": "N_G_W_N",
+    "to": "N_G_N_EXAM",
+    "distance": 56.2,
+    "travel_time_estimate": 46.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_128",
+    "from": "N_G_N_EXAM",
+    "to": "N_G_W_N",
+    "distance": 56.2,
+    "travel_time_estimate": 46.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_129",
+    "from": "N_G_N_EXAM",
+    "to": "N_G_N_MID",
+    "distance": 15.0,
+    "travel_time_estimate": 12.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_130",
+    "from": "N_G_N_MID",
+    "to": "N_G_N_EXAM",
+    "distance": 15.0,
+    "travel_time_estimate": 12.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_131",
+    "from": "N_G_N_MID",
+    "to": "N_G_N_STORE",
+    "distance": 36.2,
+    "travel_time_estimate": 30.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_132",
+    "from": "N_G_N_STORE",
+    "to": "N_G_N_MID",
+    "distance": 36.2,
+    "travel_time_estimate": 30.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_133",
+    "from": "N_G_N_STORE",
+    "to": "N_G_N_DIR",
+    "distance": 26.2,
+    "travel_time_estimate": 21.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_134",
+    "from": "N_G_N_DIR",
+    "to": "N_G_N_STORE",
+    "distance": 26.2,
+    "travel_time_estimate": 21.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_135",
+    "from": "N_G_N_DIR",
+    "to": "N_G_N_E",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_136",
+    "from": "N_G_N_E",
+    "to": "N_G_N_DIR",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_137",
+    "from": "N_G_N_E",
+    "to": "N_G_E_PRINCIPAL",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_138",
+    "from": "N_G_E_PRINCIPAL",
+    "to": "N_G_N_E",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_139",
+    "from": "N_G_E_PRINCIPAL",
+    "to": "N_G_E_ACADEMIC",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_140",
+    "from": "N_G_E_ACADEMIC",
+    "to": "N_G_E_PRINCIPAL",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_141",
+    "from": "N_G_E_ACADEMIC",
+    "to": "N_G_E_MID",
+    "distance": 37.2,
+    "travel_time_estimate": 31.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_142",
+    "from": "N_G_E_MID",
+    "to": "N_G_E_ACADEMIC",
+    "distance": 37.2,
+    "travel_time_estimate": 31.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_143",
+    "from": "N_G_E_MID",
+    "to": "N_G_E_COMP",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_144",
+    "from": "N_G_E_COMP",
+    "to": "N_G_E_MID",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_145",
+    "from": "N_G_E_COMP",
+    "to": "N_G_E_LAB5",
+    "distance": 27.5,
+    "travel_time_estimate": 22.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_146",
+    "from": "N_G_E_LAB5",
+    "to": "N_G_E_COMP",
+    "distance": 27.5,
+    "travel_time_estimate": 22.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_147",
+    "from": "N_G_E_LAB5",
+    "to": "N_G_S_E",
+    "distance": 49.3,
+    "travel_time_estimate": 41.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_148",
     "from": "N_G_S_E",
     "to": "N_G_E_LAB5",
     "distance": 49.3,
@@ -1400,7 +2072,7 @@
     "notes": ""
   },
   {
-    "id": "E_101",
+    "id": "E_149",
     "from": "N_G_W_MID",
     "to": "N_G_C_STAIR_A",
     "distance": 52.2,
@@ -1414,7 +2086,7 @@
     "notes": ""
   },
   {
-    "id": "E_102",
+    "id": "E_150",
     "from": "N_G_C_STAIR_A",
     "to": "N_G_W_MID",
     "distance": 52.2,
@@ -1428,7 +2100,7 @@
     "notes": ""
   },
   {
-    "id": "E_103",
+    "id": "E_151",
     "from": "N_G_C_STAIR_A",
     "to": "N_G_C_MID",
     "distance": 22.4,
@@ -1442,7 +2114,7 @@
     "notes": ""
   },
   {
-    "id": "E_104",
+    "id": "E_152",
     "from": "N_G_C_MID",
     "to": "N_G_C_STAIR_A",
     "distance": 22.4,
@@ -1456,7 +2128,7 @@
     "notes": ""
   },
   {
-    "id": "E_105",
+    "id": "E_153",
     "from": "N_G_C_MID",
     "to": "N_G_C_STAIR_B",
     "distance": 40.0,
@@ -1470,7 +2142,7 @@
     "notes": ""
   },
   {
-    "id": "E_106",
+    "id": "E_154",
     "from": "N_G_C_STAIR_B",
     "to": "N_G_C_MID",
     "distance": 40.0,
@@ -1484,7 +2156,7 @@
     "notes": ""
   },
   {
-    "id": "E_107",
+    "id": "E_155",
     "from": "N_G_C_STAIR_B",
     "to": "N_G_E_MID",
     "distance": 35.0,
@@ -1498,7 +2170,7 @@
     "notes": ""
   },
   {
-    "id": "E_108",
+    "id": "E_156",
     "from": "N_G_E_MID",
     "to": "N_G_C_STAIR_B",
     "distance": 35.0,
@@ -1512,7 +2184,7 @@
     "notes": ""
   },
   {
-    "id": "E_109",
+    "id": "E_157",
     "from": "N_G_N_MID",
     "to": "N_G_C_MID",
     "distance": 72.5,
@@ -1526,7 +2198,7 @@
     "notes": ""
   },
   {
-    "id": "E_110",
+    "id": "E_158",
     "from": "N_G_C_MID",
     "to": "N_G_N_MID",
     "distance": 72.5,
@@ -1540,7 +2212,7 @@
     "notes": ""
   },
   {
-    "id": "E_111",
+    "id": "E_159",
     "from": "N_G_C_MID",
     "to": "N_G_C_STUDY32",
     "distance": 48.8,
@@ -1554,7 +2226,7 @@
     "notes": ""
   },
   {
-    "id": "E_112",
+    "id": "E_160",
     "from": "N_G_C_STUDY32",
     "to": "N_G_C_MID",
     "distance": 48.8,
@@ -1568,7 +2240,7 @@
     "notes": ""
   },
   {
-    "id": "E_113",
+    "id": "E_161",
     "from": "N_G_C_STUDY32",
     "to": "N_G_S_MID",
     "distance": 51.2,
@@ -1582,7 +2254,7 @@
     "notes": ""
   },
   {
-    "id": "E_114",
+    "id": "E_162",
     "from": "N_G_S_MID",
     "to": "N_G_C_STUDY32",
     "distance": 51.2,
@@ -1596,7 +2268,7 @@
     "notes": ""
   },
   {
-    "id": "E_115",
+    "id": "E_163",
     "from": "ELEV_1_0",
     "to": "N_G_W_LIFT",
     "distance": 5.0,
@@ -1610,7 +2282,7 @@
     "notes": "Lift foyer access"
   },
   {
-    "id": "E_116",
+    "id": "E_164",
     "from": "N_G_W_LIFT",
     "to": "ELEV_1_0",
     "distance": 5.0,
@@ -1624,7 +2296,7 @@
     "notes": "Lift foyer access"
   },
   {
-    "id": "E_117",
+    "id": "E_165",
     "from": "STAIR_A_0",
     "to": "N_G_C_STAIR_A",
     "distance": 8.0,
@@ -1638,7 +2310,7 @@
     "notes": "Staircase A access"
   },
   {
-    "id": "E_118",
+    "id": "E_166",
     "from": "N_G_C_STAIR_A",
     "to": "STAIR_A_0",
     "distance": 8.0,
@@ -1652,7 +2324,7 @@
     "notes": "Staircase A access"
   },
   {
-    "id": "E_119",
+    "id": "E_167",
     "from": "STAIR_B_0",
     "to": "N_G_C_STAIR_B",
     "distance": 6.0,
@@ -1666,7 +2338,7 @@
     "notes": "Staircase B access"
   },
   {
-    "id": "E_120",
+    "id": "E_168",
     "from": "N_G_C_STAIR_B",
     "to": "STAIR_B_0",
     "distance": 6.0,
@@ -1680,7 +2352,7 @@
     "notes": "Staircase B access"
   },
   {
-    "id": "E_121",
+    "id": "E_169",
     "from": "STAIR_C_0",
     "to": "N_G_C_STAIR_C",
     "distance": 8.0,
@@ -1694,7 +2366,7 @@
     "notes": "Staircase C access"
   },
   {
-    "id": "E_122",
+    "id": "E_170",
     "from": "N_G_C_STAIR_C",
     "to": "STAIR_C_0",
     "distance": 8.0,
@@ -1708,7 +2380,7 @@
     "notes": "Staircase C access"
   },
   {
-    "id": "E_123",
+    "id": "E_171",
     "from": "N_G_C_STAIR_C",
     "to": "N_G_W_LIFT",
     "distance": 25.0,
@@ -1722,7 +2394,7 @@
     "notes": ""
   },
   {
-    "id": "E_124",
+    "id": "E_172",
     "from": "N_G_W_LIFT",
     "to": "N_G_C_STAIR_C",
     "distance": 25.0,
@@ -1736,7 +2408,7 @@
     "notes": ""
   },
   {
-    "id": "E_125",
+    "id": "E_173",
     "from": "N_G_C_STAIR_C",
     "to": "N_G_C_STUDY32",
     "distance": 28.0,
@@ -1750,7 +2422,7 @@
     "notes": ""
   },
   {
-    "id": "E_126",
+    "id": "E_174",
     "from": "N_G_C_STUDY32",
     "to": "N_G_C_STAIR_C",
     "distance": 28.0,
@@ -1764,7 +2436,7 @@
     "notes": ""
   },
   {
-    "id": "E_127",
+    "id": "E_175",
     "from": "STAIR_D_0",
     "to": "N_G_S_STAIR_D",
     "distance": 5.0,
@@ -1778,7 +2450,7 @@
     "notes": "Staircase D access"
   },
   {
-    "id": "E_128",
+    "id": "E_176",
     "from": "N_G_S_STAIR_D",
     "to": "STAIR_D_0",
     "distance": 5.0,
@@ -1792,7 +2464,7 @@
     "notes": "Staircase D access"
   },
   {
-    "id": "E_129",
+    "id": "E_177",
     "from": "STAIR_LIB_0",
     "to": "N_G_S_W",
     "distance": 22.0,
@@ -1806,7 +2478,7 @@
     "notes": "Library stair link"
   },
   {
-    "id": "E_130",
+    "id": "E_178",
     "from": "N_G_S_W",
     "to": "STAIR_LIB_0",
     "distance": 22.0,
@@ -1820,7 +2492,7 @@
     "notes": "Library stair link"
   },
   {
-    "id": "E_131",
+    "id": "E_179",
     "from": "RN_LOC_G_MAIN_ENT",
     "to": "N_G_S_ENT",
     "distance": 5.0,
@@ -1834,7 +2506,7 @@
     "notes": ""
   },
   {
-    "id": "E_132",
+    "id": "E_180",
     "from": "N_G_S_ENT",
     "to": "RN_LOC_G_MAIN_ENT",
     "distance": 5.0,
@@ -1848,7 +2520,7 @@
     "notes": ""
   },
   {
-    "id": "E_133",
+    "id": "E_181",
     "from": "RN_LOC_G_WEST_ENT",
     "to": "N_G_W_PATIO",
     "distance": 5.0,
@@ -1862,7 +2534,7 @@
     "notes": ""
   },
   {
-    "id": "E_134",
+    "id": "E_182",
     "from": "N_G_W_PATIO",
     "to": "RN_LOC_G_WEST_ENT",
     "distance": 5.0,
@@ -1876,680 +2548,8 @@
     "notes": ""
   },
   {
-    "id": "E_135",
-    "from": "RN_LOC_G_EAST_ENT",
-    "to": "N_G_C_STAIR_B",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_136",
-    "from": "N_G_C_STAIR_B",
-    "to": "RN_LOC_G_EAST_ENT",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_137",
-    "from": "RN_LOC_G_PRINCIPAL",
-    "to": "N_G_E_PRINCIPAL",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_138",
-    "from": "N_G_E_PRINCIPAL",
-    "to": "RN_LOC_G_PRINCIPAL",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_139",
-    "from": "RN_LOC_G_ACADEMIC",
-    "to": "N_G_E_ACADEMIC",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_140",
-    "from": "N_G_E_ACADEMIC",
-    "to": "RN_LOC_G_ACADEMIC",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_141",
-    "from": "RN_LOC_G_FOUNDATION",
-    "to": "N_G_N_E",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_142",
-    "from": "N_G_N_E",
-    "to": "RN_LOC_G_FOUNDATION",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_143",
-    "from": "RN_LOC_G_DIRECTOR",
-    "to": "N_G_N_DIR",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_144",
-    "from": "N_G_N_DIR",
-    "to": "RN_LOC_G_DIRECTOR",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_145",
-    "from": "RN_LOC_G_STORE_11",
-    "to": "N_G_N_STORE",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_146",
-    "from": "N_G_N_STORE",
-    "to": "RN_LOC_G_STORE_11",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_147",
-    "from": "RN_LOC_G_PLACEMENT_EXAM",
-    "to": "N_G_N_EXAM",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_148",
-    "from": "N_G_N_EXAM",
-    "to": "RN_LOC_G_PLACEMENT_EXAM",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_149",
-    "from": "RN_LOC_G_PLACEMENT_OFFICE",
-    "to": "N_G_W_PLACEMENT",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_150",
-    "from": "N_G_W_PLACEMENT",
-    "to": "RN_LOC_G_PLACEMENT_OFFICE",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_151",
-    "from": "RN_LOC_G_STUDY_21",
-    "to": "N_G_C_STAIR_B",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_152",
-    "from": "N_G_C_STAIR_B",
-    "to": "RN_LOC_G_STUDY_21",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_153",
-    "from": "RN_LOC_G_DRAWING_22",
-    "to": "N_G_E_COMP",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_154",
-    "from": "N_G_E_COMP",
-    "to": "RN_LOC_G_DRAWING_22",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_155",
-    "from": "RN_LOC_G_DEPT_COMP",
-    "to": "N_G_E_COMP",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_156",
-    "from": "N_G_E_COMP",
-    "to": "RN_LOC_G_DEPT_COMP",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_157",
-    "from": "RN_LOC_G_HOD_CS",
-    "to": "N_G_E_COMP",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_158",
-    "from": "N_G_E_COMP",
-    "to": "RN_LOC_G_HOD_CS",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_159",
-    "from": "RN_LOC_G_COMP_LAB_5",
-    "to": "N_G_E_LAB5",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_160",
-    "from": "N_G_E_LAB5",
-    "to": "RN_LOC_G_COMP_LAB_5",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_161",
-    "from": "RN_LOC_G_SEMINAR_32",
-    "to": "N_G_C_STUDY32",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_162",
-    "from": "N_G_C_STUDY32",
-    "to": "RN_LOC_G_SEMINAR_32",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_163",
-    "from": "RN_LOC_G_STUDY_33",
-    "to": "N_G_C_STUDY32",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_164",
-    "from": "N_G_C_STUDY32",
-    "to": "RN_LOC_G_STUDY_33",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_165",
-    "from": "RN_LOC_G_GUEST_LOUNGE",
-    "to": "N_G_S_40",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_166",
-    "from": "N_G_S_40",
-    "to": "RN_LOC_G_GUEST_LOUNGE",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_167",
-    "from": "RN_LOC_G_CLASS_37",
-    "to": "N_G_S_E",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_168",
-    "from": "N_G_S_E",
-    "to": "RN_LOC_G_CLASS_37",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_169",
-    "from": "RN_LOC_G_VISITORS_LOUNGE",
-    "to": "N_G_S_W",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_170",
-    "from": "N_G_S_W",
-    "to": "RN_LOC_G_VISITORS_LOUNGE",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_171",
-    "from": "RN_LOC_G_SECURITY",
-    "to": "N_G_W_VISITORS",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_172",
-    "from": "N_G_W_VISITORS",
-    "to": "RN_LOC_G_SECURITY",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_173",
-    "from": "RN_LOC_G_DEPT_40",
-    "to": "N_G_S_40",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_174",
-    "from": "N_G_S_40",
-    "to": "RN_LOC_G_DEPT_40",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_175",
-    "from": "RN_LOC_G_MEETING_44",
-    "to": "N_G_W_STUDY43",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_176",
-    "from": "N_G_W_STUDY43",
-    "to": "RN_LOC_G_MEETING_44",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_177",
-    "from": "RN_LOC_G_COURT_1",
-    "to": "N_G_C_STUDY32",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_178",
-    "from": "N_G_C_STUDY32",
-    "to": "RN_LOC_G_COURT_1",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_179",
-    "from": "RN_LOC_G_COURT_2",
-    "to": "N_G_C_STAIR_A",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_180",
-    "from": "N_G_C_STAIR_A",
-    "to": "RN_LOC_G_COURT_2",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_181",
-    "from": "RN_LOC_G_COURT_3",
-    "to": "N_G_C_STAIR_A",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_182",
-    "from": "N_G_C_STAIR_A",
-    "to": "RN_LOC_G_COURT_3",
-    "distance": 5.0,
-    "travel_time_estimate": 4.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
     "id": "E_183",
-    "from": "RN_LOC_G_COURT_4",
+    "from": "RN_LOC_G_EAST_ENT",
     "to": "N_G_C_STAIR_B",
     "distance": 5.0,
     "travel_time_estimate": 4.2,
@@ -2564,7 +2564,7 @@
   {
     "id": "E_184",
     "from": "N_G_C_STAIR_B",
-    "to": "RN_LOC_G_COURT_4",
+    "to": "RN_LOC_G_EAST_ENT",
     "distance": 5.0,
     "travel_time_estimate": 4.2,
     "stairs": false,
@@ -2577,6 +2577,678 @@
   },
   {
     "id": "E_185",
+    "from": "RN_LOC_G_PRINCIPAL",
+    "to": "N_G_E_PRINCIPAL",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_186",
+    "from": "N_G_E_PRINCIPAL",
+    "to": "RN_LOC_G_PRINCIPAL",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_187",
+    "from": "RN_LOC_G_ACADEMIC",
+    "to": "N_G_E_ACADEMIC",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_188",
+    "from": "N_G_E_ACADEMIC",
+    "to": "RN_LOC_G_ACADEMIC",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_189",
+    "from": "RN_LOC_G_FOUNDATION",
+    "to": "N_G_N_E",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_190",
+    "from": "N_G_N_E",
+    "to": "RN_LOC_G_FOUNDATION",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_191",
+    "from": "RN_LOC_G_DIRECTOR",
+    "to": "N_G_N_DIR",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_192",
+    "from": "N_G_N_DIR",
+    "to": "RN_LOC_G_DIRECTOR",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_193",
+    "from": "RN_LOC_G_STORE_11",
+    "to": "N_G_N_STORE",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_194",
+    "from": "N_G_N_STORE",
+    "to": "RN_LOC_G_STORE_11",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_195",
+    "from": "RN_LOC_G_PLACEMENT_EXAM",
+    "to": "N_G_N_EXAM",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_196",
+    "from": "N_G_N_EXAM",
+    "to": "RN_LOC_G_PLACEMENT_EXAM",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_197",
+    "from": "RN_LOC_G_PLACEMENT_OFFICE",
+    "to": "N_G_W_PLACEMENT",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_198",
+    "from": "N_G_W_PLACEMENT",
+    "to": "RN_LOC_G_PLACEMENT_OFFICE",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_199",
+    "from": "RN_LOC_G_STUDY_21",
+    "to": "N_G_C_STAIR_B",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_200",
+    "from": "N_G_C_STAIR_B",
+    "to": "RN_LOC_G_STUDY_21",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_201",
+    "from": "RN_LOC_G_DRAWING_22",
+    "to": "N_G_E_COMP",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_202",
+    "from": "N_G_E_COMP",
+    "to": "RN_LOC_G_DRAWING_22",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_203",
+    "from": "RN_LOC_G_DEPT_COMP",
+    "to": "N_G_E_COMP",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_204",
+    "from": "N_G_E_COMP",
+    "to": "RN_LOC_G_DEPT_COMP",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_205",
+    "from": "RN_LOC_G_HOD_CS",
+    "to": "N_G_E_COMP",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_206",
+    "from": "N_G_E_COMP",
+    "to": "RN_LOC_G_HOD_CS",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_207",
+    "from": "RN_LOC_G_COMP_LAB_5",
+    "to": "N_G_E_LAB5",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_208",
+    "from": "N_G_E_LAB5",
+    "to": "RN_LOC_G_COMP_LAB_5",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_209",
+    "from": "RN_LOC_G_SEMINAR_32",
+    "to": "N_G_C_STUDY32",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_210",
+    "from": "N_G_C_STUDY32",
+    "to": "RN_LOC_G_SEMINAR_32",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_211",
+    "from": "RN_LOC_G_STUDY_33",
+    "to": "N_G_C_STUDY32",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_212",
+    "from": "N_G_C_STUDY32",
+    "to": "RN_LOC_G_STUDY_33",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_213",
+    "from": "RN_LOC_G_GUEST_LOUNGE",
+    "to": "N_G_S_40",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_214",
+    "from": "N_G_S_40",
+    "to": "RN_LOC_G_GUEST_LOUNGE",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_215",
+    "from": "RN_LOC_G_CLASS_37",
+    "to": "N_G_S_E",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_216",
+    "from": "N_G_S_E",
+    "to": "RN_LOC_G_CLASS_37",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_217",
+    "from": "RN_LOC_G_VISITORS_LOUNGE",
+    "to": "N_G_S_W",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_218",
+    "from": "N_G_S_W",
+    "to": "RN_LOC_G_VISITORS_LOUNGE",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_219",
+    "from": "RN_LOC_G_SECURITY",
+    "to": "N_G_W_VISITORS",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_220",
+    "from": "N_G_W_VISITORS",
+    "to": "RN_LOC_G_SECURITY",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_221",
+    "from": "RN_LOC_G_DEPT_40",
+    "to": "N_G_S_40",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_222",
+    "from": "N_G_S_40",
+    "to": "RN_LOC_G_DEPT_40",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_223",
+    "from": "RN_LOC_G_MEETING_44",
+    "to": "N_G_W_STUDY43",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_224",
+    "from": "N_G_W_STUDY43",
+    "to": "RN_LOC_G_MEETING_44",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_225",
+    "from": "RN_LOC_G_COURT_1",
+    "to": "N_G_C_STUDY32",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_226",
+    "from": "N_G_C_STUDY32",
+    "to": "RN_LOC_G_COURT_1",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_227",
+    "from": "RN_LOC_G_COURT_2",
+    "to": "N_G_C_STAIR_A",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_228",
+    "from": "N_G_C_STAIR_A",
+    "to": "RN_LOC_G_COURT_2",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_229",
+    "from": "RN_LOC_G_COURT_3",
+    "to": "N_G_C_STAIR_A",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_230",
+    "from": "N_G_C_STAIR_A",
+    "to": "RN_LOC_G_COURT_3",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_231",
+    "from": "RN_LOC_G_COURT_4",
+    "to": "N_G_C_STAIR_B",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_232",
+    "from": "N_G_C_STAIR_B",
+    "to": "RN_LOC_G_COURT_4",
+    "distance": 5.0,
+    "travel_time_estimate": 4.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_233",
     "from": "RN_LOC_G_WORKSHOP_46",
     "to": "STAIR_WS_0",
     "distance": 5.0,
@@ -2590,7 +3262,7 @@
     "notes": ""
   },
   {
-    "id": "E_186",
+    "id": "E_234",
     "from": "STAIR_WS_0",
     "to": "RN_LOC_G_WORKSHOP_46",
     "distance": 5.0,
@@ -2604,7 +3276,7 @@
     "notes": ""
   },
   {
-    "id": "E_187",
+    "id": "E_235",
     "from": "RN_LOC_G_WORKSHOP_45",
     "to": "STAIR_WS_0",
     "distance": 5.0,
@@ -2618,7 +3290,7 @@
     "notes": ""
   },
   {
-    "id": "E_188",
+    "id": "E_236",
     "from": "STAIR_WS_0",
     "to": "RN_LOC_G_WORKSHOP_45",
     "distance": 5.0,
@@ -2632,683 +3304,11 @@
     "notes": ""
   },
   {
-    "id": "E_189",
-    "from": "N_1_S_W",
-    "to": "N_1_S_129",
-    "distance": 56.2,
-    "travel_time_estimate": 46.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_190",
-    "from": "N_1_S_129",
-    "to": "N_1_S_W",
-    "distance": 56.2,
-    "travel_time_estimate": 46.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_191",
-    "from": "N_1_S_129",
-    "to": "N_1_S_128",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_192",
-    "from": "N_1_S_128",
-    "to": "N_1_S_129",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_193",
-    "from": "N_1_S_128",
-    "to": "N_1_S_126",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_194",
-    "from": "N_1_S_126",
-    "to": "N_1_S_128",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_195",
-    "from": "N_1_S_126",
-    "to": "N_1_S_E",
-    "distance": 40.0,
-    "travel_time_estimate": 33.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_196",
-    "from": "N_1_S_E",
-    "to": "N_1_S_126",
-    "distance": 40.0,
-    "travel_time_estimate": 33.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_197",
-    "from": "N_1_S_W",
-    "to": "N_1_W_LIB",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_198",
-    "from": "N_1_W_LIB",
-    "to": "N_1_S_W",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_199",
-    "from": "N_1_W_LIB",
-    "to": "N_1_W_LIFT",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_200",
-    "from": "N_1_W_LIFT",
-    "to": "N_1_W_LIB",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_201",
-    "from": "N_1_W_LIFT",
-    "to": "N_1_W_136",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_202",
-    "from": "N_1_W_136",
-    "to": "N_1_W_LIFT",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_203",
-    "from": "N_1_W_136",
-    "to": "N_1_W_MID",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_204",
-    "from": "N_1_W_MID",
-    "to": "N_1_W_136",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_205",
-    "from": "N_1_W_MID",
-    "to": "N_1_W_116",
-    "distance": 35.0,
-    "travel_time_estimate": 29.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_206",
-    "from": "N_1_W_116",
-    "to": "N_1_W_MID",
-    "distance": 35.0,
-    "travel_time_estimate": 29.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_207",
-    "from": "N_1_W_116",
-    "to": "N_1_W_N",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_208",
-    "from": "N_1_W_N",
-    "to": "N_1_W_116",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_209",
-    "from": "N_1_W_N",
-    "to": "N_1_N_CAED",
-    "distance": 48.8,
-    "travel_time_estimate": 40.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_210",
-    "from": "N_1_N_CAED",
-    "to": "N_1_W_N",
-    "distance": 48.8,
-    "travel_time_estimate": 40.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_211",
-    "from": "N_1_N_CAED",
-    "to": "N_1_N_FACULTY",
-    "distance": 42.5,
-    "travel_time_estimate": 35.4,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_212",
-    "from": "N_1_N_FACULTY",
-    "to": "N_1_N_CAED",
-    "distance": 42.5,
-    "travel_time_estimate": 35.4,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_213",
-    "from": "N_1_N_FACULTY",
-    "to": "N_1_N_MBA_CLASS",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_214",
-    "from": "N_1_N_MBA_CLASS",
-    "to": "N_1_N_FACULTY",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_215",
-    "from": "N_1_N_MBA_CLASS",
-    "to": "N_1_N_MBA_OFFICE",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_216",
-    "from": "N_1_N_MBA_OFFICE",
-    "to": "N_1_N_MBA_CLASS",
-    "distance": 22.5,
-    "travel_time_estimate": 18.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_217",
-    "from": "N_1_N_MBA_OFFICE",
-    "to": "N_1_N_E",
-    "distance": 35.0,
-    "travel_time_estimate": 29.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_218",
-    "from": "N_1_N_E",
-    "to": "N_1_N_MBA_OFFICE",
-    "distance": 35.0,
-    "travel_time_estimate": 29.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_219",
-    "from": "N_1_N_E",
-    "to": "N_1_E_MBA102",
-    "distance": 23.8,
-    "travel_time_estimate": 19.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_220",
-    "from": "N_1_E_MBA102",
-    "to": "N_1_N_E",
-    "distance": 23.8,
-    "travel_time_estimate": 19.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_221",
-    "from": "N_1_E_MBA102",
-    "to": "N_1_E_MBA103",
-    "distance": 18.8,
-    "travel_time_estimate": 15.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_222",
-    "from": "N_1_E_MBA103",
-    "to": "N_1_E_MBA102",
-    "distance": 18.8,
-    "travel_time_estimate": 15.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_223",
-    "from": "N_1_E_MBA103",
-    "to": "N_1_E_MID",
-    "distance": 39.1,
-    "travel_time_estimate": 32.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_224",
-    "from": "N_1_E_MID",
-    "to": "N_1_E_MBA103",
-    "distance": 39.1,
-    "travel_time_estimate": 32.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_225",
-    "from": "N_1_E_MID",
-    "to": "N_1_E_STAFF",
-    "distance": 33.8,
-    "travel_time_estimate": 28.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_226",
-    "from": "N_1_E_STAFF",
-    "to": "N_1_E_MID",
-    "distance": 33.8,
-    "travel_time_estimate": 28.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_227",
-    "from": "N_1_E_STAFF",
-    "to": "N_1_E_LAB1",
-    "distance": 28.8,
-    "travel_time_estimate": 24.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_228",
-    "from": "N_1_E_LAB1",
-    "to": "N_1_E_STAFF",
-    "distance": 28.8,
-    "travel_time_estimate": 24.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_229",
-    "from": "N_1_E_LAB1",
-    "to": "N_1_S_E",
-    "distance": 45.1,
-    "travel_time_estimate": 37.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_230",
-    "from": "N_1_S_E",
-    "to": "N_1_E_LAB1",
-    "distance": 45.1,
-    "travel_time_estimate": 37.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_231",
-    "from": "N_1_W_MID",
-    "to": "N_1_C_STAIR_A",
-    "distance": 52.2,
-    "travel_time_estimate": 43.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_232",
-    "from": "N_1_C_STAIR_A",
-    "to": "N_1_W_MID",
-    "distance": 52.2,
-    "travel_time_estimate": 43.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_233",
-    "from": "N_1_C_STAIR_A",
-    "to": "N_1_C_MID",
-    "distance": 22.4,
-    "travel_time_estimate": 18.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_234",
-    "from": "N_1_C_MID",
-    "to": "N_1_C_STAIR_A",
-    "distance": 22.4,
-    "travel_time_estimate": 18.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_235",
-    "from": "N_1_C_MID",
-    "to": "N_1_C_STAIR_B",
-    "distance": 40.0,
-    "travel_time_estimate": 33.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_236",
-    "from": "N_1_C_STAIR_B",
-    "to": "N_1_C_MID",
-    "distance": 40.0,
-    "travel_time_estimate": 33.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
     "id": "E_237",
-    "from": "N_1_C_STAIR_B",
-    "to": "N_1_E_MID",
-    "distance": 35.0,
-    "travel_time_estimate": 29.2,
+    "from": "N_1_S_W",
+    "to": "N_1_S_129",
+    "distance": 56.2,
+    "travel_time_estimate": 46.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
@@ -3319,6 +3319,678 @@
   },
   {
     "id": "E_238",
+    "from": "N_1_S_129",
+    "to": "N_1_S_W",
+    "distance": 56.2,
+    "travel_time_estimate": 46.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_239",
+    "from": "N_1_S_129",
+    "to": "N_1_S_128",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_240",
+    "from": "N_1_S_128",
+    "to": "N_1_S_129",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_241",
+    "from": "N_1_S_128",
+    "to": "N_1_S_126",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_242",
+    "from": "N_1_S_126",
+    "to": "N_1_S_128",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_243",
+    "from": "N_1_S_126",
+    "to": "N_1_S_E",
+    "distance": 40.0,
+    "travel_time_estimate": 33.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_244",
+    "from": "N_1_S_E",
+    "to": "N_1_S_126",
+    "distance": 40.0,
+    "travel_time_estimate": 33.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_245",
+    "from": "N_1_S_W",
+    "to": "N_1_W_LIB",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_246",
+    "from": "N_1_W_LIB",
+    "to": "N_1_S_W",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_247",
+    "from": "N_1_W_LIB",
+    "to": "N_1_W_LIFT",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_248",
+    "from": "N_1_W_LIFT",
+    "to": "N_1_W_LIB",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_249",
+    "from": "N_1_W_LIFT",
+    "to": "N_1_W_136",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_250",
+    "from": "N_1_W_136",
+    "to": "N_1_W_LIFT",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_251",
+    "from": "N_1_W_136",
+    "to": "N_1_W_MID",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_252",
+    "from": "N_1_W_MID",
+    "to": "N_1_W_136",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_253",
+    "from": "N_1_W_MID",
+    "to": "N_1_W_116",
+    "distance": 35.0,
+    "travel_time_estimate": 29.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_254",
+    "from": "N_1_W_116",
+    "to": "N_1_W_MID",
+    "distance": 35.0,
+    "travel_time_estimate": 29.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_255",
+    "from": "N_1_W_116",
+    "to": "N_1_W_N",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_256",
+    "from": "N_1_W_N",
+    "to": "N_1_W_116",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_257",
+    "from": "N_1_W_N",
+    "to": "N_1_N_CAED",
+    "distance": 48.8,
+    "travel_time_estimate": 40.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_258",
+    "from": "N_1_N_CAED",
+    "to": "N_1_W_N",
+    "distance": 48.8,
+    "travel_time_estimate": 40.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_259",
+    "from": "N_1_N_CAED",
+    "to": "N_1_N_FACULTY",
+    "distance": 42.5,
+    "travel_time_estimate": 35.4,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_260",
+    "from": "N_1_N_FACULTY",
+    "to": "N_1_N_CAED",
+    "distance": 42.5,
+    "travel_time_estimate": 35.4,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_261",
+    "from": "N_1_N_FACULTY",
+    "to": "N_1_N_MBA_CLASS",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_262",
+    "from": "N_1_N_MBA_CLASS",
+    "to": "N_1_N_FACULTY",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_263",
+    "from": "N_1_N_MBA_CLASS",
+    "to": "N_1_N_MBA_OFFICE",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_264",
+    "from": "N_1_N_MBA_OFFICE",
+    "to": "N_1_N_MBA_CLASS",
+    "distance": 22.5,
+    "travel_time_estimate": 18.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_265",
+    "from": "N_1_N_MBA_OFFICE",
+    "to": "N_1_N_E",
+    "distance": 35.0,
+    "travel_time_estimate": 29.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_266",
+    "from": "N_1_N_E",
+    "to": "N_1_N_MBA_OFFICE",
+    "distance": 35.0,
+    "travel_time_estimate": 29.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_267",
+    "from": "N_1_N_E",
+    "to": "N_1_E_MBA102",
+    "distance": 23.8,
+    "travel_time_estimate": 19.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_268",
+    "from": "N_1_E_MBA102",
+    "to": "N_1_N_E",
+    "distance": 23.8,
+    "travel_time_estimate": 19.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_269",
+    "from": "N_1_E_MBA102",
+    "to": "N_1_E_MBA103",
+    "distance": 18.8,
+    "travel_time_estimate": 15.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_270",
+    "from": "N_1_E_MBA103",
+    "to": "N_1_E_MBA102",
+    "distance": 18.8,
+    "travel_time_estimate": 15.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_271",
+    "from": "N_1_E_MBA103",
+    "to": "N_1_E_MID",
+    "distance": 39.1,
+    "travel_time_estimate": 32.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_272",
+    "from": "N_1_E_MID",
+    "to": "N_1_E_MBA103",
+    "distance": 39.1,
+    "travel_time_estimate": 32.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_273",
+    "from": "N_1_E_MID",
+    "to": "N_1_E_STAFF",
+    "distance": 33.8,
+    "travel_time_estimate": 28.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_274",
+    "from": "N_1_E_STAFF",
+    "to": "N_1_E_MID",
+    "distance": 33.8,
+    "travel_time_estimate": 28.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_275",
+    "from": "N_1_E_STAFF",
+    "to": "N_1_E_LAB1",
+    "distance": 28.8,
+    "travel_time_estimate": 24.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_276",
+    "from": "N_1_E_LAB1",
+    "to": "N_1_E_STAFF",
+    "distance": 28.8,
+    "travel_time_estimate": 24.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_277",
+    "from": "N_1_E_LAB1",
+    "to": "N_1_S_E",
+    "distance": 45.1,
+    "travel_time_estimate": 37.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_278",
+    "from": "N_1_S_E",
+    "to": "N_1_E_LAB1",
+    "distance": 45.1,
+    "travel_time_estimate": 37.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_279",
+    "from": "N_1_W_MID",
+    "to": "N_1_C_STAIR_A",
+    "distance": 52.2,
+    "travel_time_estimate": 43.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_280",
+    "from": "N_1_C_STAIR_A",
+    "to": "N_1_W_MID",
+    "distance": 52.2,
+    "travel_time_estimate": 43.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_281",
+    "from": "N_1_C_STAIR_A",
+    "to": "N_1_C_MID",
+    "distance": 22.4,
+    "travel_time_estimate": 18.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_282",
+    "from": "N_1_C_MID",
+    "to": "N_1_C_STAIR_A",
+    "distance": 22.4,
+    "travel_time_estimate": 18.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_283",
+    "from": "N_1_C_MID",
+    "to": "N_1_C_STAIR_B",
+    "distance": 40.0,
+    "travel_time_estimate": 33.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_284",
+    "from": "N_1_C_STAIR_B",
+    "to": "N_1_C_MID",
+    "distance": 40.0,
+    "travel_time_estimate": 33.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_285",
+    "from": "N_1_C_STAIR_B",
+    "to": "N_1_E_MID",
+    "distance": 35.0,
+    "travel_time_estimate": 29.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_286",
     "from": "N_1_E_MID",
     "to": "N_1_C_STAIR_B",
     "distance": 35.0,
@@ -3332,7 +4004,7 @@
     "notes": ""
   },
   {
-    "id": "E_239",
+    "id": "E_287",
     "from": "N_1_N_FACULTY",
     "to": "N_1_C_MID",
     "distance": 75.2,
@@ -3346,7 +4018,7 @@
     "notes": ""
   },
   {
-    "id": "E_240",
+    "id": "E_288",
     "from": "N_1_C_MID",
     "to": "N_1_N_FACULTY",
     "distance": 75.2,
@@ -3360,7 +4032,7 @@
     "notes": ""
   },
   {
-    "id": "E_241",
+    "id": "E_289",
     "from": "N_1_C_MID",
     "to": "N_1_C_STUDY133",
     "distance": 48.8,
@@ -3374,7 +4046,7 @@
     "notes": ""
   },
   {
-    "id": "E_242",
+    "id": "E_290",
     "from": "N_1_C_STUDY133",
     "to": "N_1_C_MID",
     "distance": 48.8,
@@ -3388,7 +4060,7 @@
     "notes": ""
   },
   {
-    "id": "E_243",
+    "id": "E_291",
     "from": "N_1_C_STUDY133",
     "to": "N_1_S_128",
     "distance": 56.0,
@@ -3402,7 +4074,7 @@
     "notes": ""
   },
   {
-    "id": "E_244",
+    "id": "E_292",
     "from": "N_1_S_128",
     "to": "N_1_C_STUDY133",
     "distance": 56.0,
@@ -3416,7 +4088,7 @@
     "notes": ""
   },
   {
-    "id": "E_245",
+    "id": "E_293",
     "from": "ELEV_1_1",
     "to": "N_1_W_LIFT",
     "distance": 5.0,
@@ -3430,7 +4102,7 @@
     "notes": ""
   },
   {
-    "id": "E_246",
+    "id": "E_294",
     "from": "N_1_W_LIFT",
     "to": "ELEV_1_1",
     "distance": 5.0,
@@ -3444,7 +4116,7 @@
     "notes": ""
   },
   {
-    "id": "E_247",
+    "id": "E_295",
     "from": "STAIR_A_1",
     "to": "N_1_C_STAIR_A",
     "distance": 8.0,
@@ -3458,7 +4130,7 @@
     "notes": ""
   },
   {
-    "id": "E_248",
+    "id": "E_296",
     "from": "N_1_C_STAIR_A",
     "to": "STAIR_A_1",
     "distance": 8.0,
@@ -3472,7 +4144,7 @@
     "notes": ""
   },
   {
-    "id": "E_249",
+    "id": "E_297",
     "from": "STAIR_B_1",
     "to": "N_1_C_STAIR_B",
     "distance": 6.0,
@@ -3486,7 +4158,7 @@
     "notes": ""
   },
   {
-    "id": "E_250",
+    "id": "E_298",
     "from": "N_1_C_STAIR_B",
     "to": "STAIR_B_1",
     "distance": 6.0,
@@ -3500,7 +4172,7 @@
     "notes": ""
   },
   {
-    "id": "E_251",
+    "id": "E_299",
     "from": "STAIR_C_1",
     "to": "N_1_C_STAIR_C",
     "distance": 8.0,
@@ -3514,7 +4186,7 @@
     "notes": ""
   },
   {
-    "id": "E_252",
+    "id": "E_300",
     "from": "N_1_C_STAIR_C",
     "to": "STAIR_C_1",
     "distance": 8.0,
@@ -3528,7 +4200,7 @@
     "notes": ""
   },
   {
-    "id": "E_253",
+    "id": "E_301",
     "from": "N_1_C_STAIR_C",
     "to": "N_1_W_LIFT",
     "distance": 25.0,
@@ -3542,7 +4214,7 @@
     "notes": ""
   },
   {
-    "id": "E_254",
+    "id": "E_302",
     "from": "N_1_W_LIFT",
     "to": "N_1_C_STAIR_C",
     "distance": 25.0,
@@ -3556,7 +4228,7 @@
     "notes": ""
   },
   {
-    "id": "E_255",
+    "id": "E_303",
     "from": "N_1_C_STAIR_C",
     "to": "N_1_C_STUDY133",
     "distance": 28.0,
@@ -3570,7 +4242,7 @@
     "notes": ""
   },
   {
-    "id": "E_256",
+    "id": "E_304",
     "from": "N_1_C_STUDY133",
     "to": "N_1_C_STAIR_C",
     "distance": 28.0,
@@ -3584,7 +4256,7 @@
     "notes": ""
   },
   {
-    "id": "E_257",
+    "id": "E_305",
     "from": "STAIR_D_1",
     "to": "N_1_S_129",
     "distance": 6.0,
@@ -3598,7 +4270,7 @@
     "notes": ""
   },
   {
-    "id": "E_258",
+    "id": "E_306",
     "from": "N_1_S_129",
     "to": "STAIR_D_1",
     "distance": 6.0,
@@ -3612,7 +4284,7 @@
     "notes": ""
   },
   {
-    "id": "E_259",
+    "id": "E_307",
     "from": "STAIR_LIB_1",
     "to": "N_1_W_LIB",
     "distance": 15.0,
@@ -3626,7 +4298,7 @@
     "notes": ""
   },
   {
-    "id": "E_260",
+    "id": "E_308",
     "from": "N_1_W_LIB",
     "to": "STAIR_LIB_1",
     "distance": 15.0,
@@ -3640,7 +4312,7 @@
     "notes": ""
   },
   {
-    "id": "E_261",
+    "id": "E_309",
     "from": "RN_LOC_1_MBA_DIR",
     "to": "N_1_N_E",
     "distance": 5.0,
@@ -3654,7 +4326,7 @@
     "notes": ""
   },
   {
-    "id": "E_262",
+    "id": "E_310",
     "from": "N_1_N_E",
     "to": "RN_LOC_1_MBA_DIR",
     "distance": 5.0,
@@ -3668,7 +4340,7 @@
     "notes": ""
   },
   {
-    "id": "E_263",
+    "id": "E_311",
     "from": "RN_LOC_1_MBA_CR_102",
     "to": "N_1_E_MBA102",
     "distance": 5.0,
@@ -3682,7 +4354,7 @@
     "notes": ""
   },
   {
-    "id": "E_264",
+    "id": "E_312",
     "from": "N_1_E_MBA102",
     "to": "RN_LOC_1_MBA_CR_102",
     "distance": 5.0,
@@ -3696,7 +4368,7 @@
     "notes": ""
   },
   {
-    "id": "E_265",
+    "id": "E_313",
     "from": "RN_LOC_1_MBA_CR_103",
     "to": "N_1_E_MBA103",
     "distance": 5.0,
@@ -3710,7 +4382,7 @@
     "notes": ""
   },
   {
-    "id": "E_266",
+    "id": "E_314",
     "from": "N_1_E_MBA103",
     "to": "RN_LOC_1_MBA_CR_103",
     "distance": 5.0,
@@ -3724,7 +4396,7 @@
     "notes": ""
   },
   {
-    "id": "E_267",
+    "id": "E_315",
     "from": "RN_LOC_1_MEET_106",
     "to": "N_1_C_STAIR_B",
     "distance": 5.0,
@@ -3738,7 +4410,7 @@
     "notes": ""
   },
   {
-    "id": "E_268",
+    "id": "E_316",
     "from": "N_1_C_STAIR_B",
     "to": "RN_LOC_1_MEET_106",
     "distance": 5.0,
@@ -3752,7 +4424,7 @@
     "notes": ""
   },
   {
-    "id": "E_269",
+    "id": "E_317",
     "from": "RN_LOC_1_STUDY_107",
     "to": "N_1_C_STAIR_B",
     "distance": 5.0,
@@ -3766,7 +4438,7 @@
     "notes": ""
   },
   {
-    "id": "E_270",
+    "id": "E_318",
     "from": "N_1_C_STAIR_B",
     "to": "RN_LOC_1_STUDY_107",
     "distance": 5.0,
@@ -3780,7 +4452,7 @@
     "notes": ""
   },
   {
-    "id": "E_271",
+    "id": "E_319",
     "from": "RN_LOC_1_MBA_LIB",
     "to": "N_1_C_STAIR_A",
     "distance": 5.0,
@@ -3794,7 +4466,7 @@
     "notes": ""
   },
   {
-    "id": "E_272",
+    "id": "E_320",
     "from": "N_1_C_STAIR_A",
     "to": "RN_LOC_1_MBA_LIB",
     "distance": 5.0,
@@ -3808,7 +4480,7 @@
     "notes": ""
   },
   {
-    "id": "E_273",
+    "id": "E_321",
     "from": "RN_LOC_1_MBA_OFFICE",
     "to": "N_1_N_MBA_OFFICE",
     "distance": 5.0,
@@ -3822,7 +4494,7 @@
     "notes": ""
   },
   {
-    "id": "E_274",
+    "id": "E_322",
     "from": "N_1_N_MBA_OFFICE",
     "to": "RN_LOC_1_MBA_OFFICE",
     "distance": 5.0,
@@ -3836,7 +4508,7 @@
     "notes": ""
   },
   {
-    "id": "E_275",
+    "id": "E_323",
     "from": "RN_LOC_1_MBA_CLASS",
     "to": "N_1_N_MBA_CLASS",
     "distance": 5.0,
@@ -3850,7 +4522,7 @@
     "notes": ""
   },
   {
-    "id": "E_276",
+    "id": "E_324",
     "from": "N_1_N_MBA_CLASS",
     "to": "RN_LOC_1_MBA_CLASS",
     "distance": 5.0,
@@ -3864,7 +4536,7 @@
     "notes": ""
   },
   {
-    "id": "E_277",
+    "id": "E_325",
     "from": "RN_LOC_1_FACULTY_111",
     "to": "N_1_N_FACULTY",
     "distance": 5.0,
@@ -3878,7 +4550,7 @@
     "notes": ""
   },
   {
-    "id": "E_278",
+    "id": "E_326",
     "from": "N_1_N_FACULTY",
     "to": "RN_LOC_1_FACULTY_111",
     "distance": 5.0,
@@ -3892,7 +4564,7 @@
     "notes": ""
   },
   {
-    "id": "E_279",
+    "id": "E_327",
     "from": "RN_LOC_1_CAED_LAB",
     "to": "N_1_N_CAED",
     "distance": 5.0,
@@ -3906,7 +4578,7 @@
     "notes": ""
   },
   {
-    "id": "E_280",
+    "id": "E_328",
     "from": "N_1_N_CAED",
     "to": "RN_LOC_1_CAED_LAB",
     "distance": 5.0,
@@ -3920,7 +4592,7 @@
     "notes": ""
   },
   {
-    "id": "E_281",
+    "id": "E_329",
     "from": "RN_LOC_1_LADIES_ROOM",
     "to": "N_1_W_N",
     "distance": 5.0,
@@ -3934,7 +4606,7 @@
     "notes": ""
   },
   {
-    "id": "E_282",
+    "id": "E_330",
     "from": "N_1_W_N",
     "to": "RN_LOC_1_LADIES_ROOM",
     "distance": 5.0,
@@ -3948,7 +4620,7 @@
     "notes": ""
   },
   {
-    "id": "E_283",
+    "id": "E_331",
     "from": "RN_LOC_1_LECTURE_116",
     "to": "N_1_W_116",
     "distance": 5.0,
@@ -3962,7 +4634,7 @@
     "notes": ""
   },
   {
-    "id": "E_284",
+    "id": "E_332",
     "from": "N_1_W_116",
     "to": "RN_LOC_1_LECTURE_116",
     "distance": 5.0,
@@ -3976,7 +4648,7 @@
     "notes": ""
   },
   {
-    "id": "E_285",
+    "id": "E_333",
     "from": "RN_LOC_1_ELEC_PANEL",
     "to": "N_1_C_MID",
     "distance": 5.0,
@@ -3990,7 +4662,7 @@
     "notes": ""
   },
   {
-    "id": "E_286",
+    "id": "E_334",
     "from": "N_1_C_MID",
     "to": "RN_LOC_1_ELEC_PANEL",
     "distance": 5.0,
@@ -4004,7 +4676,7 @@
     "notes": ""
   },
   {
-    "id": "E_287",
+    "id": "E_335",
     "from": "RN_LOC_1_STUDY_119",
     "to": "N_1_C_STUDY133",
     "distance": 5.0,
@@ -4018,7 +4690,7 @@
     "notes": ""
   },
   {
-    "id": "E_288",
+    "id": "E_336",
     "from": "N_1_C_STUDY133",
     "to": "RN_LOC_1_STUDY_119",
     "distance": 5.0,
@@ -4032,7 +4704,7 @@
     "notes": ""
   },
   {
-    "id": "E_289",
+    "id": "E_337",
     "from": "RN_LOC_1_STAFF_ROOM",
     "to": "N_1_E_STAFF",
     "distance": 5.0,
@@ -4046,7 +4718,7 @@
     "notes": ""
   },
   {
-    "id": "E_290",
+    "id": "E_338",
     "from": "N_1_E_STAFF",
     "to": "RN_LOC_1_STAFF_ROOM",
     "distance": 5.0,
@@ -4060,7 +4732,7 @@
     "notes": ""
   },
   {
-    "id": "E_291",
+    "id": "E_339",
     "from": "RN_LOC_1_EC_LAB_1",
     "to": "N_1_E_LAB1",
     "distance": 5.0,
@@ -4074,7 +4746,7 @@
     "notes": ""
   },
   {
-    "id": "E_292",
+    "id": "E_340",
     "from": "N_1_E_LAB1",
     "to": "RN_LOC_1_EC_LAB_1",
     "distance": 5.0,
@@ -4088,7 +4760,7 @@
     "notes": ""
   },
   {
-    "id": "E_293",
+    "id": "E_341",
     "from": "RN_LOC_1_EC_LAB_2",
     "to": "N_1_S_E",
     "distance": 5.0,
@@ -4102,7 +4774,7 @@
     "notes": ""
   },
   {
-    "id": "E_294",
+    "id": "E_342",
     "from": "N_1_S_E",
     "to": "RN_LOC_1_EC_LAB_2",
     "distance": 5.0,
@@ -4116,7 +4788,7 @@
     "notes": ""
   },
   {
-    "id": "E_295",
+    "id": "E_343",
     "from": "RN_LOC_1_EC_LAB_3",
     "to": "N_1_S_126",
     "distance": 5.0,
@@ -4130,7 +4802,7 @@
     "notes": ""
   },
   {
-    "id": "E_296",
+    "id": "E_344",
     "from": "N_1_S_126",
     "to": "RN_LOC_1_EC_LAB_3",
     "distance": 5.0,
@@ -4144,7 +4816,7 @@
     "notes": ""
   },
   {
-    "id": "E_297",
+    "id": "E_345",
     "from": "RN_LOC_1_EC_LAB_4",
     "to": "N_1_S_128",
     "distance": 5.0,
@@ -4158,7 +4830,7 @@
     "notes": ""
   },
   {
-    "id": "E_298",
+    "id": "E_346",
     "from": "N_1_S_128",
     "to": "RN_LOC_1_EC_LAB_4",
     "distance": 5.0,
@@ -4172,7 +4844,7 @@
     "notes": ""
   },
   {
-    "id": "E_299",
+    "id": "E_347",
     "from": "RN_LOC_1_EC_LAB_5",
     "to": "N_1_S_129",
     "distance": 5.0,
@@ -4186,7 +4858,7 @@
     "notes": ""
   },
   {
-    "id": "E_300",
+    "id": "E_348",
     "from": "N_1_S_129",
     "to": "RN_LOC_1_EC_LAB_5",
     "distance": 5.0,
@@ -4200,7 +4872,7 @@
     "notes": ""
   },
   {
-    "id": "E_301",
+    "id": "E_349",
     "from": "RN_LOC_1_EC_LAB_6",
     "to": "N_1_C_STUDY133",
     "distance": 5.0,
@@ -4214,7 +4886,7 @@
     "notes": ""
   },
   {
-    "id": "E_302",
+    "id": "E_350",
     "from": "N_1_C_STUDY133",
     "to": "RN_LOC_1_EC_LAB_6",
     "distance": 5.0,
@@ -4228,7 +4900,7 @@
     "notes": ""
   },
   {
-    "id": "E_303",
+    "id": "E_351",
     "from": "RN_LOC_1_EC_LAB_7",
     "to": "N_1_C_STUDY133",
     "distance": 5.0,
@@ -4242,7 +4914,7 @@
     "notes": ""
   },
   {
-    "id": "E_304",
+    "id": "E_352",
     "from": "N_1_C_STUDY133",
     "to": "RN_LOC_1_EC_LAB_7",
     "distance": 5.0,
@@ -4256,7 +4928,7 @@
     "notes": ""
   },
   {
-    "id": "E_305",
+    "id": "E_353",
     "from": "RN_LOC_1_EC_LAB_8",
     "to": "N_1_C_STAIR_C",
     "distance": 5.0,
@@ -4270,7 +4942,7 @@
     "notes": ""
   },
   {
-    "id": "E_306",
+    "id": "E_354",
     "from": "N_1_C_STAIR_C",
     "to": "RN_LOC_1_EC_LAB_8",
     "distance": 5.0,
@@ -4284,7 +4956,7 @@
     "notes": ""
   },
   {
-    "id": "E_307",
+    "id": "E_355",
     "from": "RN_LOC_1_STUDY_133",
     "to": "N_1_C_STUDY133",
     "distance": 5.0,
@@ -4298,7 +4970,7 @@
     "notes": ""
   },
   {
-    "id": "E_308",
+    "id": "E_356",
     "from": "N_1_C_STUDY133",
     "to": "RN_LOC_1_STUDY_133",
     "distance": 5.0,
@@ -4312,7 +4984,7 @@
     "notes": ""
   },
   {
-    "id": "E_309",
+    "id": "E_357",
     "from": "RN_LOC_1_LIB_MAIN",
     "to": "N_1_W_LIB",
     "distance": 5.0,
@@ -4326,7 +4998,7 @@
     "notes": ""
   },
   {
-    "id": "E_310",
+    "id": "E_358",
     "from": "N_1_W_LIB",
     "to": "RN_LOC_1_LIB_MAIN",
     "distance": 5.0,
@@ -4340,7 +5012,7 @@
     "notes": ""
   },
   {
-    "id": "E_311",
+    "id": "E_359",
     "from": "RN_LOC_1_STUDY_136",
     "to": "N_1_W_136",
     "distance": 5.0,
@@ -4354,7 +5026,7 @@
     "notes": ""
   },
   {
-    "id": "E_312",
+    "id": "E_360",
     "from": "N_1_W_136",
     "to": "RN_LOC_1_STUDY_136",
     "distance": 5.0,
@@ -4368,7 +5040,7 @@
     "notes": ""
   },
   {
-    "id": "E_313",
+    "id": "E_361",
     "from": "RN_LOC_1_LECTURE_137",
     "to": "N_1_W_LIFT",
     "distance": 5.0,
@@ -4382,7 +5054,7 @@
     "notes": ""
   },
   {
-    "id": "E_314",
+    "id": "E_362",
     "from": "N_1_W_LIFT",
     "to": "RN_LOC_1_LECTURE_137",
     "distance": 5.0,
@@ -4396,7 +5068,7 @@
     "notes": ""
   },
   {
-    "id": "E_315",
+    "id": "E_363",
     "from": "RN_LOC_1_SEMINAR_AUD",
     "to": "N_1_C_STAIR_A",
     "distance": 5.0,
@@ -4410,7 +5082,7 @@
     "notes": ""
   },
   {
-    "id": "E_316",
+    "id": "E_364",
     "from": "N_1_C_STAIR_A",
     "to": "RN_LOC_1_SEMINAR_AUD",
     "distance": 5.0,
@@ -4424,7 +5096,7 @@
     "notes": ""
   },
   {
-    "id": "E_317",
+    "id": "E_365",
     "from": "RN_LOC_1_WORKSHOP_138",
     "to": "STAIR_WS_1",
     "distance": 5.0,
@@ -4438,7 +5110,7 @@
     "notes": ""
   },
   {
-    "id": "E_318",
+    "id": "E_366",
     "from": "STAIR_WS_1",
     "to": "RN_LOC_1_WORKSHOP_138",
     "distance": 5.0,
@@ -4452,7 +5124,7 @@
     "notes": ""
   },
   {
-    "id": "E_319",
+    "id": "E_367",
     "from": "RN_LOC_1_WORKSHOP_139",
     "to": "STAIR_WS_1",
     "distance": 5.0,
@@ -4466,7 +5138,7 @@
     "notes": ""
   },
   {
-    "id": "E_320",
+    "id": "E_368",
     "from": "STAIR_WS_1",
     "to": "RN_LOC_1_WORKSHOP_139",
     "distance": 5.0,
@@ -4480,683 +5152,11 @@
     "notes": ""
   },
   {
-    "id": "E_321",
-    "from": "N_2_S_W",
-    "to": "N_2_S_233",
-    "distance": 53.8,
-    "travel_time_estimate": 44.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_322",
-    "from": "N_2_S_233",
-    "to": "N_2_S_W",
-    "distance": 53.8,
-    "travel_time_estimate": 44.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_323",
-    "from": "N_2_S_233",
-    "to": "N_2_S_232",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_324",
-    "from": "N_2_S_232",
-    "to": "N_2_S_233",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_325",
-    "from": "N_2_S_232",
-    "to": "N_2_S_231",
-    "distance": 21.2,
-    "travel_time_estimate": 17.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_326",
-    "from": "N_2_S_231",
-    "to": "N_2_S_232",
-    "distance": 21.2,
-    "travel_time_estimate": 17.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_327",
-    "from": "N_2_S_231",
-    "to": "N_2_S_230",
-    "distance": 16.2,
-    "travel_time_estimate": 13.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_328",
-    "from": "N_2_S_230",
-    "to": "N_2_S_231",
-    "distance": 16.2,
-    "travel_time_estimate": 13.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_329",
-    "from": "N_2_S_230",
-    "to": "N_2_S_E",
-    "distance": 50.0,
-    "travel_time_estimate": 41.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_330",
-    "from": "N_2_S_E",
-    "to": "N_2_S_230",
-    "distance": 50.0,
-    "travel_time_estimate": 41.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_331",
-    "from": "N_2_S_W",
-    "to": "N_2_W_LIB",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_332",
-    "from": "N_2_W_LIB",
-    "to": "N_2_S_W",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_333",
-    "from": "N_2_W_LIB",
-    "to": "N_2_W_LIFT",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_334",
-    "from": "N_2_W_LIFT",
-    "to": "N_2_W_LIB",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_335",
-    "from": "N_2_W_LIFT",
-    "to": "N_2_W_CHEM",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_336",
-    "from": "N_2_W_CHEM",
-    "to": "N_2_W_LIFT",
-    "distance": 30.0,
-    "travel_time_estimate": 25.0,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_337",
-    "from": "N_2_W_CHEM",
-    "to": "N_2_W_MID",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_338",
-    "from": "N_2_W_MID",
-    "to": "N_2_W_CHEM",
-    "distance": 17.5,
-    "travel_time_estimate": 14.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_339",
-    "from": "N_2_W_MID",
-    "to": "N_2_W_PHYSICS",
-    "distance": 27.5,
-    "travel_time_estimate": 22.9,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_340",
-    "from": "N_2_W_PHYSICS",
-    "to": "N_2_W_MID",
-    "distance": 27.5,
-    "travel_time_estimate": 22.9,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_341",
-    "from": "N_2_W_PHYSICS",
-    "to": "N_2_W_LOUNGE",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_342",
-    "from": "N_2_W_LOUNGE",
-    "to": "N_2_W_PHYSICS",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_343",
-    "from": "N_2_W_LOUNGE",
-    "to": "N_2_W_N",
-    "distance": 7.5,
-    "travel_time_estimate": 6.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_344",
-    "from": "N_2_W_N",
-    "to": "N_2_W_LOUNGE",
-    "distance": 7.5,
-    "travel_time_estimate": 6.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_345",
-    "from": "N_2_W_N",
-    "to": "N_2_N_214",
-    "distance": 41.2,
-    "travel_time_estimate": 34.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_346",
-    "from": "N_2_N_214",
-    "to": "N_2_W_N",
-    "distance": 41.2,
-    "travel_time_estimate": 34.3,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_347",
-    "from": "N_2_N_214",
-    "to": "N_2_N_213",
-    "distance": 25.0,
-    "travel_time_estimate": 20.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_348",
-    "from": "N_2_N_213",
-    "to": "N_2_N_214",
-    "distance": 25.0,
-    "travel_time_estimate": 20.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_349",
-    "from": "N_2_N_213",
-    "to": "N_2_N_211",
-    "distance": 47.5,
-    "travel_time_estimate": 39.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_350",
-    "from": "N_2_N_211",
-    "to": "N_2_N_213",
-    "distance": 47.5,
-    "travel_time_estimate": 39.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_351",
-    "from": "N_2_N_211",
-    "to": "N_2_N_201",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_352",
-    "from": "N_2_N_201",
-    "to": "N_2_N_211",
-    "distance": 37.5,
-    "travel_time_estimate": 31.2,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_353",
-    "from": "N_2_N_201",
-    "to": "N_2_N_E",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_354",
-    "from": "N_2_N_E",
-    "to": "N_2_N_201",
-    "distance": 20.0,
-    "travel_time_estimate": 16.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_355",
-    "from": "N_2_N_E",
-    "to": "N_2_E_MBA202",
-    "distance": 23.8,
-    "travel_time_estimate": 19.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_356",
-    "from": "N_2_E_MBA202",
-    "to": "N_2_N_E",
-    "distance": 23.8,
-    "travel_time_estimate": 19.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_357",
-    "from": "N_2_E_MBA202",
-    "to": "N_2_E_MBA203",
-    "distance": 18.8,
-    "travel_time_estimate": 15.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_358",
-    "from": "N_2_E_MBA203",
-    "to": "N_2_E_MBA202",
-    "distance": 18.8,
-    "travel_time_estimate": 15.7,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_359",
-    "from": "N_2_E_MBA203",
-    "to": "N_2_E_MID",
-    "distance": 39.1,
-    "travel_time_estimate": 32.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_360",
-    "from": "N_2_E_MID",
-    "to": "N_2_E_MBA203",
-    "distance": 39.1,
-    "travel_time_estimate": 32.6,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_361",
-    "from": "N_2_E_MID",
-    "to": "N_2_E_STAFF",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_362",
-    "from": "N_2_E_STAFF",
-    "to": "N_2_E_MID",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_363",
-    "from": "N_2_E_STAFF",
-    "to": "N_2_E_CS_CR",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_364",
-    "from": "N_2_E_CS_CR",
-    "to": "N_2_E_STAFF",
-    "distance": 32.5,
-    "travel_time_estimate": 27.1,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_365",
-    "from": "N_2_E_CS_CR",
-    "to": "N_2_S_E",
-    "distance": 43.0,
-    "travel_time_estimate": 35.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_366",
-    "from": "N_2_S_E",
-    "to": "N_2_E_CS_CR",
-    "distance": 43.0,
-    "travel_time_estimate": 35.8,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_367",
-    "from": "N_2_W_MID",
-    "to": "N_2_C_STAIR_A",
-    "distance": 52.2,
-    "travel_time_estimate": 43.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
-    "id": "E_368",
-    "from": "N_2_C_STAIR_A",
-    "to": "N_2_W_MID",
-    "distance": 52.2,
-    "travel_time_estimate": 43.5,
-    "stairs": false,
-    "elevator": false,
-    "accessible": true,
-    "difficulty": 0,
-    "turn_complexity": 0,
-    "active": true,
-    "notes": ""
-  },
-  {
     "id": "E_369",
-    "from": "N_2_C_STAIR_A",
-    "to": "N_2_C_MID",
-    "distance": 22.4,
-    "travel_time_estimate": 18.7,
+    "from": "N_2_S_W",
+    "to": "N_2_S_233",
+    "distance": 53.8,
+    "travel_time_estimate": 44.8,
     "stairs": false,
     "elevator": false,
     "accessible": true,
@@ -5167,6 +5167,678 @@
   },
   {
     "id": "E_370",
+    "from": "N_2_S_233",
+    "to": "N_2_S_W",
+    "distance": 53.8,
+    "travel_time_estimate": 44.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_371",
+    "from": "N_2_S_233",
+    "to": "N_2_S_232",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_372",
+    "from": "N_2_S_232",
+    "to": "N_2_S_233",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_373",
+    "from": "N_2_S_232",
+    "to": "N_2_S_231",
+    "distance": 21.2,
+    "travel_time_estimate": 17.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_374",
+    "from": "N_2_S_231",
+    "to": "N_2_S_232",
+    "distance": 21.2,
+    "travel_time_estimate": 17.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_375",
+    "from": "N_2_S_231",
+    "to": "N_2_S_230",
+    "distance": 16.2,
+    "travel_time_estimate": 13.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_376",
+    "from": "N_2_S_230",
+    "to": "N_2_S_231",
+    "distance": 16.2,
+    "travel_time_estimate": 13.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_377",
+    "from": "N_2_S_230",
+    "to": "N_2_S_E",
+    "distance": 50.0,
+    "travel_time_estimate": 41.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_378",
+    "from": "N_2_S_E",
+    "to": "N_2_S_230",
+    "distance": 50.0,
+    "travel_time_estimate": 41.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_379",
+    "from": "N_2_S_W",
+    "to": "N_2_W_LIB",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_380",
+    "from": "N_2_W_LIB",
+    "to": "N_2_S_W",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_381",
+    "from": "N_2_W_LIB",
+    "to": "N_2_W_LIFT",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_382",
+    "from": "N_2_W_LIFT",
+    "to": "N_2_W_LIB",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_383",
+    "from": "N_2_W_LIFT",
+    "to": "N_2_W_CHEM",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_384",
+    "from": "N_2_W_CHEM",
+    "to": "N_2_W_LIFT",
+    "distance": 30.0,
+    "travel_time_estimate": 25.0,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_385",
+    "from": "N_2_W_CHEM",
+    "to": "N_2_W_MID",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_386",
+    "from": "N_2_W_MID",
+    "to": "N_2_W_CHEM",
+    "distance": 17.5,
+    "travel_time_estimate": 14.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_387",
+    "from": "N_2_W_MID",
+    "to": "N_2_W_PHYSICS",
+    "distance": 27.5,
+    "travel_time_estimate": 22.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_388",
+    "from": "N_2_W_PHYSICS",
+    "to": "N_2_W_MID",
+    "distance": 27.5,
+    "travel_time_estimate": 22.9,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_389",
+    "from": "N_2_W_PHYSICS",
+    "to": "N_2_W_LOUNGE",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_390",
+    "from": "N_2_W_LOUNGE",
+    "to": "N_2_W_PHYSICS",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_391",
+    "from": "N_2_W_LOUNGE",
+    "to": "N_2_W_N",
+    "distance": 7.5,
+    "travel_time_estimate": 6.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_392",
+    "from": "N_2_W_N",
+    "to": "N_2_W_LOUNGE",
+    "distance": 7.5,
+    "travel_time_estimate": 6.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_393",
+    "from": "N_2_W_N",
+    "to": "N_2_N_214",
+    "distance": 41.2,
+    "travel_time_estimate": 34.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_394",
+    "from": "N_2_N_214",
+    "to": "N_2_W_N",
+    "distance": 41.2,
+    "travel_time_estimate": 34.3,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_395",
+    "from": "N_2_N_214",
+    "to": "N_2_N_213",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_396",
+    "from": "N_2_N_213",
+    "to": "N_2_N_214",
+    "distance": 25.0,
+    "travel_time_estimate": 20.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_397",
+    "from": "N_2_N_213",
+    "to": "N_2_N_211",
+    "distance": 47.5,
+    "travel_time_estimate": 39.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_398",
+    "from": "N_2_N_211",
+    "to": "N_2_N_213",
+    "distance": 47.5,
+    "travel_time_estimate": 39.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_399",
+    "from": "N_2_N_211",
+    "to": "N_2_N_201",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_400",
+    "from": "N_2_N_201",
+    "to": "N_2_N_211",
+    "distance": 37.5,
+    "travel_time_estimate": 31.2,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_401",
+    "from": "N_2_N_201",
+    "to": "N_2_N_E",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_402",
+    "from": "N_2_N_E",
+    "to": "N_2_N_201",
+    "distance": 20.0,
+    "travel_time_estimate": 16.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_403",
+    "from": "N_2_N_E",
+    "to": "N_2_E_MBA202",
+    "distance": 23.8,
+    "travel_time_estimate": 19.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_404",
+    "from": "N_2_E_MBA202",
+    "to": "N_2_N_E",
+    "distance": 23.8,
+    "travel_time_estimate": 19.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_405",
+    "from": "N_2_E_MBA202",
+    "to": "N_2_E_MBA203",
+    "distance": 18.8,
+    "travel_time_estimate": 15.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_406",
+    "from": "N_2_E_MBA203",
+    "to": "N_2_E_MBA202",
+    "distance": 18.8,
+    "travel_time_estimate": 15.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_407",
+    "from": "N_2_E_MBA203",
+    "to": "N_2_E_MID",
+    "distance": 39.1,
+    "travel_time_estimate": 32.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_408",
+    "from": "N_2_E_MID",
+    "to": "N_2_E_MBA203",
+    "distance": 39.1,
+    "travel_time_estimate": 32.6,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_409",
+    "from": "N_2_E_MID",
+    "to": "N_2_E_STAFF",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_410",
+    "from": "N_2_E_STAFF",
+    "to": "N_2_E_MID",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_411",
+    "from": "N_2_E_STAFF",
+    "to": "N_2_E_CS_CR",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_412",
+    "from": "N_2_E_CS_CR",
+    "to": "N_2_E_STAFF",
+    "distance": 32.5,
+    "travel_time_estimate": 27.1,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_413",
+    "from": "N_2_E_CS_CR",
+    "to": "N_2_S_E",
+    "distance": 43.0,
+    "travel_time_estimate": 35.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_414",
+    "from": "N_2_S_E",
+    "to": "N_2_E_CS_CR",
+    "distance": 43.0,
+    "travel_time_estimate": 35.8,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_415",
+    "from": "N_2_W_MID",
+    "to": "N_2_C_STAIR_A",
+    "distance": 52.2,
+    "travel_time_estimate": 43.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_416",
+    "from": "N_2_C_STAIR_A",
+    "to": "N_2_W_MID",
+    "distance": 52.2,
+    "travel_time_estimate": 43.5,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_417",
+    "from": "N_2_C_STAIR_A",
+    "to": "N_2_C_MID",
+    "distance": 22.4,
+    "travel_time_estimate": 18.7,
+    "stairs": false,
+    "elevator": false,
+    "accessible": true,
+    "difficulty": 0,
+    "turn_complexity": 0,
+    "active": true,
+    "notes": ""
+  },
+  {
+    "id": "E_418",
     "from": "N_2_C_MID",
     "to": "N_2_C_STAIR_A",
     "distance": 22.4,
@@ -5180,7 +5852,7 @@
     "notes": ""
   },
   {
-    "id": "E_371",
+    "id": "E_419",
     "from": "N_2_C_MID",
     "to": "N_2_C_STAIR_B",
     "distance": 40.0,
@@ -5194,7 +5866,7 @@
     "notes": ""
   },
   {
-    "id": "E_372",
+    "id": "E_420",
     "from": "N_2_C_STAIR_B",
     "to": "N_2_C_MID",
     "distance": 40.0,
@@ -5208,7 +5880,7 @@
     "notes": ""
   },
   {
-    "id": "E_373",
+    "id": "E_421",
     "from": "N_2_C_STAIR_B",
     "to": "N_2_E_MID",
     "distance": 35.0,
@@ -5222,7 +5894,7 @@
     "notes": ""
   },
   {
-    "id": "E_374",
+    "id": "E_422",
     "from": "N_2_E_MID",
     "to": "N_2_C_STAIR_B",
     "distance": 35.0,
@@ -5236,7 +5908,7 @@
     "notes": ""
   },
   {
-    "id": "E_375",
+    "id": "E_423",
     "from": "N_2_N_213",
     "to": "N_2_C_MID",
     "distance": 72.7,
@@ -5250,7 +5922,7 @@
     "notes": ""
   },
   {
-    "id": "E_376",
+    "id": "E_424",
     "from": "N_2_C_MID",
     "to": "N_2_N_213",
     "distance": 72.7,
@@ -5264,7 +5936,7 @@
     "notes": ""
   },
   {
-    "id": "E_377",
+    "id": "E_425",
     "from": "N_2_C_MID",
     "to": "N_2_C_STUDY237",
     "distance": 48.8,
@@ -5278,7 +5950,7 @@
     "notes": ""
   },
   {
-    "id": "E_378",
+    "id": "E_426",
     "from": "N_2_C_STUDY237",
     "to": "N_2_C_MID",
     "distance": 48.8,
@@ -5292,7 +5964,7 @@
     "notes": ""
   },
   {
-    "id": "E_379",
+    "id": "E_427",
     "from": "N_2_C_STUDY237",
     "to": "N_2_S_232",
     "distance": 52.8,
@@ -5306,7 +5978,7 @@
     "notes": ""
   },
   {
-    "id": "E_380",
+    "id": "E_428",
     "from": "N_2_S_232",
     "to": "N_2_C_STUDY237",
     "distance": 52.8,
@@ -5320,7 +5992,7 @@
     "notes": ""
   },
   {
-    "id": "E_381",
+    "id": "E_429",
     "from": "ELEV_1_2",
     "to": "N_2_W_LIFT",
     "distance": 5.0,
@@ -5334,7 +6006,7 @@
     "notes": ""
   },
   {
-    "id": "E_382",
+    "id": "E_430",
     "from": "N_2_W_LIFT",
     "to": "ELEV_1_2",
     "distance": 5.0,
@@ -5348,7 +6020,7 @@
     "notes": ""
   },
   {
-    "id": "E_383",
+    "id": "E_431",
     "from": "STAIR_A_2",
     "to": "N_2_C_STAIR_A",
     "distance": 8.0,
@@ -5362,7 +6034,7 @@
     "notes": ""
   },
   {
-    "id": "E_384",
+    "id": "E_432",
     "from": "N_2_C_STAIR_A",
     "to": "STAIR_A_2",
     "distance": 8.0,
@@ -5376,7 +6048,7 @@
     "notes": ""
   },
   {
-    "id": "E_385",
+    "id": "E_433",
     "from": "STAIR_B_2",
     "to": "N_2_C_STAIR_B",
     "distance": 6.0,
@@ -5390,7 +6062,7 @@
     "notes": ""
   },
   {
-    "id": "E_386",
+    "id": "E_434",
     "from": "N_2_C_STAIR_B",
     "to": "STAIR_B_2",
     "distance": 6.0,
@@ -5404,7 +6076,7 @@
     "notes": ""
   },
   {
-    "id": "E_387",
+    "id": "E_435",
     "from": "STAIR_C_2",
     "to": "N_2_C_STAIR_C",
     "distance": 8.0,
@@ -5418,7 +6090,7 @@
     "notes": ""
   },
   {
-    "id": "E_388",
+    "id": "E_436",
     "from": "N_2_C_STAIR_C",
     "to": "STAIR_C_2",
     "distance": 8.0,
@@ -5432,7 +6104,7 @@
     "notes": ""
   },
   {
-    "id": "E_389",
+    "id": "E_437",
     "from": "N_2_C_STAIR_C",
     "to": "N_2_W_LIFT",
     "distance": 25.0,
@@ -5446,7 +6118,7 @@
     "notes": ""
   },
   {
-    "id": "E_390",
+    "id": "E_438",
     "from": "N_2_W_LIFT",
     "to": "N_2_C_STAIR_C",
     "distance": 25.0,
@@ -5460,7 +6132,7 @@
     "notes": ""
   },
   {
-    "id": "E_391",
+    "id": "E_439",
     "from": "N_2_C_STAIR_C",
     "to": "N_2_C_STUDY237",
     "distance": 28.0,
@@ -5474,7 +6146,7 @@
     "notes": ""
   },
   {
-    "id": "E_392",
+    "id": "E_440",
     "from": "N_2_C_STUDY237",
     "to": "N_2_C_STAIR_C",
     "distance": 28.0,
@@ -5488,7 +6160,7 @@
     "notes": ""
   },
   {
-    "id": "E_393",
+    "id": "E_441",
     "from": "STAIR_D_2",
     "to": "N_2_S_233",
     "distance": 6.0,
@@ -5502,7 +6174,7 @@
     "notes": ""
   },
   {
-    "id": "E_394",
+    "id": "E_442",
     "from": "N_2_S_233",
     "to": "STAIR_D_2",
     "distance": 6.0,
@@ -5516,7 +6188,7 @@
     "notes": ""
   },
   {
-    "id": "E_395",
+    "id": "E_443",
     "from": "STAIR_LIB_2",
     "to": "N_2_W_LIB",
     "distance": 15.0,
@@ -5530,7 +6202,7 @@
     "notes": ""
   },
   {
-    "id": "E_396",
+    "id": "E_444",
     "from": "N_2_W_LIB",
     "to": "STAIR_LIB_2",
     "distance": 15.0,
@@ -5544,7 +6216,7 @@
     "notes": ""
   },
   {
-    "id": "E_397",
+    "id": "E_445",
     "from": "N_2_W_LOUNGE",
     "to": "N_2_WS_BRIDGE",
     "distance": 18.0,
@@ -5558,7 +6230,7 @@
     "notes": "Enclosed skybridge walkway"
   },
   {
-    "id": "E_398",
+    "id": "E_446",
     "from": "N_2_WS_BRIDGE",
     "to": "N_2_W_LOUNGE",
     "distance": 18.0,
@@ -5572,7 +6244,7 @@
     "notes": "Enclosed skybridge walkway"
   },
   {
-    "id": "E_399",
+    "id": "E_447",
     "from": "N_2_WS_BRIDGE",
     "to": "STAIR_WS_2",
     "distance": 25.0,
@@ -5586,7 +6258,7 @@
     "notes": "Access to Workshop 2nd floor labs"
   },
   {
-    "id": "E_400",
+    "id": "E_448",
     "from": "STAIR_WS_2",
     "to": "N_2_WS_BRIDGE",
     "distance": 25.0,
@@ -5600,7 +6272,7 @@
     "notes": "Access to Workshop 2nd floor labs"
   },
   {
-    "id": "E_401",
+    "id": "E_449",
     "from": "RN_R214",
     "to": "N_2_N_214",
     "distance": 5.0,
@@ -5614,7 +6286,7 @@
     "notes": ""
   },
   {
-    "id": "E_402",
+    "id": "E_450",
     "from": "N_2_N_214",
     "to": "RN_R214",
     "distance": 5.0,
@@ -5628,7 +6300,7 @@
     "notes": ""
   },
   {
-    "id": "E_403",
+    "id": "E_451",
     "from": "RN_LOC_2_MATH_DEPT",
     "to": "N_2_N_213",
     "distance": 5.0,
@@ -5642,7 +6314,7 @@
     "notes": ""
   },
   {
-    "id": "E_404",
+    "id": "E_452",
     "from": "N_2_N_213",
     "to": "RN_LOC_2_MATH_DEPT",
     "distance": 5.0,
@@ -5656,7 +6328,7 @@
     "notes": ""
   },
   {
-    "id": "E_405",
+    "id": "E_453",
     "from": "RN_LOC_2_ENG_CR_211",
     "to": "N_2_N_211",
     "distance": 5.0,
@@ -5670,7 +6342,7 @@
     "notes": ""
   },
   {
-    "id": "E_406",
+    "id": "E_454",
     "from": "N_2_N_211",
     "to": "RN_LOC_2_ENG_CR_211",
     "distance": 5.0,
@@ -5684,7 +6356,7 @@
     "notes": ""
   },
   {
-    "id": "E_407",
+    "id": "E_455",
     "from": "RN_LOC_2_FACULTY_201",
     "to": "N_2_N_201",
     "distance": 5.0,
@@ -5698,7 +6370,7 @@
     "notes": ""
   },
   {
-    "id": "E_408",
+    "id": "E_456",
     "from": "N_2_N_201",
     "to": "RN_LOC_2_FACULTY_201",
     "distance": 5.0,
@@ -5712,7 +6384,7 @@
     "notes": ""
   },
   {
-    "id": "E_409",
+    "id": "E_457",
     "from": "RN_LOC_2_STUDENT_LOUNGE",
     "to": "N_2_W_LOUNGE",
     "distance": 5.0,
@@ -5726,7 +6398,7 @@
     "notes": ""
   },
   {
-    "id": "E_410",
+    "id": "E_458",
     "from": "N_2_W_LOUNGE",
     "to": "RN_LOC_2_STUDENT_LOUNGE",
     "distance": 5.0,
@@ -5740,7 +6412,7 @@
     "notes": ""
   },
   {
-    "id": "E_411",
+    "id": "E_459",
     "from": "RN_LOC_2_SPORTS",
     "to": "N_2_W_LOUNGE",
     "distance": 5.0,
@@ -5754,7 +6426,7 @@
     "notes": ""
   },
   {
-    "id": "E_412",
+    "id": "E_460",
     "from": "N_2_W_LOUNGE",
     "to": "RN_LOC_2_SPORTS",
     "distance": 5.0,
@@ -5768,7 +6440,7 @@
     "notes": ""
   },
   {
-    "id": "E_413",
+    "id": "E_461",
     "from": "RN_LOC_2_PHYSICS_LAB",
     "to": "N_2_W_PHYSICS",
     "distance": 5.0,
@@ -5782,7 +6454,7 @@
     "notes": ""
   },
   {
-    "id": "E_414",
+    "id": "E_462",
     "from": "N_2_W_PHYSICS",
     "to": "RN_LOC_2_PHYSICS_LAB",
     "distance": 5.0,
@@ -5796,7 +6468,7 @@
     "notes": ""
   },
   {
-    "id": "E_415",
+    "id": "E_463",
     "from": "RN_LOC_2_CHEMISTRY_LAB",
     "to": "N_2_W_CHEM",
     "distance": 5.0,
@@ -5810,7 +6482,7 @@
     "notes": ""
   },
   {
-    "id": "E_416",
+    "id": "E_464",
     "from": "N_2_W_CHEM",
     "to": "RN_LOC_2_CHEMISTRY_LAB",
     "distance": 5.0,
@@ -5824,7 +6496,7 @@
     "notes": ""
   },
   {
-    "id": "E_417",
+    "id": "E_465",
     "from": "RN_LOC_2_DRAWING_219",
     "to": "N_2_C_STAIR_A",
     "distance": 5.0,
@@ -5838,7 +6510,7 @@
     "notes": ""
   },
   {
-    "id": "E_418",
+    "id": "E_466",
     "from": "N_2_C_STAIR_A",
     "to": "RN_LOC_2_DRAWING_219",
     "distance": 5.0,
@@ -5852,7 +6524,7 @@
     "notes": ""
   },
   {
-    "id": "E_419",
+    "id": "E_467",
     "from": "RN_LOC_2_INTEL_LAB",
     "to": "N_2_C_MID",
     "distance": 5.0,
@@ -5866,7 +6538,7 @@
     "notes": ""
   },
   {
-    "id": "E_420",
+    "id": "E_468",
     "from": "N_2_C_MID",
     "to": "RN_LOC_2_INTEL_LAB",
     "distance": 5.0,
@@ -5880,7 +6552,7 @@
     "notes": ""
   },
   {
-    "id": "E_421",
+    "id": "E_469",
     "from": "RN_LOC_2_STUDY_207",
     "to": "N_2_C_STAIR_B",
     "distance": 5.0,
@@ -5894,7 +6566,7 @@
     "notes": ""
   },
   {
-    "id": "E_422",
+    "id": "E_470",
     "from": "N_2_C_STAIR_B",
     "to": "RN_LOC_2_STUDY_207",
     "distance": 5.0,
@@ -5908,7 +6580,7 @@
     "notes": ""
   },
   {
-    "id": "E_423",
+    "id": "E_471",
     "from": "RN_LOC_2_IS_CR_206",
     "to": "N_2_C_STAIR_B",
     "distance": 5.0,
@@ -5922,7 +6594,7 @@
     "notes": ""
   },
   {
-    "id": "E_424",
+    "id": "E_472",
     "from": "N_2_C_STAIR_B",
     "to": "RN_LOC_2_IS_CR_206",
     "distance": 5.0,
@@ -5936,7 +6608,7 @@
     "notes": ""
   },
   {
-    "id": "E_425",
+    "id": "E_473",
     "from": "RN_LOC_2_RESTROOM_204",
     "to": "N_2_E_MID",
     "distance": 5.0,
@@ -5950,7 +6622,7 @@
     "notes": ""
   },
   {
-    "id": "E_426",
+    "id": "E_474",
     "from": "N_2_E_MID",
     "to": "RN_LOC_2_RESTROOM_204",
     "distance": 5.0,
@@ -5964,7 +6636,7 @@
     "notes": ""
   },
   {
-    "id": "E_427",
+    "id": "E_475",
     "from": "RN_LOC_2_MBA_CR_202",
     "to": "N_2_E_MBA202",
     "distance": 5.0,
@@ -5978,7 +6650,7 @@
     "notes": ""
   },
   {
-    "id": "E_428",
+    "id": "E_476",
     "from": "N_2_E_MBA202",
     "to": "RN_LOC_2_MBA_CR_202",
     "distance": 5.0,
@@ -5992,7 +6664,7 @@
     "notes": ""
   },
   {
-    "id": "E_429",
+    "id": "E_477",
     "from": "RN_LOC_2_MBA_CR_203",
     "to": "N_2_E_MBA203",
     "distance": 5.0,
@@ -6006,7 +6678,7 @@
     "notes": ""
   },
   {
-    "id": "E_430",
+    "id": "E_478",
     "from": "N_2_E_MBA203",
     "to": "RN_LOC_2_MBA_CR_203",
     "distance": 5.0,
@@ -6020,7 +6692,7 @@
     "notes": ""
   },
   {
-    "id": "E_431",
+    "id": "E_479",
     "from": "RN_LOC_2_CIVIL_DEPT_209",
     "to": "N_2_C_STAIR_A",
     "distance": 5.0,
@@ -6034,7 +6706,7 @@
     "notes": ""
   },
   {
-    "id": "E_432",
+    "id": "E_480",
     "from": "N_2_C_STAIR_A",
     "to": "RN_LOC_2_CIVIL_DEPT_209",
     "distance": 5.0,
@@ -6048,7 +6720,7 @@
     "notes": ""
   },
   {
-    "id": "E_433",
+    "id": "E_481",
     "from": "RN_LOC_2_STUDY_221",
     "to": "N_2_C_STUDY237",
     "distance": 5.0,
@@ -6062,7 +6734,7 @@
     "notes": ""
   },
   {
-    "id": "E_434",
+    "id": "E_482",
     "from": "N_2_C_STUDY237",
     "to": "RN_LOC_2_STUDY_221",
     "distance": 5.0,
@@ -6076,7 +6748,7 @@
     "notes": ""
   },
   {
-    "id": "E_435",
+    "id": "E_483",
     "from": "RN_LOC_2_STAFF_224",
     "to": "N_2_E_STAFF",
     "distance": 5.0,
@@ -6090,7 +6762,7 @@
     "notes": ""
   },
   {
-    "id": "E_436",
+    "id": "E_484",
     "from": "N_2_E_STAFF",
     "to": "RN_LOC_2_STAFF_224",
     "distance": 5.0,
@@ -6104,7 +6776,7 @@
     "notes": ""
   },
   {
-    "id": "E_437",
+    "id": "E_485",
     "from": "RN_LOC_2_CS_LAB_225",
     "to": "N_2_E_STAFF",
     "distance": 5.0,
@@ -6118,7 +6790,7 @@
     "notes": ""
   },
   {
-    "id": "E_438",
+    "id": "E_486",
     "from": "N_2_E_STAFF",
     "to": "RN_LOC_2_CS_LAB_225",
     "distance": 5.0,
@@ -6132,7 +6804,7 @@
     "notes": ""
   },
   {
-    "id": "E_439",
+    "id": "E_487",
     "from": "RN_LOC_2_CS_CR_226",
     "to": "N_2_E_CS_CR",
     "distance": 5.0,
@@ -6146,7 +6818,7 @@
     "notes": ""
   },
   {
-    "id": "E_440",
+    "id": "E_488",
     "from": "N_2_E_CS_CR",
     "to": "RN_LOC_2_CS_CR_226",
     "distance": 5.0,
@@ -6160,7 +6832,7 @@
     "notes": ""
   },
   {
-    "id": "E_441",
+    "id": "E_489",
     "from": "RN_LOC_2_IS_LAB_2",
     "to": "N_2_S_E",
     "distance": 5.0,
@@ -6174,7 +6846,7 @@
     "notes": ""
   },
   {
-    "id": "E_442",
+    "id": "E_490",
     "from": "N_2_S_E",
     "to": "RN_LOC_2_IS_LAB_2",
     "distance": 5.0,
@@ -6188,7 +6860,7 @@
     "notes": ""
   },
   {
-    "id": "E_443",
+    "id": "E_491",
     "from": "RN_LOC_2_IS_LAB_3",
     "to": "N_2_S_230",
     "distance": 5.0,
@@ -6202,7 +6874,7 @@
     "notes": ""
   },
   {
-    "id": "E_444",
+    "id": "E_492",
     "from": "N_2_S_230",
     "to": "RN_LOC_2_IS_LAB_3",
     "distance": 5.0,
@@ -6216,7 +6888,7 @@
     "notes": ""
   },
   {
-    "id": "E_445",
+    "id": "E_493",
     "from": "RN_LOC_2_SERVER_231",
     "to": "N_2_S_231",
     "distance": 5.0,
@@ -6230,7 +6902,7 @@
     "notes": ""
   },
   {
-    "id": "E_446",
+    "id": "E_494",
     "from": "N_2_S_231",
     "to": "RN_LOC_2_SERVER_231",
     "distance": 5.0,
@@ -6244,7 +6916,7 @@
     "notes": ""
   },
   {
-    "id": "E_447",
+    "id": "E_495",
     "from": "RN_LOC_2_IS_LAB_4",
     "to": "N_2_S_232",
     "distance": 5.0,
@@ -6258,7 +6930,7 @@
     "notes": ""
   },
   {
-    "id": "E_448",
+    "id": "E_496",
     "from": "N_2_S_232",
     "to": "RN_LOC_2_IS_LAB_4",
     "distance": 5.0,
@@ -6272,7 +6944,7 @@
     "notes": ""
   },
   {
-    "id": "E_449",
+    "id": "E_497",
     "from": "RN_LOC_2_IS_LAB_5",
     "to": "N_2_S_233",
     "distance": 5.0,
@@ -6286,7 +6958,7 @@
     "notes": ""
   },
   {
-    "id": "E_450",
+    "id": "E_498",
     "from": "N_2_S_233",
     "to": "RN_LOC_2_IS_LAB_5",
     "distance": 5.0,
@@ -6300,7 +6972,7 @@
     "notes": ""
   },
   {
-    "id": "E_451",
+    "id": "E_499",
     "from": "RN_LOC_2_CS_CR_236",
     "to": "N_2_C_STAIR_C",
     "distance": 5.0,
@@ -6314,7 +6986,7 @@
     "notes": ""
   },
   {
-    "id": "E_452",
+    "id": "E_500",
     "from": "N_2_C_STAIR_C",
     "to": "RN_LOC_2_CS_CR_236",
     "distance": 5.0,
@@ -6328,7 +7000,7 @@
     "notes": ""
   },
   {
-    "id": "E_453",
+    "id": "E_501",
     "from": "RN_LOC_2_STUDY_237",
     "to": "N_2_C_STUDY237",
     "distance": 5.0,
@@ -6342,7 +7014,7 @@
     "notes": ""
   },
   {
-    "id": "E_454",
+    "id": "E_502",
     "from": "N_2_C_STUDY237",
     "to": "RN_LOC_2_STUDY_237",
     "distance": 5.0,
@@ -6356,7 +7028,7 @@
     "notes": ""
   },
   {
-    "id": "E_455",
+    "id": "E_503",
     "from": "RN_LOC_2_LIB_SF",
     "to": "N_2_W_LIB",
     "distance": 5.0,
@@ -6370,7 +7042,7 @@
     "notes": ""
   },
   {
-    "id": "E_456",
+    "id": "E_504",
     "from": "N_2_W_LIB",
     "to": "RN_LOC_2_LIB_SF",
     "distance": 5.0,
@@ -6384,7 +7056,7 @@
     "notes": ""
   },
   {
-    "id": "E_457",
+    "id": "E_505",
     "from": "RN_LOC_2_WORKSHOP_243",
     "to": "STAIR_WS_2",
     "distance": 5.0,
@@ -6398,7 +7070,7 @@
     "notes": ""
   },
   {
-    "id": "E_458",
+    "id": "E_506",
     "from": "STAIR_WS_2",
     "to": "RN_LOC_2_WORKSHOP_243",
     "distance": 5.0,
@@ -6412,7 +7084,7 @@
     "notes": ""
   },
   {
-    "id": "E_459",
+    "id": "E_507",
     "from": "RN_LOC_2_WORKSHOP_242",
     "to": "STAIR_WS_2",
     "distance": 5.0,
@@ -6426,7 +7098,7 @@
     "notes": ""
   },
   {
-    "id": "E_460",
+    "id": "E_508",
     "from": "STAIR_WS_2",
     "to": "RN_LOC_2_WORKSHOP_242",
     "distance": 5.0,
@@ -6440,7 +7112,7 @@
     "notes": ""
   },
   {
-    "id": "E_461",
+    "id": "E_509",
     "from": "N_3_S_W",
     "to": "N_3_S_337",
     "distance": 51.2,
@@ -6454,7 +7126,7 @@
     "notes": ""
   },
   {
-    "id": "E_462",
+    "id": "E_510",
     "from": "N_3_S_337",
     "to": "N_3_S_W",
     "distance": 51.2,
@@ -6468,7 +7140,7 @@
     "notes": ""
   },
   {
-    "id": "E_463",
+    "id": "E_511",
     "from": "N_3_S_337",
     "to": "N_3_S_339",
     "distance": 37.5,
@@ -6482,7 +7154,7 @@
     "notes": ""
   },
   {
-    "id": "E_464",
+    "id": "E_512",
     "from": "N_3_S_339",
     "to": "N_3_S_337",
     "distance": 37.5,
@@ -6496,7 +7168,7 @@
     "notes": ""
   },
   {
-    "id": "E_465",
+    "id": "E_513",
     "from": "N_3_S_339",
     "to": "N_3_S_E",
     "distance": 82.5,
@@ -6510,7 +7182,7 @@
     "notes": ""
   },
   {
-    "id": "E_466",
+    "id": "E_514",
     "from": "N_3_S_E",
     "to": "N_3_S_339",
     "distance": 82.5,
@@ -6524,7 +7196,7 @@
     "notes": ""
   },
   {
-    "id": "E_467",
+    "id": "E_515",
     "from": "N_3_S_W",
     "to": "N_3_W_TERRACE",
     "distance": 20.0,
@@ -6538,7 +7210,7 @@
     "notes": ""
   },
   {
-    "id": "E_468",
+    "id": "E_516",
     "from": "N_3_W_TERRACE",
     "to": "N_3_S_W",
     "distance": 20.0,
@@ -6552,7 +7224,7 @@
     "notes": ""
   },
   {
-    "id": "E_469",
+    "id": "E_517",
     "from": "N_3_W_TERRACE",
     "to": "N_3_W_LIFT",
     "distance": 32.5,
@@ -6566,7 +7238,7 @@
     "notes": ""
   },
   {
-    "id": "E_470",
+    "id": "E_518",
     "from": "N_3_W_LIFT",
     "to": "N_3_W_TERRACE",
     "distance": 32.5,
@@ -6580,7 +7252,7 @@
     "notes": ""
   },
   {
-    "id": "E_471",
+    "id": "E_519",
     "from": "N_3_W_LIFT",
     "to": "N_3_W_MID",
     "distance": 47.5,
@@ -6594,7 +7266,7 @@
     "notes": ""
   },
   {
-    "id": "E_472",
+    "id": "E_520",
     "from": "N_3_W_MID",
     "to": "N_3_W_LIFT",
     "distance": 47.5,
@@ -6608,7 +7280,7 @@
     "notes": ""
   },
   {
-    "id": "E_473",
+    "id": "E_521",
     "from": "N_3_W_MID",
     "to": "N_3_W_N",
     "distance": 72.5,
@@ -6622,7 +7294,7 @@
     "notes": ""
   },
   {
-    "id": "E_474",
+    "id": "E_522",
     "from": "N_3_W_N",
     "to": "N_3_W_MID",
     "distance": 72.5,
@@ -6636,7 +7308,7 @@
     "notes": ""
   },
   {
-    "id": "E_475",
+    "id": "E_523",
     "from": "N_3_W_N",
     "to": "N_3_N_316",
     "distance": 6.2,
@@ -6650,7 +7322,7 @@
     "notes": ""
   },
   {
-    "id": "E_476",
+    "id": "E_524",
     "from": "N_3_N_316",
     "to": "N_3_W_N",
     "distance": 6.2,
@@ -6664,7 +7336,7 @@
     "notes": ""
   },
   {
-    "id": "E_477",
+    "id": "E_525",
     "from": "N_3_N_316",
     "to": "N_3_N_318",
     "distance": 30.0,
@@ -6678,7 +7350,7 @@
     "notes": ""
   },
   {
-    "id": "E_478",
+    "id": "E_526",
     "from": "N_3_N_318",
     "to": "N_3_N_316",
     "distance": 30.0,
@@ -6692,7 +7364,7 @@
     "notes": ""
   },
   {
-    "id": "E_479",
+    "id": "E_527",
     "from": "N_3_N_318",
     "to": "N_3_N_STAFF",
     "distance": 80.0,
@@ -6706,7 +7378,7 @@
     "notes": ""
   },
   {
-    "id": "E_480",
+    "id": "E_528",
     "from": "N_3_N_STAFF",
     "to": "N_3_N_318",
     "distance": 80.0,
@@ -6720,7 +7392,7 @@
     "notes": ""
   },
   {
-    "id": "E_481",
+    "id": "E_529",
     "from": "N_3_N_STAFF",
     "to": "N_3_N_E",
     "distance": 55.0,
@@ -6734,7 +7406,7 @@
     "notes": ""
   },
   {
-    "id": "E_482",
+    "id": "E_530",
     "from": "N_3_N_E",
     "to": "N_3_N_STAFF",
     "distance": 55.0,
@@ -6748,7 +7420,7 @@
     "notes": ""
   },
   {
-    "id": "E_483",
+    "id": "E_531",
     "from": "N_3_N_E",
     "to": "N_3_E_301",
     "distance": 23.8,
@@ -6762,7 +7434,7 @@
     "notes": ""
   },
   {
-    "id": "E_484",
+    "id": "E_532",
     "from": "N_3_E_301",
     "to": "N_3_N_E",
     "distance": 23.8,
@@ -6776,7 +7448,7 @@
     "notes": ""
   },
   {
-    "id": "E_485",
+    "id": "E_533",
     "from": "N_3_E_301",
     "to": "N_3_E_302",
     "distance": 22.5,
@@ -6790,7 +7462,7 @@
     "notes": ""
   },
   {
-    "id": "E_486",
+    "id": "E_534",
     "from": "N_3_E_302",
     "to": "N_3_E_301",
     "distance": 22.5,
@@ -6804,7 +7476,7 @@
     "notes": ""
   },
   {
-    "id": "E_487",
+    "id": "E_535",
     "from": "N_3_E_302",
     "to": "N_3_E_MID",
     "distance": 36.2,
@@ -6818,7 +7490,7 @@
     "notes": ""
   },
   {
-    "id": "E_488",
+    "id": "E_536",
     "from": "N_3_E_MID",
     "to": "N_3_E_302",
     "distance": 36.2,
@@ -6832,7 +7504,7 @@
     "notes": ""
   },
   {
-    "id": "E_489",
+    "id": "E_537",
     "from": "N_3_E_MID",
     "to": "N_3_E_CAD",
     "distance": 32.5,
@@ -6846,7 +7518,7 @@
     "notes": ""
   },
   {
-    "id": "E_490",
+    "id": "E_538",
     "from": "N_3_E_CAD",
     "to": "N_3_E_MID",
     "distance": 32.5,
@@ -6860,7 +7532,7 @@
     "notes": ""
   },
   {
-    "id": "E_491",
+    "id": "E_539",
     "from": "N_3_E_CAD",
     "to": "N_3_S_E",
     "distance": 72.0,
@@ -6874,7 +7546,7 @@
     "notes": ""
   },
   {
-    "id": "E_492",
+    "id": "E_540",
     "from": "N_3_S_E",
     "to": "N_3_E_CAD",
     "distance": 72.0,
@@ -6888,7 +7560,7 @@
     "notes": ""
   },
   {
-    "id": "E_493",
+    "id": "E_541",
     "from": "N_3_W_MID",
     "to": "N_3_C_STAIR_A",
     "distance": 52.2,
@@ -6902,7 +7574,7 @@
     "notes": ""
   },
   {
-    "id": "E_494",
+    "id": "E_542",
     "from": "N_3_C_STAIR_A",
     "to": "N_3_W_MID",
     "distance": 52.2,
@@ -6916,7 +7588,7 @@
     "notes": ""
   },
   {
-    "id": "E_495",
+    "id": "E_543",
     "from": "N_3_C_STAIR_A",
     "to": "N_3_C_MID",
     "distance": 22.4,
@@ -6930,7 +7602,7 @@
     "notes": ""
   },
   {
-    "id": "E_496",
+    "id": "E_544",
     "from": "N_3_C_MID",
     "to": "N_3_C_STAIR_A",
     "distance": 22.4,
@@ -6944,7 +7616,7 @@
     "notes": ""
   },
   {
-    "id": "E_497",
+    "id": "E_545",
     "from": "N_3_C_MID",
     "to": "N_3_C_STAIR_B",
     "distance": 40.0,
@@ -6958,7 +7630,7 @@
     "notes": ""
   },
   {
-    "id": "E_498",
+    "id": "E_546",
     "from": "N_3_C_STAIR_B",
     "to": "N_3_C_MID",
     "distance": 40.0,
@@ -6972,7 +7644,7 @@
     "notes": ""
   },
   {
-    "id": "E_499",
+    "id": "E_547",
     "from": "N_3_C_STAIR_B",
     "to": "N_3_E_MID",
     "distance": 35.0,
@@ -6986,7 +7658,7 @@
     "notes": ""
   },
   {
-    "id": "E_500",
+    "id": "E_548",
     "from": "N_3_E_MID",
     "to": "N_3_C_STAIR_B",
     "distance": 35.0,
@@ -7000,7 +7672,7 @@
     "notes": ""
   },
   {
-    "id": "E_501",
+    "id": "E_549",
     "from": "ELEV_1_3",
     "to": "N_3_W_LIFT",
     "distance": 5.0,
@@ -7014,7 +7686,7 @@
     "notes": ""
   },
   {
-    "id": "E_502",
+    "id": "E_550",
     "from": "N_3_W_LIFT",
     "to": "ELEV_1_3",
     "distance": 5.0,
@@ -7028,7 +7700,7 @@
     "notes": ""
   },
   {
-    "id": "E_503",
+    "id": "E_551",
     "from": "STAIR_A_3",
     "to": "N_3_C_STAIR_A",
     "distance": 8.0,
@@ -7042,7 +7714,7 @@
     "notes": ""
   },
   {
-    "id": "E_504",
+    "id": "E_552",
     "from": "N_3_C_STAIR_A",
     "to": "STAIR_A_3",
     "distance": 8.0,
@@ -7056,7 +7728,7 @@
     "notes": ""
   },
   {
-    "id": "E_505",
+    "id": "E_553",
     "from": "STAIR_B_3",
     "to": "N_3_C_STAIR_B",
     "distance": 6.0,
@@ -7070,7 +7742,7 @@
     "notes": ""
   },
   {
-    "id": "E_506",
+    "id": "E_554",
     "from": "N_3_C_STAIR_B",
     "to": "STAIR_B_3",
     "distance": 6.0,
@@ -7084,7 +7756,7 @@
     "notes": ""
   },
   {
-    "id": "E_507",
+    "id": "E_555",
     "from": "STAIR_C_3",
     "to": "N_3_C_STAIR_C",
     "distance": 8.0,
@@ -7098,7 +7770,7 @@
     "notes": ""
   },
   {
-    "id": "E_508",
+    "id": "E_556",
     "from": "N_3_C_STAIR_C",
     "to": "STAIR_C_3",
     "distance": 8.0,
@@ -7112,7 +7784,7 @@
     "notes": ""
   },
   {
-    "id": "E_509",
+    "id": "E_557",
     "from": "N_3_C_STAIR_C",
     "to": "N_3_W_LIFT",
     "distance": 25.0,
@@ -7126,7 +7798,7 @@
     "notes": ""
   },
   {
-    "id": "E_510",
+    "id": "E_558",
     "from": "N_3_W_LIFT",
     "to": "N_3_C_STAIR_C",
     "distance": 25.0,
@@ -7140,7 +7812,7 @@
     "notes": ""
   },
   {
-    "id": "E_511",
+    "id": "E_559",
     "from": "STAIR_D_3",
     "to": "N_3_S_337",
     "distance": 6.0,
@@ -7154,7 +7826,7 @@
     "notes": ""
   },
   {
-    "id": "E_512",
+    "id": "E_560",
     "from": "N_3_S_337",
     "to": "STAIR_D_3",
     "distance": 6.0,
@@ -7168,7 +7840,7 @@
     "notes": ""
   },
   {
-    "id": "E_513",
+    "id": "E_561",
     "from": "RN_LOC_3_CIVIL_CR_316",
     "to": "N_3_N_316",
     "distance": 5.0,
@@ -7182,7 +7854,7 @@
     "notes": ""
   },
   {
-    "id": "E_514",
+    "id": "E_562",
     "from": "N_3_N_316",
     "to": "RN_LOC_3_CIVIL_CR_316",
     "distance": 5.0,
@@ -7196,7 +7868,7 @@
     "notes": ""
   },
   {
-    "id": "E_515",
+    "id": "E_563",
     "from": "RN_LOC_3_CR_318",
     "to": "N_3_N_318",
     "distance": 5.0,
@@ -7210,7 +7882,7 @@
     "notes": ""
   },
   {
-    "id": "E_516",
+    "id": "E_564",
     "from": "N_3_N_318",
     "to": "RN_LOC_3_CR_318",
     "distance": 5.0,
@@ -7224,7 +7896,7 @@
     "notes": ""
   },
   {
-    "id": "E_517",
+    "id": "E_565",
     "from": "RN_LOC_3_CIVIL_STAFF",
     "to": "N_3_N_STAFF",
     "distance": 5.0,
@@ -7238,7 +7910,7 @@
     "notes": ""
   },
   {
-    "id": "E_518",
+    "id": "E_566",
     "from": "N_3_N_STAFF",
     "to": "RN_LOC_3_CIVIL_STAFF",
     "distance": 5.0,
@@ -7252,7 +7924,7 @@
     "notes": ""
   },
   {
-    "id": "E_519",
+    "id": "E_567",
     "from": "RN_LOC_3_CIVIL_CR_301",
     "to": "N_3_E_301",
     "distance": 5.0,
@@ -7266,7 +7938,7 @@
     "notes": ""
   },
   {
-    "id": "E_520",
+    "id": "E_568",
     "from": "N_3_E_301",
     "to": "RN_LOC_3_CIVIL_CR_301",
     "distance": 5.0,
@@ -7280,7 +7952,7 @@
     "notes": ""
   },
   {
-    "id": "E_521",
+    "id": "E_569",
     "from": "RN_LOC_3_CIVIL_CR_302",
     "to": "N_3_E_302",
     "distance": 5.0,
@@ -7294,7 +7966,7 @@
     "notes": ""
   },
   {
-    "id": "E_522",
+    "id": "E_570",
     "from": "N_3_E_302",
     "to": "RN_LOC_3_CIVIL_CR_302",
     "distance": 5.0,
@@ -7308,7 +7980,7 @@
     "notes": ""
   },
   {
-    "id": "E_523",
+    "id": "E_571",
     "from": "RN_LOC_3_ENV_LAB",
     "to": "N_3_C_STAIR_A",
     "distance": 5.0,
@@ -7322,7 +7994,7 @@
     "notes": ""
   },
   {
-    "id": "E_524",
+    "id": "E_572",
     "from": "N_3_C_STAIR_A",
     "to": "RN_LOC_3_ENV_LAB",
     "distance": 5.0,
@@ -7336,7 +8008,7 @@
     "notes": ""
   },
   {
-    "id": "E_525",
+    "id": "E_573",
     "from": "RN_LOC_3_TRAINING",
     "to": "N_3_C_MID",
     "distance": 5.0,
@@ -7350,7 +8022,7 @@
     "notes": ""
   },
   {
-    "id": "E_526",
+    "id": "E_574",
     "from": "N_3_C_MID",
     "to": "RN_LOC_3_TRAINING",
     "distance": 5.0,
@@ -7364,7 +8036,7 @@
     "notes": ""
   },
   {
-    "id": "E_527",
+    "id": "E_575",
     "from": "RN_LOC_3_CIVIL_CAD",
     "to": "N_3_E_CAD",
     "distance": 5.0,
@@ -7378,7 +8050,7 @@
     "notes": ""
   },
   {
-    "id": "E_528",
+    "id": "E_576",
     "from": "N_3_E_CAD",
     "to": "RN_LOC_3_CIVIL_CAD",
     "distance": 5.0,
@@ -7392,7 +8064,7 @@
     "notes": ""
   },
   {
-    "id": "E_529",
+    "id": "E_577",
     "from": "RN_LOC_3_CR_337",
     "to": "N_3_S_337",
     "distance": 5.0,
@@ -7406,7 +8078,7 @@
     "notes": ""
   },
   {
-    "id": "E_530",
+    "id": "E_578",
     "from": "N_3_S_337",
     "to": "RN_LOC_3_CR_337",
     "distance": 5.0,
@@ -7420,7 +8092,7 @@
     "notes": ""
   },
   {
-    "id": "E_531",
+    "id": "E_579",
     "from": "RN_LOC_3_IS_CR_339",
     "to": "N_3_S_339",
     "distance": 5.0,
@@ -7434,7 +8106,7 @@
     "notes": ""
   },
   {
-    "id": "E_532",
+    "id": "E_580",
     "from": "N_3_S_339",
     "to": "RN_LOC_3_IS_CR_339",
     "distance": 5.0,
@@ -7448,7 +8120,7 @@
     "notes": ""
   },
   {
-    "id": "E_533",
+    "id": "E_581",
     "from": "RN_LOC_3_ROOF_POOL",
     "to": "N_3_W_TERRACE",
     "distance": 5.0,
@@ -7462,7 +8134,7 @@
     "notes": ""
   },
   {
-    "id": "E_534",
+    "id": "E_582",
     "from": "N_3_W_TERRACE",
     "to": "RN_LOC_3_ROOF_POOL",
     "distance": 5.0,
@@ -7476,7 +8148,7 @@
     "notes": ""
   },
   {
-    "id": "E_535",
+    "id": "E_583",
     "from": "N_4_N_W",
     "to": "N_4_N_411",
     "distance": 36.2,
@@ -7490,7 +8162,7 @@
     "notes": ""
   },
   {
-    "id": "E_536",
+    "id": "E_584",
     "from": "N_4_N_411",
     "to": "N_4_N_W",
     "distance": 36.2,
@@ -7504,7 +8176,7 @@
     "notes": ""
   },
   {
-    "id": "E_537",
+    "id": "E_585",
     "from": "N_4_N_411",
     "to": "N_4_N_410",
     "distance": 25.0,
@@ -7518,7 +8190,7 @@
     "notes": ""
   },
   {
-    "id": "E_538",
+    "id": "E_586",
     "from": "N_4_N_410",
     "to": "N_4_N_411",
     "distance": 25.0,
@@ -7532,7 +8204,7 @@
     "notes": ""
   },
   {
-    "id": "E_539",
+    "id": "E_587",
     "from": "N_4_N_410",
     "to": "N_4_N_408",
     "distance": 47.5,
@@ -7546,7 +8218,7 @@
     "notes": ""
   },
   {
-    "id": "E_540",
+    "id": "E_588",
     "from": "N_4_N_408",
     "to": "N_4_N_410",
     "distance": 47.5,
@@ -7560,7 +8232,7 @@
     "notes": ""
   },
   {
-    "id": "E_541",
+    "id": "E_589",
     "from": "N_4_N_408",
     "to": "N_4_N_SPSS",
     "distance": 22.5,
@@ -7574,7 +8246,7 @@
     "notes": ""
   },
   {
-    "id": "E_542",
+    "id": "E_590",
     "from": "N_4_N_SPSS",
     "to": "N_4_N_408",
     "distance": 22.5,
@@ -7588,7 +8260,7 @@
     "notes": ""
   },
   {
-    "id": "E_543",
+    "id": "E_591",
     "from": "N_4_N_SPSS",
     "to": "N_4_N_E",
     "distance": 40.0,
@@ -7602,7 +8274,7 @@
     "notes": ""
   },
   {
-    "id": "E_544",
+    "id": "E_592",
     "from": "N_4_N_E",
     "to": "N_4_N_SPSS",
     "distance": 40.0,
@@ -7616,7 +8288,7 @@
     "notes": ""
   },
   {
-    "id": "E_545",
+    "id": "E_593",
     "from": "N_4_N_E",
     "to": "N_4_E_ENG",
     "distance": 43.7,
@@ -7630,7 +8302,7 @@
     "notes": ""
   },
   {
-    "id": "E_546",
+    "id": "E_594",
     "from": "N_4_E_ENG",
     "to": "N_4_N_E",
     "distance": 43.7,
@@ -7644,7 +8316,7 @@
     "notes": ""
   },
   {
-    "id": "E_547",
+    "id": "E_595",
     "from": "N_4_E_ENG",
     "to": "N_4_E_MID",
     "distance": 29.7,
@@ -7658,7 +8330,7 @@
     "notes": ""
   },
   {
-    "id": "E_548",
+    "id": "E_596",
     "from": "N_4_E_MID",
     "to": "N_4_E_ENG",
     "distance": 29.7,
@@ -7672,7 +8344,7 @@
     "notes": ""
   },
   {
-    "id": "E_549",
+    "id": "E_597",
     "from": "N_4_N_W",
     "to": "N_4_W_LIFT",
     "distance": 67.5,
@@ -7686,7 +8358,7 @@
     "notes": ""
   },
   {
-    "id": "E_550",
+    "id": "E_598",
     "from": "N_4_W_LIFT",
     "to": "N_4_N_W",
     "distance": 67.5,
@@ -7700,7 +8372,7 @@
     "notes": ""
   },
   {
-    "id": "E_551",
+    "id": "E_599",
     "from": "N_4_W_LIFT",
     "to": "N_4_C_MID",
     "distance": 71.2,
@@ -7714,7 +8386,7 @@
     "notes": ""
   },
   {
-    "id": "E_552",
+    "id": "E_600",
     "from": "N_4_C_MID",
     "to": "N_4_W_LIFT",
     "distance": 71.2,
@@ -7728,7 +8400,7 @@
     "notes": ""
   },
   {
-    "id": "E_553",
+    "id": "E_601",
     "from": "N_4_C_MID",
     "to": "N_4_C_STAIR_B",
     "distance": 40.0,
@@ -7742,7 +8414,7 @@
     "notes": ""
   },
   {
-    "id": "E_554",
+    "id": "E_602",
     "from": "N_4_C_STAIR_B",
     "to": "N_4_C_MID",
     "distance": 40.0,
@@ -7756,7 +8428,7 @@
     "notes": ""
   },
   {
-    "id": "E_555",
+    "id": "E_603",
     "from": "N_4_C_STAIR_B",
     "to": "N_4_E_MID",
     "distance": 35.0,
@@ -7770,7 +8442,7 @@
     "notes": ""
   },
   {
-    "id": "E_556",
+    "id": "E_604",
     "from": "N_4_E_MID",
     "to": "N_4_C_STAIR_B",
     "distance": 35.0,
@@ -7784,7 +8456,7 @@
     "notes": ""
   },
   {
-    "id": "E_557",
+    "id": "E_605",
     "from": "N_4_C_MID",
     "to": "N_4_TERRACE",
     "distance": 47.5,
@@ -7798,7 +8470,7 @@
     "notes": ""
   },
   {
-    "id": "E_558",
+    "id": "E_606",
     "from": "N_4_TERRACE",
     "to": "N_4_C_MID",
     "distance": 47.5,
@@ -7812,7 +8484,7 @@
     "notes": ""
   },
   {
-    "id": "E_559",
+    "id": "E_607",
     "from": "ELEV_1_4",
     "to": "N_4_W_LIFT",
     "distance": 5.0,
@@ -7826,7 +8498,7 @@
     "notes": ""
   },
   {
-    "id": "E_560",
+    "id": "E_608",
     "from": "N_4_W_LIFT",
     "to": "ELEV_1_4",
     "distance": 5.0,
@@ -7840,7 +8512,7 @@
     "notes": ""
   },
   {
-    "id": "E_561",
+    "id": "E_609",
     "from": "STAIR_B_4",
     "to": "N_4_C_STAIR_B",
     "distance": 6.0,
@@ -7854,7 +8526,7 @@
     "notes": ""
   },
   {
-    "id": "E_562",
+    "id": "E_610",
     "from": "N_4_C_STAIR_B",
     "to": "STAIR_B_4",
     "distance": 6.0,
@@ -7868,7 +8540,7 @@
     "notes": ""
   },
   {
-    "id": "E_563",
+    "id": "E_611",
     "from": "RN_LOC_4_EC_LAB_1",
     "to": "N_4_N_E",
     "distance": 5.0,
@@ -7882,7 +8554,7 @@
     "notes": ""
   },
   {
-    "id": "E_564",
+    "id": "E_612",
     "from": "N_4_N_E",
     "to": "RN_LOC_4_EC_LAB_1",
     "distance": 5.0,
@@ -7896,7 +8568,7 @@
     "notes": ""
   },
   {
-    "id": "E_565",
+    "id": "E_613",
     "from": "RN_LOC_4_SPSS",
     "to": "N_4_N_SPSS",
     "distance": 5.0,
@@ -7910,7 +8582,7 @@
     "notes": ""
   },
   {
-    "id": "E_566",
+    "id": "E_614",
     "from": "N_4_N_SPSS",
     "to": "RN_LOC_4_SPSS",
     "distance": 5.0,
@@ -7924,7 +8596,7 @@
     "notes": ""
   },
   {
-    "id": "E_567",
+    "id": "E_615",
     "from": "RN_LOC_4_EC_LAB_3",
     "to": "N_4_N_408",
     "distance": 5.0,
@@ -7938,7 +8610,7 @@
     "notes": ""
   },
   {
-    "id": "E_568",
+    "id": "E_616",
     "from": "N_4_N_408",
     "to": "RN_LOC_4_EC_LAB_3",
     "distance": 5.0,
@@ -7952,7 +8624,7 @@
     "notes": ""
   },
   {
-    "id": "E_569",
+    "id": "E_617",
     "from": "RN_LOC_4_EC_LAB_5",
     "to": "N_4_N_410",
     "distance": 5.0,
@@ -7966,7 +8638,7 @@
     "notes": ""
   },
   {
-    "id": "E_570",
+    "id": "E_618",
     "from": "N_4_N_410",
     "to": "RN_LOC_4_EC_LAB_5",
     "distance": 5.0,
@@ -7980,7 +8652,7 @@
     "notes": ""
   },
   {
-    "id": "E_571",
+    "id": "E_619",
     "from": "RN_LOC_4_EC_LAB_4",
     "to": "N_4_N_411",
     "distance": 5.0,
@@ -7994,7 +8666,7 @@
     "notes": ""
   },
   {
-    "id": "E_572",
+    "id": "E_620",
     "from": "N_4_N_411",
     "to": "RN_LOC_4_EC_LAB_4",
     "distance": 5.0,
@@ -8008,7 +8680,7 @@
     "notes": ""
   },
   {
-    "id": "E_573",
+    "id": "E_621",
     "from": "RN_LOC_4_DRESS_ROOM",
     "to": "N_4_N_W",
     "distance": 5.0,
@@ -8022,7 +8694,7 @@
     "notes": ""
   },
   {
-    "id": "E_574",
+    "id": "E_622",
     "from": "N_4_N_W",
     "to": "RN_LOC_4_DRESS_ROOM",
     "distance": 5.0,
@@ -8036,7 +8708,7 @@
     "notes": ""
   },
   {
-    "id": "E_575",
+    "id": "E_623",
     "from": "RN_LOC_4_EC_ENG",
     "to": "N_4_E_ENG",
     "distance": 5.0,
@@ -8050,7 +8722,7 @@
     "notes": ""
   },
   {
-    "id": "E_576",
+    "id": "E_624",
     "from": "N_4_E_ENG",
     "to": "RN_LOC_4_EC_ENG",
     "distance": 5.0,
@@ -8064,7 +8736,7 @@
     "notes": ""
   },
   {
-    "id": "E_577",
+    "id": "E_625",
     "from": "RN_LOC_4_STUDY_406",
     "to": "N_4_C_STAIR_B",
     "distance": 5.0,
@@ -8078,7 +8750,7 @@
     "notes": ""
   },
   {
-    "id": "E_578",
+    "id": "E_626",
     "from": "N_4_C_STAIR_B",
     "to": "RN_LOC_4_STUDY_406",
     "distance": 5.0,
@@ -8092,7 +8764,7 @@
     "notes": ""
   },
   {
-    "id": "E_579",
+    "id": "E_627",
     "from": "RN_LOC_4_TOILET_405",
     "to": "N_4_E_MID",
     "distance": 5.0,
@@ -8106,7 +8778,7 @@
     "notes": ""
   },
   {
-    "id": "E_580",
+    "id": "E_628",
     "from": "N_4_E_MID",
     "to": "RN_LOC_4_TOILET_405",
     "distance": 5.0,
@@ -8120,7 +8792,7 @@
     "notes": ""
   },
   {
-    "id": "E_581",
+    "id": "E_629",
     "from": "RN_LOC_4_ROOFTOP_GARDEN",
     "to": "N_4_TERRACE",
     "distance": 5.0,
@@ -8134,7 +8806,7 @@
     "notes": ""
   },
   {
-    "id": "E_582",
+    "id": "E_630",
     "from": "N_4_TERRACE",
     "to": "RN_LOC_4_ROOFTOP_GARDEN",
     "distance": 5.0,
@@ -8148,7 +8820,7 @@
     "notes": ""
   },
   {
-    "id": "E_583",
+    "id": "E_631",
     "from": "RN_LOC_4_GUEST_HOUSE",
     "to": "STAIR_WS_4",
     "distance": 5.0,
@@ -8162,7 +8834,7 @@
     "notes": ""
   },
   {
-    "id": "E_584",
+    "id": "E_632",
     "from": "STAIR_WS_4",
     "to": "RN_LOC_4_GUEST_HOUSE",
     "distance": 5.0,
@@ -8176,7 +8848,7 @@
     "notes": ""
   },
   {
-    "id": "E_585",
+    "id": "E_633",
     "from": "N_5_N_INCUBATION",
     "to": "N_5_N_ENTREPRENEUR",
     "distance": 40.0,
@@ -8190,7 +8862,7 @@
     "notes": ""
   },
   {
-    "id": "E_586",
+    "id": "E_634",
     "from": "N_5_N_ENTREPRENEUR",
     "to": "N_5_N_INCUBATION",
     "distance": 40.0,
@@ -8204,7 +8876,7 @@
     "notes": ""
   },
   {
-    "id": "E_587",
+    "id": "E_635",
     "from": "N_5_N_ENTREPRENEUR",
     "to": "N_5_N_E",
     "distance": 27.5,
@@ -8218,7 +8890,7 @@
     "notes": ""
   },
   {
-    "id": "E_588",
+    "id": "E_636",
     "from": "N_5_N_E",
     "to": "N_5_N_ENTREPRENEUR",
     "distance": 27.5,
@@ -8232,7 +8904,7 @@
     "notes": ""
   },
   {
-    "id": "E_589",
+    "id": "E_637",
     "from": "N_5_N_E",
     "to": "N_5_E_DREAMERS",
     "distance": 32.5,
@@ -8246,7 +8918,7 @@
     "notes": ""
   },
   {
-    "id": "E_590",
+    "id": "E_638",
     "from": "N_5_E_DREAMERS",
     "to": "N_5_N_E",
     "distance": 32.5,
@@ -8260,7 +8932,7 @@
     "notes": ""
   },
   {
-    "id": "E_591",
+    "id": "E_639",
     "from": "N_5_E_DREAMERS",
     "to": "N_5_E_MID",
     "distance": 35.0,
@@ -8274,7 +8946,7 @@
     "notes": ""
   },
   {
-    "id": "E_592",
+    "id": "E_640",
     "from": "N_5_E_MID",
     "to": "N_5_E_DREAMERS",
     "distance": 35.0,
@@ -8288,7 +8960,7 @@
     "notes": ""
   },
   {
-    "id": "E_593",
+    "id": "E_641",
     "from": "N_5_N_INCUBATION",
     "to": "N_5_C_APTRA",
     "distance": 44.2,
@@ -8302,7 +8974,7 @@
     "notes": ""
   },
   {
-    "id": "E_594",
+    "id": "E_642",
     "from": "N_5_C_APTRA",
     "to": "N_5_N_INCUBATION",
     "distance": 44.2,
@@ -8316,7 +8988,7 @@
     "notes": ""
   },
   {
-    "id": "E_595",
+    "id": "E_643",
     "from": "N_5_C_APTRA",
     "to": "N_5_C_STAIR_B",
     "distance": 57.0,
@@ -8330,7 +9002,7 @@
     "notes": ""
   },
   {
-    "id": "E_596",
+    "id": "E_644",
     "from": "N_5_C_STAIR_B",
     "to": "N_5_C_APTRA",
     "distance": 57.0,
@@ -8344,7 +9016,7 @@
     "notes": ""
   },
   {
-    "id": "E_597",
+    "id": "E_645",
     "from": "N_5_C_STAIR_B",
     "to": "N_5_E_MID",
     "distance": 52.5,
@@ -8358,7 +9030,7 @@
     "notes": ""
   },
   {
-    "id": "E_598",
+    "id": "E_646",
     "from": "N_5_E_MID",
     "to": "N_5_C_STAIR_B",
     "distance": 52.5,
@@ -8372,7 +9044,7 @@
     "notes": ""
   },
   {
-    "id": "E_599",
+    "id": "E_647",
     "from": "N_5_C_STAIR_B",
     "to": "N_5_W_LIFT",
     "distance": 111.2,
@@ -8386,7 +9058,7 @@
     "notes": ""
   },
   {
-    "id": "E_600",
+    "id": "E_648",
     "from": "N_5_W_LIFT",
     "to": "N_5_C_STAIR_B",
     "distance": 111.2,
@@ -8400,7 +9072,7 @@
     "notes": ""
   },
   {
-    "id": "E_601",
+    "id": "E_649",
     "from": "N_5_C_STAIR_B",
     "to": "N_5_TERRACE",
     "distance": 82.8,
@@ -8414,7 +9086,7 @@
     "notes": ""
   },
   {
-    "id": "E_602",
+    "id": "E_650",
     "from": "N_5_TERRACE",
     "to": "N_5_C_STAIR_B",
     "distance": 82.8,
@@ -8428,7 +9100,7 @@
     "notes": ""
   },
   {
-    "id": "E_603",
+    "id": "E_651",
     "from": "ELEV_1_5",
     "to": "N_5_W_LIFT",
     "distance": 5.0,
@@ -8442,7 +9114,7 @@
     "notes": ""
   },
   {
-    "id": "E_604",
+    "id": "E_652",
     "from": "N_5_W_LIFT",
     "to": "ELEV_1_5",
     "distance": 5.0,
@@ -8456,7 +9128,7 @@
     "notes": ""
   },
   {
-    "id": "E_605",
+    "id": "E_653",
     "from": "STAIR_B_5",
     "to": "N_5_C_STAIR_B",
     "distance": 6.0,
@@ -8470,7 +9142,7 @@
     "notes": ""
   },
   {
-    "id": "E_606",
+    "id": "E_654",
     "from": "N_5_C_STAIR_B",
     "to": "STAIR_B_5",
     "distance": 6.0,
@@ -8484,7 +9156,7 @@
     "notes": ""
   },
   {
-    "id": "E_607",
+    "id": "E_655",
     "from": "RN_LOC_5_DIRECTOR",
     "to": "N_5_N_E",
     "distance": 5.0,
@@ -8498,7 +9170,7 @@
     "notes": ""
   },
   {
-    "id": "E_608",
+    "id": "E_656",
     "from": "N_5_N_E",
     "to": "RN_LOC_5_DIRECTOR",
     "distance": 5.0,
@@ -8512,7 +9184,7 @@
     "notes": ""
   },
   {
-    "id": "E_609",
+    "id": "E_657",
     "from": "RN_LOC_5_INCUBATION",
     "to": "N_5_N_INCUBATION",
     "distance": 5.0,
@@ -8526,7 +9198,7 @@
     "notes": ""
   },
   {
-    "id": "E_610",
+    "id": "E_658",
     "from": "N_5_N_INCUBATION",
     "to": "RN_LOC_5_INCUBATION",
     "distance": 5.0,
@@ -8540,7 +9212,7 @@
     "notes": ""
   },
   {
-    "id": "E_611",
+    "id": "E_659",
     "from": "RN_LOC_5_ENTREPRENEUR",
     "to": "N_5_N_ENTREPRENEUR",
     "distance": 5.0,
@@ -8554,7 +9226,7 @@
     "notes": ""
   },
   {
-    "id": "E_612",
+    "id": "E_660",
     "from": "N_5_N_ENTREPRENEUR",
     "to": "RN_LOC_5_ENTREPRENEUR",
     "distance": 5.0,
@@ -8568,7 +9240,7 @@
     "notes": ""
   },
   {
-    "id": "E_613",
+    "id": "E_661",
     "from": "RN_LOC_5_DREAMERS",
     "to": "N_5_E_DREAMERS",
     "distance": 5.0,
@@ -8582,7 +9254,7 @@
     "notes": ""
   },
   {
-    "id": "E_614",
+    "id": "E_662",
     "from": "N_5_E_DREAMERS",
     "to": "RN_LOC_5_DREAMERS",
     "distance": 5.0,
@@ -8596,7 +9268,7 @@
     "notes": ""
   },
   {
-    "id": "E_615",
+    "id": "E_663",
     "from": "RN_LOC_5_APTRA",
     "to": "N_5_C_APTRA",
     "distance": 5.0,
@@ -8610,7 +9282,7 @@
     "notes": ""
   },
   {
-    "id": "E_616",
+    "id": "E_664",
     "from": "N_5_C_APTRA",
     "to": "RN_LOC_5_APTRA",
     "distance": 5.0,
@@ -8624,7 +9296,7 @@
     "notes": ""
   },
   {
-    "id": "E_617",
+    "id": "E_665",
     "from": "RN_LOC_5_RESTROOM_503",
     "to": "N_5_E_MID",
     "distance": 5.0,
@@ -8638,7 +9310,7 @@
     "notes": ""
   },
   {
-    "id": "E_618",
+    "id": "E_666",
     "from": "N_5_E_MID",
     "to": "RN_LOC_5_RESTROOM_503",
     "distance": 5.0,
@@ -8652,7 +9324,7 @@
     "notes": ""
   },
   {
-    "id": "E_619",
+    "id": "E_667",
     "from": "RN_LOC_5_STUDY_506",
     "to": "N_5_C_STAIR_B",
     "distance": 5.0,
@@ -8666,7 +9338,7 @@
     "notes": ""
   },
   {
-    "id": "E_620",
+    "id": "E_668",
     "from": "N_5_C_STAIR_B",
     "to": "RN_LOC_5_STUDY_506",
     "distance": 5.0,
@@ -8680,7 +9352,7 @@
     "notes": ""
   },
   {
-    "id": "E_621",
+    "id": "E_669",
     "from": "RN_LOC_5_ROOFTOP_TERRACE",
     "to": "N_5_TERRACE",
     "distance": 5.0,
@@ -8694,7 +9366,7 @@
     "notes": ""
   },
   {
-    "id": "E_622",
+    "id": "E_670",
     "from": "N_5_TERRACE",
     "to": "RN_LOC_5_ROOFTOP_TERRACE",
     "distance": 5.0,
